@@ -344,11 +344,25 @@ test('B3 Schnelles „Weiter“: Lösung der alten Übung wird nicht mehr vorgel
   await openFirstPick(page);
   await page.waitForTimeout(600);
   await page.locator('.pick-card').first().click();
-  await page.getByRole('button', { name: 'Prüfen' }).click();
-  await expect(page.locator('.sheet')).toBeVisible();
-  const solution = (await page.locator('.sheet-solution').innerText()).split('\n')[0].trim().toLowerCase();
-  const tClick = await page.evaluate(() => performance.now());
-  await page.getByRole('button', { name: 'Weiter' }).click();
+  // „Prüfen“ und gleich danach „Weiter“ in der Seite selbst klicken: Playwright würde vor dem Klick warten, bis die
+  // Feedback-Leiste fertig eingeblendet ist, und auf langsamen Rechnern käme der Klick erst nach der Lösung (350 ms).
+  // Gemessen wird der Zeitpunkt des echten Klicks auf „Weiter“.
+  const { solution, tCheck, tClick } = await page.evaluate(async () => {
+    const button = (label: string) =>
+      [...document.querySelectorAll<HTMLButtonElement>('button')].find((b) => b.textContent?.trim() === label);
+    const tCheck = performance.now();
+    button('Prüfen')!.click();
+    let weiter = button('Weiter');
+    while (!weiter && performance.now() - tCheck < 2000) {
+      await new Promise((r) => setTimeout(r, 5));
+      weiter = button('Weiter');
+    }
+    const text = document.querySelector<HTMLElement>('.sheet-solution')?.innerText ?? '';
+    const tClick = performance.now();
+    weiter!.click();
+    return { solution: text.split('\n')[0].trim().toLowerCase(), tCheck, tClick };
+  });
+  expect(tClick - tCheck, '„Weiter“ kommt vor dem Vorlesen der Lösung').toBeLessThan(300);
   await page.waitForTimeout(1200);
   const after = (await speechLog(page)).filter((e) => e.t > tClick).map((e) => e.text.toLowerCase());
   expect(solution.length).toBeGreaterThan(0);
