@@ -40,6 +40,8 @@ MUTATIONS = [
      "? diagnose(sol.es, result.given, lexicon, { speech }) : null;", "? null : null; void diagnose; void lexicon; void speech;", "Regelhinweis"),
     ("ser/estar wird nicht erkannt", "src/lib/diagnose.ts",
      "if (ei >= 0 && SER.indexOf(g) >= 0) {", "if (ei >= 0 && SER.indexOf(g) >= 99) {", "Regelhinweis"),
+    ("Lösung der alten Übung wird nach „Weiter“ noch vorgelesen", "src/screens/LessonScreen.tsx",
+     "    window.clearTimeout(solutionTimer.current);\n    stopSpeaking();\n    setResult(null);", "    stopSpeaking();\n    setResult(null);", "B3"),
     ("Testergebnis wird nicht gespeichert", "src/App.tsx",
      "assessments: addRecord(p.assessments, rec),", "assessments: p.assessments,", "Lernerfolg"),
     ("Veränderung mit falschem Vorzeichen", "src/lib/assessment.ts",

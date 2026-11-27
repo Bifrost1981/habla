@@ -233,7 +233,7 @@
       "approvals_required": [],
       "passes": true,
       "evidence": [
-        "evidence/WP-02.json#2e9fac0b8569"
+        "evidence/WP-02.json#1bd8fc3bdb59"
       ],
       "was_accepted": true
     },
@@ -352,7 +352,7 @@
       "approvals_required": [],
       "passes": true,
       "evidence": [
-        "evidence/WP-17.json#cea56c1f7a2b"
+        "evidence/WP-17.json#351731367b12"
       ],
       "was_accepted": true
     },
@@ -463,7 +463,7 @@
       "approvals_required": [],
       "passes": true,
       "evidence": [
-        "evidence/WP-04.json#1464f355b3a1"
+        "evidence/WP-04.json#c1c6721103cf"
       ],
       "scope": {
         "include": [
@@ -508,7 +508,7 @@
       "approvals_required": [],
       "passes": true,
       "evidence": [
-        "evidence/WP-05.json#9d69bddc79d7"
+        "evidence/WP-05.json#e8a1f98de9e3"
       ],
       "was_accepted": true
     },
@@ -617,7 +617,7 @@
       "approvals_required": [],
       "passes": true,
       "evidence": [
-        "evidence/WP-10.json#7f208f32067e"
+        "evidence/WP-10.json#a5efee0b6ef1"
       ],
       "was_accepted": true
     },
@@ -655,7 +655,7 @@
       "approvals_required": [],
       "passes": true,
       "evidence": [
-        "evidence/WP-18.json#bc89915c3618"
+        "evidence/WP-18.json#c5e6d53a93a0"
       ],
       "was_accepted": true
     },

@@ -179,19 +179,20 @@ Diese Sitzung garantiert keinen späteren Zugriff. Dauerhafte Kopie: `~/Document
 
 ## Übergabe
 
-- Paket: WP-13 Geschützte Integration (Branch-Schutz und Pflicht-CI) (in Arbeit: Repository `Bifrost1981/habla` öffentlich, wird vom Projektverantwortlichen angelegt)
-- Kontrollstatus: Pflichtprüfung `.github/workflows/pruefung.yml` EINGERICHTET, noch nicht auf GitHub gelaufen; Nachweise für erlaubten und gesperrten Pull Request stehen aus
-- Geänderte Dateien: `.github/workflows/pruefung.yml` (neu), `.gitignore` (`.DS_Store`), `evidence/approvals.json` (Freigebender nur als Rolle), `project-progress.md`
-- Testbefehle: `python3 scripts/project_gate.py start`, `python3 -m unittest discover -s tests/gate`, `npm test`, `npx tsc --noEmit`, `npm run build`; auf GitHub der Workflow „Prüfung“
+- Paket: WP-13 Geschützte Integration (Branch-Schutz und Pflicht-CI) – in Arbeit
+- Kontrollstatus: Repository `Bifrost1981/habla` öffentlich, ein Anfangscommit `f62485b` (ohne Namen, Baum gleich `e1603ad`). Erster Lauf auf `main`: „Prüfung“ (Job „Startprüfung und Tests“) und „gate“ grün. Branch-Schutz NOCH NICHT eingerichtet: Die Schnittstelle dafür ist für diese Sitzung gesperrt („Write access to this GitHub API path is not permitted through this proxy“), der Projektverantwortliche richtet ihn in den GitHub-Einstellungen ein. Pull Request #1 (erlaubter Fall, Zweig `doku-geschuetzter-main`) und #2 (gesperrter Fall, Zweig `probe-roter-test`, absichtlich roter Test, nicht mergen) offen.
+- Defekt gefunden und behoben (D-B3): In #1 schlug der Browser-Test B3 auf GitHub fehl, obwohl nur die README geändert war. Ursache im Test: Die Klickzeit wurde vor dem Klick genommen, Playwright klickt aber erst nach der eingeblendeten Feedback-Leiste (220 ms); auf dem langsamen Rechner lag der Klick nach dem Vorlesen der Lösung (350 ms). Nachgestellt mit 6-fach gedrosselter CPU: alte Fassung 6 von 8 rot (gleiche Meldung), neue Fassung 8 von 8 grün. Neue Fassung klickt „Prüfen“ und „Weiter“ in der Seite, misst am echten Klick und verlangt < 300 ms Abstand (strenger: vorher konnte der Test ohne Aussage bestehen). Neue Gegenprobe „Lösung der alten Übung wird nach ‚Weiter‘ noch vorgelesen“ (Mutationstest 14 von 14).
+- Geänderte Dateien: `.github/workflows/pruefung.yml` (neu), `.gitignore` (`.DS_Store`), `evidence/approvals.json` (Freigebender nur als Rolle), `README.md` (Ablauf am geschützten `main`), `tests/e2e/habla.spec.ts` (B3), `scripts/e2e_mutation_check.py` (Gegenprobe B3), `project-progress.md`, Nachweise der Folgeprüfung
+- Testbefehle: `python3 scripts/project_gate.py start`; `npx playwright test -c tests/e2e/playwright.config.ts --grep B3 --repeat-each 15` (15 grün); dasselbe mit CPU-Drosselung 6 (neu 8/8 grün, alt 6/8 rot); `python3 -B scripts/e2e_mutation_check.py` (14 von 14 erkannt); auf GitHub die Workflows „Prüfung“ und „gate“
 - Ergebnisse und geprüfter Zustand: siehe „Prüfprotokoll“ und `evidence/`
-- Letzter Commit: siehe `git log --oneline -1`
+- Letzter Commit: siehe `git log --oneline -1` (Zweig `doku-geschuetzter-main`; `main` = `f62485b`)
 - Fehlende Freigaben: WP-13 „owner“; WP-07 „owner“ (erst nach der Messung)
-- Blocker: WP-13 wartet auf das leere öffentliche Repository und den Zugriff der Claude-App. WP-07 wartet auf `model_quantized.onnx` und 28 Testaufnahmen in `testdaten/`. WP-14 braucht echte Lernende. WP-12 hängt an WP-14
-- Maßgebliche Kopie: Mac-Ordner `~/Documents/_Projekte/2_Habla` (Commit siehe `git log -1`, dazu Zweig `wp07-vorbereitung`). Nach WP-13 zusätzlich GitHub `Bifrost1981/habla` (ein Anfangscommit, danach Pull Requests). Vor jeder Arbeit zuerst `git log -1` im Mac-Ordner prüfen. Auf dem Mac einmal `npm install` (Pakete @fontsource aus WP-19).
+- Blocker: WP-13 wartet auf den Branch-Schutz (Einstellung durch den Projektverantwortlichen). WP-07 wartet auf `model_quantized.onnx` und 28 Testaufnahmen in `testdaten/`. WP-14 braucht echte Lernende. WP-12 hängt an WP-14
+- Maßgebliche Kopie: GitHub `Bifrost1981/habla` (`main`, nur über Pull Requests) und Mac-Ordner `~/Documents/_Projekte/2_Habla` (`main` = `f62485b`, `origin` = GitHub; frühere Geschichte im Zweig `archiv/vor-github`, dazu `wp07-vorbereitung`). Vor jeder Arbeit `git log -1` prüfen. Auf dem Mac einmal `npm install` (Pakete @fontsource aus WP-19).
 - Aufnahmen: außerhalb von Git in `audio/es-ES` (Mac; Kopie `testdaten/audio-es-ES.tgz`, 1196 Dateien für 1197 Texte), nicht auf GitHub.
 - Offen: G2 wird durch die CI entschärft (Tests laufen neu), nicht behoben (lokal bleibt der Nachweis fälschbar). WP-02, WP-05 und WP-10 ohne eigenen Paketbereich.
-- Folgeprüfung: nach der Einrichtung erneut `start`; erledigt am 2026-11-25 für WP-00 (Freigabe erbeten), WP-02, WP-05, WP-10.
-- Nächster Schritt: Stand als Anfangscommit nach GitHub, ersten CI-Lauf prüfen, Branch-Schutz einrichten, Test-Pull-Requests (grün mergebar, rot gesperrt), Umgehungen dokumentieren.
+- Folgeprüfung (wegen B3-Test und Gegenprobe): WP-02, danach WP-17, WP-04, WP-05, dann WP-10, dann WP-18 – erledigt am 2026-11-27, alle abgenommen, `start` in Ordnung.
+- Nächster Schritt: Branch-Schutz prüfen (lesen geht), #1 mergen, #2 blockiert nachweisen und schließen, Umgehungen dokumentieren, Freigabe WP-13 erbitten, `finish --package WP-13`.
 
 ## Prüfprotokoll
 
@@ -408,6 +409,12 @@ WP-00 aktuell: Paketstand `a62573946152` (Paketbereich Prüfinfrastruktur; gebun
 | 2026-11-25 | `finish` WP-02 / WP-05 / WP-10 nach `.github/workflows/pruefung.yml` | 1 / 1 / 1 | alle Tests grün, aber Abhängigkeit WP-00 nicht mehr gültig (Paketbereich `.github/*`); **Rückschritt sichtbar** (passes=false), bis WP-00 erneut freigegeben ist. Reihenfolge falsch gewählt: WP-00 hätte zuerst geprüft werden müssen |
 | 2026-11-25 | `finish` WP-00, `approve` (erbeten: „Ja, eintragen“), `finish`; dann `finish` WP-02 / WP-05 / WP-10 | 2/0/0; 0 × 3 | WP-00 erneut abgenommen `66dc132afaee`; WP-02 `2e9fac0b8569`, WP-05 `9d69bddc79d7`, WP-10 `7f208f32067e`; Rückschritt behoben |
 | 2026-11-25 | `python3 scripts/project_gate.py start` | 0 | in Ordnung |
+| 2026-11-27 | GitHub: Anfangscommit `f62485b` nach `main`; Workflows „Prüfung“ (Run 45959971229) und „gate“ (Run 45959971141) | – | beide grün (Prüfung 14 min, alle Schritte) |
+| 2026-11-27 | GitHub: Pull Request #1 (nur README), Workflow „Prüfung“ (Run 45961765998) | – | ROT: Browser-Test B3 („buenos días“ nach dem Weiterschalten) – zeitabhängiger Test, Defekt D-B3 |
+| 2026-11-27 | `npx playwright test -c tests/e2e/playwright.config.ts --grep B3 --repeat-each 8` mit CPU-Drosselung 6 (vorübergehend eingefügt, nicht im Repository) | alt 1 / neu 0 | alte Fassung 6 von 8 rot, neue Fassung 8 von 8 grün; ungebremst neu 15 von 15 grün |
+| 2026-11-27 | `python3 -B scripts/e2e_mutation_check.py` | 0 | 14 von 14 Mutationen erkannt (neu: Lösung nach „Weiter“ noch vorgelesen) |
+| 2026-11-27 | `finish` WP-02, WP-17, WP-04, WP-05, WP-10, WP-18 (Folgeprüfung nach B3-Korrektur; ein erster Lauf wurde nach 10 min von der Sitzung abgebrochen, ohne Eintrag) | 0 × 6 | WP-02 `1bd8fc3bdb59`, WP-17 `351731367b12`, WP-04 `c1c6721103cf`, WP-05 `e8a1f98de9e3`, WP-10 `a5efee0b6ef1`, WP-18 `c5e6d53a93a0` |
+| 2026-11-27 | `python3 scripts/project_gate.py start` | 0 | in Ordnung |
 | 2026-11-19 | `bash scripts/vertonen.sh` auf dem Mac (Projektverantwortlicher) | 0 | 880 Rohaufnahmen, 56 MB, 19,3 min Sprache |
 | 2026-11-19 | Prüfung der Rohaufnahmen (Sprechpegel und Sprache je Silbe, bezogen auf die lauteste Stelle) | – | 870 in Ordnung, alle Sätze und Zweiwort-Texte; Einzelwörter im Mittel ~4 dB leiser als Sätze; 10 Einzelwörter auffällig: stumm „a.“, „Y.“; sehr leise (Spitze < −30 dBFS) „pequeño.“, „Como.“, „Escucho.“, „mucho.“, „Me.“, „qué.“, „día.“, „no.“ |
 | 2026-11-19 | Selbstprüfung von `pocket_render.py` gegen die echten Rohaufnahmen | – | genau dieselben 10 fallen durch |

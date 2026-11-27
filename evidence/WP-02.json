@@ -1,16 +1,16 @@
 {
   "package_id": "WP-02",
-  "created": "2026-11-25T20:26:29+00:00",
+  "created": "2026-11-27T08:39:47+00:00",
   "result": "pass",
   "package_state": {
-    "package_hash": "2e9fac0b8569b37a56663b98addc16b5d3920f826e5194cf033ec35e79d79ebe",
+    "package_hash": "1bd8fc3bdb5938f3232ed4deb9b7410a1ecb8445794d8ae40d77cda594d74c0b",
     "file_count": 88,
     "scope": [
       "*"
     ]
   },
   "state": {
-    "state_hash": "5d721d71a4c1944610a2a6a81474c02bd3452aa67e0a1714a813a42e20b03ef7",
+    "state_hash": "a433986a63add91d4b66777ad99070ac8d927d67eb3ee13cc85349e620b833db",
     "file_count": 89,
     "environment": {
       "node --version": "v22.23.4",
@@ -19,8 +19,8 @@
     "environment_bound": {
       "node --version": "major 22"
     },
-    "git_head": "fa850535389330171c78c862ce765caa2a953fb8",
-    "git_dirty": false
+    "git_head": "d1c5bbc8be0215b1b732441b17c4b89c0d313d01",
+    "git_dirty": true
   },
   "scope": {
     "include": [
@@ -64,7 +64,7 @@
     "public/manifest.webmanifest": "a3ea74782f67b778944458b4416279c0fda221caba77d864342f16de090fb9a3",
     "public/sw.js": "197d716bf6b6b6e61e7bef2ef4a4fc5aea9faab0c1638c7a079987f883190a1e",
     "scripts/audio-signal.ts": "49008d0d27278b2058c62c706538c0d32dfccbc6d1842f03f88fc8534dd4a406",
-    "scripts/e2e_mutation_check.py": "ec0fac7c1568a78d45f4bddde40bbd8ecdacfcde2a49c8fc417811c0e089053b",
+    "scripts/e2e_mutation_check.py": "28af97b5cc25856db716d628932fa437aaa13ed0e521a4c618f0319657bedec2",
     "scripts/make-artifact.py": "38f9570586dda2b6f9650f997b2e1578485aea093a3d2f27a7fc7bb51b23c244",
     "scripts/make-audio.ts": "9ac475dae239123995d6fd3c68ccbba3ca137208b8e8cb9497101cdf851915fe",
     "scripts/make-srs-reference.ts": "04485d695e6ccbd5f9cdc6c3356ff23ac8f2525a42704d4224b12a2c4f4ead31",
@@ -134,7 +134,7 @@
     "tests/delivery/delivery.spec.ts": "0c297449daf13440f188cae7c83c5a6aa84ec31cb7ae8700164fbac5e8fafb20",
     "tests/delivery/playwright.config.ts": "08d88219c2af91c81d14387c8737ab919fa3ff00b3145e6b1ede9e354fb98109",
     "tests/delivery/serve.ts": "2ae90a73ae0baa7638ba73d14a6b28149cac289ad199ab2a5b3c79911c77a8d1",
-    "tests/e2e/habla.spec.ts": "abca85d19632b460018bd2d84e124f7029723035b8e8d37a139a0017051e2a1c",
+    "tests/e2e/habla.spec.ts": "512a76c49159a195a8579c626b2bb8345b5273d9a639b9280c146e1133a548b0",
     "tests/e2e/playwright.config.ts": "db46fedeaef1ae8ce903bd7732610ea05916a5dd30fee56ce0b1f4f4f25d18aa",
     "tests/gate/test_project_gate.py": "746bbece4d3ec93b39a3cd8d6abaee5f065ba98170d852babfc82b43e7a27c86",
     "tests/srs/reference.json": "cd9fac83806da4a5d809623a55f7305ebbb9fb602f7a2c7399508f82ffa9d072",
@@ -146,32 +146,32 @@
       "name": "e2e",
       "cmd": "npm run e2e",
       "returncode": 0,
-      "started": "2026-11-25T20:12:48+00:00",
-      "duration_s": 174.37,
-      "output_tail": "en (3.0s)\n  ✓   9 [chromium] › tests/e2e/habla.spec.ts:358:1 › B4 Dialog „Lektion beenden?“ sperrt Tasten der Übung dahinter (2.1s)\n  ✓  10 [chromium] › tests/e2e/habla.spec.ts:385:1 › Fortschritt aus Version 0.3 (Leitner) wird übernommen und mit FSRS weitergeplant (6.0s)\n  ✓  11 [chromium] › tests/e2e/habla.spec.ts:469:1 › Hör-Diktat und Übersetzen-Sprechen: Abruf ohne Vorlage, nur mit Klicks und Mikrofon (23.7s)\n  ✓  12 [chromium] › tests/e2e/habla.spec.ts:586:1 › Regelhinweis bei falscher Antwort: Wortstellung, ser/estar, fehlendes Wort, Wort zu viel (4.1s)\n  ✓  13 [chromium] › tests/e2e/habla.spec.ts:659:1 › Lernerfolg: Vortest und Nachtest einer Einheit, Auswertung je Fertigkeit (11.7s)\n  ✓  14 [chromium] › tests/e2e/habla.spec.ts:786:1 › Onboarding bietet den Vortest von Einheit 1 an; danach startet die erste Lektion (27.9s)\n  ✓  15 [chromium] › tests/e2e/habla.spec.ts:818:1 › Vortest im Onboarding übersprungen: Lernpfad bietet ihn an, bis Einheit 1 begonnen ist (569ms)\n  ✓  16 [chromium] › tests/e2e/habla.spec.ts:851:1 › Hörgeschichte: nach der Einheit offen, ganz anhören, mitlesen, Fragen beantworten, bestes Ergebnis bleibt (17.2s)\n  ✓  17 [chromium] › tests/e2e/habla.spec.ts:932:1 › Rollenspiel: Gespräch per Mikrofon mit Hörhilfe und Musterantwort, ohne Mikrofon per Auswahl, bestes Ergebnis bleibt (8.0s)\n  ✓  18 [chromium] › tests/e2e/habla.spec.ts:1048:1 › Kann-Beschreibungen je Einheit im Lernpfad; nach der Einheit „Das kannst du jetzt“ (387ms)\n\n  18 passed (2.9m)\n"
+      "started": "2026-11-27T08:25:59+00:00",
+      "duration_s": 175.23,
+      "output_tail": "en (2.6s)\n  ✓   9 [chromium] › tests/e2e/habla.spec.ts:372:1 › B4 Dialog „Lektion beenden?“ sperrt Tasten der Übung dahinter (2.2s)\n  ✓  10 [chromium] › tests/e2e/habla.spec.ts:399:1 › Fortschritt aus Version 0.3 (Leitner) wird übernommen und mit FSRS weitergeplant (6.0s)\n  ✓  11 [chromium] › tests/e2e/habla.spec.ts:483:1 › Hör-Diktat und Übersetzen-Sprechen: Abruf ohne Vorlage, nur mit Klicks und Mikrofon (21.8s)\n  ✓  12 [chromium] › tests/e2e/habla.spec.ts:600:1 › Regelhinweis bei falscher Antwort: Wortstellung, ser/estar, fehlendes Wort, Wort zu viel (4.0s)\n  ✓  13 [chromium] › tests/e2e/habla.spec.ts:673:1 › Lernerfolg: Vortest und Nachtest einer Einheit, Auswertung je Fertigkeit (11.3s)\n  ✓  14 [chromium] › tests/e2e/habla.spec.ts:800:1 › Onboarding bietet den Vortest von Einheit 1 an; danach startet die erste Lektion (30.7s)\n  ✓  15 [chromium] › tests/e2e/habla.spec.ts:832:1 › Vortest im Onboarding übersprungen: Lernpfad bietet ihn an, bis Einheit 1 begonnen ist (611ms)\n  ✓  16 [chromium] › tests/e2e/habla.spec.ts:865:1 › Hörgeschichte: nach der Einheit offen, ganz anhören, mitlesen, Fragen beantworten, bestes Ergebnis bleibt (17.2s)\n  ✓  17 [chromium] › tests/e2e/habla.spec.ts:946:1 › Rollenspiel: Gespräch per Mikrofon mit Hörhilfe und Musterantwort, ohne Mikrofon per Auswahl, bestes Ergebnis bleibt (8.0s)\n  ✓  18 [chromium] › tests/e2e/habla.spec.ts:1062:1 › Kann-Beschreibungen je Einheit im Lernpfad; nach der Einheit „Das kannst du jetzt“ (455ms)\n\n  18 passed (2.9m)\n"
     },
     {
       "name": "e2e-mutation",
       "cmd": "python3 -B scripts/e2e_mutation_check.py",
       "returncode": 0,
-      "started": "2026-11-25T20:15:42+00:00",
-      "duration_s": 642.26,
-      "output_tail": "  ✓ Kontrolle ohne Mutation: Rückgabecode 0\n  ✓ Paare passen nie zusammen: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Ablegen in der Lücke wirkungslos: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Fortschritt wird nicht gespeichert: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Aufnahmen werden ignoriert: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Dunkelmodus fehlt: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Übersetzen-Sprechen zeigt die Lösung vorab: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Diktat wird nicht vorgelesen: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Diktat prüft die Reihenfolge nicht mehr richtig: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Regelhinweis wird nicht angezeigt: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ ser/estar wird nicht erkannt: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Testergebnis wird nicht gespeichert: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Veränderung mit falschem Vorzeichen: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Vortest zeigt die Lösung: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\nErgebnis: 13 von 13 Mutationen erkannt\n"
+      "started": "2026-11-27T08:28:55+00:00",
+      "duration_s": 648.3,
+      "output_tail": "  ✓ Kontrolle ohne Mutation: Rückgabecode 0\n  ✓ Paare passen nie zusammen: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Ablegen in der Lücke wirkungslos: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Fortschritt wird nicht gespeichert: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Aufnahmen werden ignoriert: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Dunkelmodus fehlt: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Übersetzen-Sprechen zeigt die Lösung vorab: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Diktat wird nicht vorgelesen: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Diktat prüft die Reihenfolge nicht mehr richtig: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Regelhinweis wird nicht angezeigt: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ ser/estar wird nicht erkannt: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Lösung der alten Übung wird nach „Weiter“ noch vorgelesen: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Testergebnis wird nicht gespeichert: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Veränderung mit falschem Vorzeichen: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\n  ✓ Vortest zeigt die Lösung: Browser-Test schlägt fehl (erkannt) · Rückgabecode 1\nErgebnis: 14 von 14 Mutationen erkannt\n"
     },
     {
       "name": "logic",
       "cmd": "npm test",
       "returncode": 0,
-      "started": "2026-11-25T20:26:24+00:00",
-      "duration_s": 0.36,
+      "started": "2026-11-27T08:39:43+00:00",
+      "duration_s": 0.29,
       "output_tail": "\n> habla@0.3.0 test\n> node --experimental-strip-types --no-warnings scripts/test-logic.ts\n\nOK – 287 Vokabeln, 708 Übungen in 40 Lektionen und 8 Einheiten, alle Tests bestanden.\n"
     },
     {
       "name": "typecheck",
       "cmd": "npx tsc --noEmit",
       "returncode": 0,
-      "started": "2026-11-25T20:26:25+00:00",
-      "duration_s": 4.09,
+      "started": "2026-11-27T08:39:43+00:00",
+      "duration_s": 3.45,
       "output_tail": ""
     }
   ],
