@@ -190,4 +190,7 @@ const rev = buildReview(course, course.vocab.slice(0, 7).map((v) => v.id));
 assert.equal(rev[0].type, 'match');
 assert.equal(rev.length, 8);
 
+// WP-13-Probe: absichtlich roter Test. Dieser Pull Request darf nicht gemergt werden.
+assert.equal(normalize('Mañana'), 'absichtlich-falsch', 'WP-13-Probe: absichtlich roter Test');
+
 console.log(`OK – ${course.vocab.length} Vokabeln, ${total} Übungen in ${lessonCount} Lektionen und ${course.units.length} Einheiten, alle Tests bestanden.`);
