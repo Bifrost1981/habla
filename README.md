@@ -120,6 +120,21 @@ Neue Inhalte: Am einfachsten eine Lektion in `src/content/more.json` ergänzen �
 
 Übungsarten: Auswahl und Einführung sind Karteikarte, Bild-Auswahl, Paare und Lücke. Abruf und Sprechen sind „Satz bauen“, Hör-Diktat (Satz nur hören und aus Kacheln legen), Nachsprechen und Übersetzen-Sprechen (deutschen Satz sehen, auf Spanisch sagen; nach dem ersten Fehlversuch gibt es den Satz zum Anhören). Ohne Mikrofon werden beide Sprechübungen zu „Satz bauen“. Eine erzeugte Lektion hat 17–20 Übungen: Einführung der Wörter, Paare, eine Lücke, vier Satzübungen und Beispielsätze der Wörter abwechselnd als Diktat und Übersetzen-Sprechen.
 
+## Änderungen einbringen (geschützter Zweig `main`)
+
+`main` auf GitHub ist geschützt: Änderungen kommen nur über einen Pull Request hinein, und nur wenn beide Prüfungen grün sind – „Startprüfung und Tests“ (`.github/workflows/pruefung.yml`: Startprüfung, Selbsttest des Prüfskripts, Logik, Typen, Build, alle Inhaltstests, Browser-Tests, Auslieferungstest, Gegenprobe) und „gate“ (`.github/workflows/gate.yml`). Der Zweig muss dabei auf dem neuesten Stand von `main` sein. Direktes Pushen, Force-Push und Löschen von `main` sind gesperrt, auch für Admins.
+
+Ablauf:
+
+```bash
+git switch -c mein-zweig
+# ändern, testen, Nachweise mit `python3 scripts/project_gate.py finish --package <ID>` erneuern
+git push -u origin mein-zweig
+# auf GitHub Pull Request öffnen, warten bis beide Prüfungen grün sind, dann mergen
+```
+
+Ändert ein Pull Request Dateien im Prüfbereich (`src/`, `scripts/`, `tests/` …), ohne die Nachweise zu erneuern, schlägt schon die Startprüfung fehl.
+
 ## Lernerfolg messen
 
 Jede Einheit hat einen Kurztest mit 12 Aufgaben: 4 zum Hören (Satz hören, deutsche Bedeutung wählen), 4 zum Abruf (deutschen Satz als Kacheln auf Spanisch legen) und 4 zum Sprechen (deutschen Satz auf Spanisch sagen). Der **Vortest** steht am Anfang der Einheit, solange noch keine ihrer Lektionen abgeschlossen ist. Der **Nachtest** erscheint nach der letzten Lektion und lässt sich wiederholen. Beide haben dieselben Aufgaben. Während des Tests gibt es keine Lösungen; „Weiß ich nicht“ zählt als falsch. Ohne Mikrofon oder mit „Gerade nicht sprechen“ wird Sprechen nicht gemessen. Die Auswertung (Symbol in der Kopfzeile) zeigt je Einheit und Fertigkeit Vorher, Nachher und die Veränderung in Prozentpunkten sowie den Verlauf aller Tests. Die Tests ändern die Wiederholungsplanung nicht und bleiben auf dem Gerät.
