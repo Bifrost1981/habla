@@ -1,0 +1,128 @@
+{
+  "package_id": "WP-15",
+  "created": "2026-11-15T10:55:40+00:00",
+  "result": "pass",
+  "package_state": {
+    "package_hash": "049a2d8c05d18d8d00a5047d7d119f40fa2977851e52c3822549f52660c66625",
+    "file_count": 3,
+    "scope": [
+      "scripts/project_gate.py",
+      "tests/gate/*",
+      "CLAUDE.md"
+    ]
+  },
+  "state": {
+    "state_hash": "3f718d443c301af490cf3223281f0e66d565720944add082d27fcf5744cf3a9a",
+    "file_count": 54,
+    "environment": {
+      "node --version": "v22.23.4",
+      "python3 --version": "Python 3.13.18"
+    },
+    "environment_bound": {
+      "node --version": "major 22"
+    },
+    "git_head": "abccccc029d8d5eb47e1e192b96ba0db62cfc8e2",
+    "git_dirty": true
+  },
+  "scope": {
+    "include": [
+      "src/*",
+      "scripts/*",
+      "public/*",
+      "tests/*",
+      ".github/*",
+      "index.html",
+      "package.json",
+      "package-lock.json",
+      "tsconfig.json",
+      "vite.config.ts",
+      "feature_list.json",
+      "init.sh",
+      "CLAUDE.md"
+    ],
+    "exclude": [
+      ".git/*",
+      "node_modules/*",
+      "dist/*",
+      "dist-single/*",
+      "dist-artifact/*",
+      "evidence/*",
+      "*__pycache__*",
+      "*.pyc",
+      "*.tmp"
+    ]
+  },
+  "files": {
+    ".github/workflows/gate.yml": "8f2487e977a43184792b4bafdff70b5a5b556f76081c44cffa9d89f87a900cff",
+    "CLAUDE.md": "fa521596733c671850cc3bc7a389f27986b7770a740b0066d99eae41f7312525",
+    "feature_list.json": "56cb403c1bb67cedbf3580a07f55700fccd88603033d61bcde189233a83573e1",
+    "index.html": "a84c90a2accc83a4d6d9f284c82b6529b0c9e55125728eed36a08c2dba9d9096",
+    "init.sh": "5a6d51f65acd82d7ef2d828ce6508f0ad656fc52d29ff2a157c487c720ea235d",
+    "package-lock.json": "0d98d9babb38f428b03c2a3b63bcfbc127e36e7b08c733fbbd0fa4c9b0965a1a",
+    "package.json": "395937fe52597f721447221ee534791f62133cd574122e13b631471f37347593",
+    "public/icon.svg": "a14e5fdb3a727db87ac2c15230118ba094cd85071ea161999277c996c44254d7",
+    "public/manifest.webmanifest": "45b6582b23e8a3b62249e93fe1662a5b2c87ff704d7138fdcbd3e5f5d9038378",
+    "public/sw.js": "ca9a95313e78082ce39b3475b9ab069cd45ae336084a73ffec457f23455ed031",
+    "scripts/e2e_mutation_check.py": "2223926ccb5104bc55057c4378d0e938dcc262d6dc70cff387722f0c6f3cc542",
+    "scripts/make-artifact.py": "38f9570586dda2b6f9650f997b2e1578485aea093a3d2f27a7fc7bb51b23c244",
+    "scripts/make-audio.ts": "dcaea745eb01ce1335fe46a17c7e13788e47b51024011ce450ddc840edb31ff8",
+    "scripts/project_gate.py": "95b839c98af41937e907b3bbc8c9fb2e32e0a7f87a3dda16f015449d8bcd0fe1",
+    "scripts/test-logic.ts": "9f054b157a4140dfe2d2e41c1d6049d9c673139e7a57d54ed87bb17b48fd18ea",
+    "src/App.tsx": "434ddaff1b6a54bb7b0acf59037e6fb0d427bfce0c621bcd3cf6c03d2d43b3ef",
+    "src/components/GoalRing.tsx": "948e58ee194434d4f7b052dc0107540fe9970d016be3a253a036b438c5e6533e",
+    "src/components/MicButton.tsx": "740cc2724b439edca5435aacfdce565bda67aa91be30cbc0d5d255038257284c",
+    "src/components/Speakable.tsx": "f6cda4f583190a35fd1fdf3014880bfb7c9767595294a70f8102da7dcbd13195",
+    "src/components/VoicePicker.tsx": "e7c490b82cdd67c79fe93c5c41a980598e6531d1e4409b8aba865e3dabe46146",
+    "src/components/icons.tsx": "da360a44c361a65c33dbd189547924a4eeb7a23978e3d0162454ab425c96db9a",
+    "src/content/course.json": "034f8f5f2a7a8425d8e63cf071a3505032831f245c31e8022070a228bf15c504",
+    "src/content/more.json": "40b2013de374ed9c5d897e83b152551120276b53c2cd10020d93b7b87a47fc34",
+    "src/content/phrases.ts": "2ead2c9c9ace0ae8c7207fa398e504006adbec89d0f43550e90112a89969ee76",
+    "src/context.tsx": "cb8977dd62c386c2d14fd0c7f2594d8b29f3a7638e7dcc77acabbba7a730be71",
+    "src/exercises/Build.tsx": "d94ef43e301127a684a6a58ba285b26778ffe624bcdd0d0e038cf98af06705ed",
+    "src/exercises/Card.tsx": "e0cd6c713c140ce99c0e83dd2819bf3956b50ff093355a836a1523ee88d329eb",
+    "src/exercises/Gap.tsx": "18814f4e716af3367322be9a4b47924179e6b3d6d99bc118c125808f50e5e4a3",
+    "src/exercises/Match.tsx": "01022dd48a90e3be7f310f062bc649f4bd0ad0d411fefb6da9539f8e008593d9",
+    "src/exercises/Pick.tsx": "1a3c7dbcc2b56216e56249e51be1d0a1bac4d4ae71c479709feff4ded8441e6b",
+    "src/exercises/Speak.tsx": "4bc1a7060d885bfde21eadee6eb9998a61ec66bc401b9d1fd85647167ba0830d",
+    "src/exercises/common.tsx": "c1d9227db7c0b9cfa51fdb5f250c43b67e5f676ffd1ba2d7f62713c06c63192b",
+    "src/lib/audioKey.ts": "bbf9433d60bf6ebcb44355dffb9f199aa76f7810f4671a37b5b20cb6b21e76c0",
+    "src/lib/course.ts": "ea416caf7b63cb398469f04c26951a6d995db1700c84c17e9ddc7b78a7775c68",
+    "src/lib/feedback.ts": "508255cdbe907cd4dc0de9d14d08d9459cb4d7f4410b46c2746ad0dad802ad5b",
+    "src/lib/generate.ts": "ea9d48783cb66c3d6ee2e19f3660e518a7541b481d6dbcf2833c030caa2e2c0e",
+    "src/lib/speech.ts": "bc2f72b9eed5081b0dc5487a650ddd1da789197525ebc1f76453dd069076ff72",
+    "src/lib/srs.ts": "f3682a78fe2bda6f4d256fa2062f076edbfae7d7c120ea50e784fc0659c417ef",
+    "src/lib/storage.ts": "ee33a1ea4a1869830de985f0c4f2936e9be99630a639826b0c93ead50a02093a",
+    "src/lib/text.ts": "c43e579d0302b9d9cf38eed96c7ac11110d3be3c3fc69481a160ea7acc79cdf3",
+    "src/main.tsx": "64adc2a9cabc84686bcabce05f5e4ae3a53baf5735edc6a65a0084b6c3f2614f",
+    "src/screens/LessonScreen.tsx": "3788c5fac7c95e6a073d2c14e768a7a08e1329178c9407f9036ac1a2d2bd451f",
+    "src/screens/Onboarding.tsx": "ae8e9238cb54001d5c6ea3e71bd82466a77ecf4e37199c32d38cb026a87d6633",
+    "src/screens/PathScreen.tsx": "528dbf55f5f0b60c6da7c312ccafc488d0ffe7d8deba0798ac3ad765dc5a3f9e",
+    "src/screens/ResultScreen.tsx": "1bd72bb3b9809a0bee5307fe6b35df956a68d2cd81ded13e346542065320cce1",
+    "src/screens/SettingsScreen.tsx": "0f04701cc44e6e3390def109c6a9117389ae284b99ee3f4b2fc3ffac37d9e732",
+    "src/styles.css": "899fd53318c12d4b2b27d1f28d02b6abd804c60b109c390087b78351df64afae",
+    "src/types.ts": "21b47fd3c76a0dc76241b18efdb1f689b85605e930afb04b57a3f1ac4a0bee23",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "tests/e2e/habla.spec.ts": "ee3761ac8498fb62cc8802b7c21c29efdf02296a1428eb2e35c6938753c2da07",
+    "tests/e2e/playwright.config.ts": "ed8deab0c2ebeb22b2c86acf821509d8ec6fe698eea4504367aa9fd4c895b058",
+    "tests/gate/test_project_gate.py": "746bbece4d3ec93b39a3cd8d6abaee5f065ba98170d852babfc82b43e7a27c86",
+    "tsconfig.json": "86f3cb14826ff520a8088a808922614d05b78031a5124bf1e5f55e9a83d737a5",
+    "vite.config.ts": "46e53e936e3420f0e62afba8cd32edd2f2d9fd974ba260ec234743ac5d0c1fc7"
+  },
+  "commands": [
+    {
+      "name": "gate-selftest",
+      "cmd": "python3 -m unittest discover -s tests/gate",
+      "returncode": 0,
+      "started": "2026-11-15T10:55:35+00:00",
+      "duration_s": 5.67,
+      "output_tail": "............................\n----------------------------------------------------------------------\nRan 28 tests in 5.618s\n\nOK\n"
+    }
+  ],
+  "problems": [],
+  "approvals_required": [
+    "owner"
+  ],
+  "approvals_valid": [
+    "owner"
+  ]
+}

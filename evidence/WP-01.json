@@ -1,0 +1,158 @@
+{
+  "package_id": "WP-01",
+  "created": "2026-11-17T10:09:56+00:00",
+  "result": "pass",
+  "package_state": {
+    "package_hash": "e737b4b53affe8064ecdf4a0fbcb8ef9acb089c8b5f25dffbb8b63b54c183df6",
+    "file_count": 2,
+    "scope": [
+      ".gitignore",
+      ".env.example",
+      "init.sh",
+      "CLAUDE.md"
+    ]
+  },
+  "state": {
+    "state_hash": "33cd3b90f18380fea38a65da3c6606e06d4976e349614c10361fd12febba3ece",
+    "file_count": 67,
+    "environment": {
+      "node --version": "v22.23.4",
+      "python3 --version": "Python 3.13.18"
+    },
+    "environment_bound": {
+      "node --version": "major 22"
+    },
+    "git_head": "1c05cd1fc9062eaad3bf88572a637344f5f8df0a",
+    "git_dirty": true
+  },
+  "scope": {
+    "include": [
+      "src/*",
+      "scripts/*",
+      "public/*",
+      "tests/*",
+      ".github/*",
+      "index.html",
+      "package.json",
+      "package-lock.json",
+      "tsconfig.json",
+      "vite.config.ts",
+      "feature_list.json",
+      "init.sh",
+      "CLAUDE.md"
+    ],
+    "exclude": [
+      ".git/*",
+      "node_modules/*",
+      "dist/*",
+      "dist-single/*",
+      "dist-artifact/*",
+      "evidence/*",
+      "*__pycache__*",
+      "*.pyc",
+      "*.tmp"
+    ]
+  },
+  "files": {
+    ".github/workflows/gate.yml": "8f2487e977a43184792b4bafdff70b5a5b556f76081c44cffa9d89f87a900cff",
+    "CLAUDE.md": "fa521596733c671850cc3bc7a389f27986b7770a740b0066d99eae41f7312525",
+    "feature_list.json": "e9c61d86b6567e12cf955d4fbe67e838bc3835134b4cc2197002c9fe731802b2",
+    "index.html": "a84c90a2accc83a4d6d9f284c82b6529b0c9e55125728eed36a08c2dba9d9096",
+    "init.sh": "5a6d51f65acd82d7ef2d828ce6508f0ad656fc52d29ff2a157c487c720ea235d",
+    "package-lock.json": "5cc44c8252a9e6f15fa17abad4ad11a22da93751bd0e27c3a8959907aa334203",
+    "package.json": "bded737e7ec33b22e8029cd9d07d6f5170977965380771f8b59e76de182b1a7c",
+    "public/THIRD-PARTY-LICENSES.txt": "8ac7412fa6900007d5fa63aaea6712b97d27146d781b78665505ff95a95145f4",
+    "public/icon.svg": "a14e5fdb3a727db87ac2c15230118ba094cd85071ea161999277c996c44254d7",
+    "public/manifest.webmanifest": "45b6582b23e8a3b62249e93fe1662a5b2c87ff704d7138fdcbd3e5f5d9038378",
+    "public/sw.js": "ca9a95313e78082ce39b3475b9ab069cd45ae336084a73ffec457f23455ed031",
+    "scripts/e2e_mutation_check.py": "be27c0c71d5925bc6ecc51cbeaa59a063c36d74897506026c132b7686798f969",
+    "scripts/make-artifact.py": "38f9570586dda2b6f9650f997b2e1578485aea093a3d2f27a7fc7bb51b23c244",
+    "scripts/make-audio.ts": "3c19550ef6365e05dd3c2c39f4b9ba591a66fe3d83dc362cc45fc36c42588239",
+    "scripts/make-srs-reference.ts": "04485d695e6ccbd5f9cdc6c3356ff23ac8f2525a42704d4224b12a2c4f4ead31",
+    "scripts/project_gate.py": "95b839c98af41937e907b3bbc8c9fb2e32e0a7f87a3dda16f015449d8bcd0fe1",
+    "scripts/srs_reference_py.py": "7403cdc2ec3c6badebecea6a0fd021c2fb6ad7c095cfa40b10abe4d95ddc63e4",
+    "scripts/test-assessment.ts": "8b523bbd7ad5fa69c9fc51616e4f2f35363a774ca907bb2979c53030689812e2",
+    "scripts/test-feedback.ts": "a4f42b9ccf1aeb0e348c04a159e2af2fbb76c0393ff1151949a6386442b9eb0f",
+    "scripts/test-logic.ts": "b97c32dcd7bbbc88e771c99f8c02b934ab68fe8d20ca72c9bc84d10d4db9672a",
+    "scripts/test-mix.ts": "2cb6341592f7213c2db8bce61ac45e98cbe0a02841f5d100fac25c8ec91b1cb8",
+    "scripts/test-srs.ts": "b98740ba0f0b446ff1971d8f8fd754bcb5e66ba3eae53189e88405b4bae6ce56",
+    "src/App.tsx": "894de6a3153e90cf3534fc86893578032bc39d31e88f80ad11f7d943f2832cc5",
+    "src/components/GoalRing.tsx": "948e58ee194434d4f7b052dc0107540fe9970d016be3a253a036b438c5e6533e",
+    "src/components/MicButton.tsx": "740cc2724b439edca5435aacfdce565bda67aa91be30cbc0d5d255038257284c",
+    "src/components/Speakable.tsx": "7256807c8afb86ddd0f70a333faebbfa321eea0ff7cdf1e24f7422b18608273c",
+    "src/components/VoicePicker.tsx": "e7c490b82cdd67c79fe93c5c41a980598e6531d1e4409b8aba865e3dabe46146",
+    "src/components/icons.tsx": "22cf0990156de1b6ce0e2f69f89bd70d0f647093dcaed39c5f2ea6568e992883",
+    "src/content/course.json": "4c7739448c94abf73cff0738fdd167911f277b2724befcc4b0b218d4b2608db5",
+    "src/content/more.json": "40b2013de374ed9c5d897e83b152551120276b53c2cd10020d93b7b87a47fc34",
+    "src/content/phrases.ts": "2ead2c9c9ace0ae8c7207fa398e504006adbec89d0f43550e90112a89969ee76",
+    "src/context.tsx": "3f4c442c63c3401a513fed8070feb727e2d0a36b97999b2527172b7ef953d1bf",
+    "src/exercises/Build.tsx": "351a6f508ef3c6cb9a711f3699b33329cdd95366ea4ff521543f7fa9cfaa3e3c",
+    "src/exercises/Card.tsx": "fa78a03c37a84e1a6d2c45a35d0fecb92d5fe28cbaf740acfd90440e9a018b39",
+    "src/exercises/Gap.tsx": "3f2d07f1008f4bc6bdbb7bd56a68d0e4e6273753f54c68a37b5f7986b64661e1",
+    "src/exercises/Match.tsx": "01022dd48a90e3be7f310f062bc649f4bd0ad0d411fefb6da9539f8e008593d9",
+    "src/exercises/Pick.tsx": "1a3c7dbcc2b56216e56249e51be1d0a1bac4d4ae71c479709feff4ded8441e6b",
+    "src/exercises/Speak.tsx": "7ec329bcb0771325f924832a3a5e1a70857b9dc4facf3274e5b68b6ebd375a26",
+    "src/exercises/common.tsx": "c1d9227db7c0b9cfa51fdb5f250c43b67e5f676ffd1ba2d7f62713c06c63192b",
+    "src/lib/assessment.ts": "8576492076553a8c843521c6603075aeec88b65336759f4bf5ff3546f23e23ab",
+    "src/lib/audioKey.ts": "bbf9433d60bf6ebcb44355dffb9f199aa76f7810f4671a37b5b20cb6b21e76c0",
+    "src/lib/course.ts": "1f6bc3a593ed585429dbe57235d2a987d040ffee8c8e7067dc6a846ea94444aa",
+    "src/lib/diagnose.ts": "fa20df42cf4a22689f9eb9233db15f6b20e911316b9c0fb1a182ae0df4451180",
+    "src/lib/dom.ts": "2b88fde45211dd79caaabd451ef7a1300f37802ddaa2cd0d2a98bb8ccdae6346",
+    "src/lib/feedback.ts": "508255cdbe907cd4dc0de9d14d08d9459cb4d7f4410b46c2746ad0dad802ad5b",
+    "src/lib/generate.ts": "58bab9f5106865f072b3c185c27b2e82c75e93479dc2a6b1bd1b90efe3bf27b9",
+    "src/lib/speech.ts": "2bd96c063c33702763cf54f0c6529b9dfa2db2445ef67315a3caa28580e40868",
+    "src/lib/srs.ts": "bc63fcface0e4e171b3ef142551c17fdd064c535f70fad1f8c60fb05dab0165c",
+    "src/lib/storage.ts": "75352d5b19ee572dd3537660fc79ad05160eea0aeb12eb2d06b20ad380fb8ad0",
+    "src/lib/text.ts": "ad6ffe4de11d216edaf249c31d424a61e048709819b050f4f704e81c771c33ee",
+    "src/main.tsx": "64adc2a9cabc84686bcabce05f5e4ae3a53baf5735edc6a65a0084b6c3f2614f",
+    "src/screens/AssessmentScreen.tsx": "26df6259a311913ecc2f86a0428e43b85b343be466523811c3992e6de8e36b53",
+    "src/screens/LearningScreen.tsx": "95d0a4024d3ec3a83d854e7bf7427a48c099b9d03c3d88e03d1b64676e4badd3",
+    "src/screens/LessonScreen.tsx": "94c8f97dc349c5303c256bd9843cf06f1e75243472de48c9705279c404f1af83",
+    "src/screens/Onboarding.tsx": "ae8e9238cb54001d5c6ea3e71bd82466a77ecf4e37199c32d38cb026a87d6633",
+    "src/screens/PathScreen.tsx": "23e9c0cb728f7f3069b4d573e79d139977e72968d2078d3206e552777e1d8502",
+    "src/screens/ResultScreen.tsx": "1bd72bb3b9809a0bee5307fe6b35df956a68d2cd81ded13e346542065320cce1",
+    "src/screens/SettingsScreen.tsx": "0f04701cc44e6e3390def109c6a9117389ae284b99ee3f4b2fc3ffac37d9e732",
+    "src/styles.css": "caed6ee52545dd2b2d8e64271a126d7aff282ab2d469601e14bba95a72c8b20d",
+    "src/types.ts": "35ee14ae9e87753a7cb3755622cb8c74a01089e794da3ea9bca95051f30cf1a9",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "tests/e2e/habla.spec.ts": "7aecce043fa519275cc23251fac23961496811a08b077705afe84b005dbbefcc",
+    "tests/e2e/playwright.config.ts": "ed8deab0c2ebeb22b2c86acf821509d8ec6fe698eea4504367aa9fd4c895b058",
+    "tests/gate/test_project_gate.py": "746bbece4d3ec93b39a3cd8d6abaee5f065ba98170d852babfc82b43e7a27c86",
+    "tests/srs/reference.json": "cd9fac83806da4a5d809623a55f7305ebbb9fb602f7a2c7399508f82ffa9d072",
+    "tsconfig.json": "86f3cb14826ff520a8088a808922614d05b78031a5124bf1e5f55e9a83d737a5",
+    "vite.config.ts": "46e53e936e3420f0e62afba8cd32edd2f2d9fd974ba260ec234743ac5d0c1fc7"
+  },
+  "commands": [
+    {
+      "name": "logic",
+      "cmd": "npm test",
+      "returncode": 0,
+      "started": "2026-11-17T10:09:46+00:00",
+      "duration_s": 0.28,
+      "output_tail": "\n> habla@0.3.0 test\n> node --experimental-strip-types --no-warnings scripts/test-logic.ts\n\nOK – 239 Vokabeln, 580 Übungen in 32 Lektionen und 8 Einheiten, alle Tests bestanden.\n"
+    },
+    {
+      "name": "typecheck",
+      "cmd": "npx tsc --noEmit",
+      "returncode": 0,
+      "started": "2026-11-17T10:09:47+00:00",
+      "duration_s": 2.68,
+      "output_tail": ""
+    },
+    {
+      "name": "gate-selftest",
+      "cmd": "python3 -m unittest discover -s tests/gate",
+      "returncode": 0,
+      "started": "2026-11-17T10:09:49+00:00",
+      "duration_s": 6.14,
+      "output_tail": "............................\n----------------------------------------------------------------------\nRan 28 tests in 6.080s\n\nOK\n"
+    }
+  ],
+  "problems": [],
+  "approvals_required": [
+    "owner"
+  ],
+  "approvals_valid": [
+    "owner"
+  ]
+}

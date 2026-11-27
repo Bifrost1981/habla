@@ -1,0 +1,181 @@
+{
+  "vocab": [
+    { "id": "hola", "es": "hola", "de": "hallo", "gender": null, "emoji": "👋", "exEs": "¡Hola, Ana!", "exDe": "Hallo, Ana!" },
+    { "id": "adios", "es": "adiós", "de": "tschüss", "gender": null, "emoji": "🚶", "exEs": "Adiós, hasta mañana.", "exDe": "Tschüss, bis morgen." },
+    { "id": "buenosdias", "es": "buenos días", "de": "guten Morgen", "gender": null, "emoji": "🌅", "exEs": "Buenos días, señor.", "exDe": "Guten Morgen, mein Herr." },
+    { "id": "buenasnoches", "es": "buenas noches", "de": "gute Nacht", "gender": null, "emoji": "🌙", "exEs": "Buenas noches, mamá.", "exDe": "Gute Nacht, Mama." },
+    { "id": "gracias", "es": "gracias", "de": "danke", "gender": null, "emoji": "🙏", "exEs": "Muchas gracias.", "exDe": "Vielen Dank." },
+    { "id": "porfavor", "es": "por favor", "de": "bitte", "gender": null, "emoji": "🤲", "exEs": "Un café, por favor.", "exDe": "Einen Kaffee, bitte." },
+    { "id": "si", "es": "sí", "de": "ja", "gender": null, "emoji": "✅", "exEs": "Sí, claro.", "exDe": "Ja, klar." },
+    { "id": "no", "es": "no", "de": "nein", "gender": null, "emoji": "❌", "exEs": "No, gracias.", "exDe": "Nein, danke." },
+
+    { "id": "quetal", "es": "¿qué tal?", "de": "wie geht's?", "gender": null, "emoji": "🙂", "exEs": "Hola, ¿qué tal?", "exDe": "Hallo, wie geht's?" },
+    { "id": "bien", "es": "bien", "de": "gut", "gender": null, "emoji": "👍", "exEs": "Estoy bien.", "exDe": "Mir geht es gut." },
+    { "id": "mal", "es": "mal", "de": "schlecht", "gender": null, "emoji": "👎", "exEs": "Hoy estoy mal.", "exDe": "Heute geht es mir schlecht." },
+    { "id": "muchogusto", "es": "mucho gusto", "de": "freut mich", "gender": null, "emoji": "🤝", "exEs": "Mucho gusto, Pedro.", "exDe": "Freut mich, Pedro." },
+    { "id": "hastaluego", "es": "hasta luego", "de": "bis später", "gender": null, "emoji": "⏰", "exEs": "Hasta luego, amigo.", "exDe": "Bis später, mein Freund." },
+
+    { "id": "mellamo", "es": "me llamo", "de": "ich heiße", "gender": null, "emoji": "🗣️", "exEs": "Me llamo Laura.", "exDe": "Ich heiße Laura." },
+    { "id": "soy", "es": "soy", "de": "ich bin", "gender": null, "emoji": "🙋", "exEs": "Soy de Berlín.", "exDe": "Ich bin aus Berlin." },
+    { "id": "dedonde", "es": "¿de dónde?", "de": "woher?", "gender": null, "emoji": "🧭", "exEs": "¿De dónde eres?", "exDe": "Woher kommst du?" },
+    { "id": "alemania", "es": "Alemania", "de": "Deutschland", "gender": null, "emoji": "🇩🇪", "exEs": "Soy de Alemania.", "exDe": "Ich komme aus Deutschland." },
+    { "id": "espana", "es": "España", "de": "Spanien", "gender": null, "emoji": "🇪🇸", "exEs": "Madrid está en España.", "exDe": "Madrid liegt in Spanien." },
+    { "id": "amigo", "es": "el amigo", "de": "der Freund", "gender": "m", "emoji": "🧑", "exEs": "Es mi amigo.", "exDe": "Er ist mein Freund." },
+    { "id": "amiga", "es": "la amiga", "de": "die Freundin", "gender": "f", "emoji": "👩", "exEs": "Es mi amiga Sofía.", "exDe": "Das ist meine Freundin Sofía." },
+    { "id": "nombre", "es": "el nombre", "de": "der Name", "gender": "m", "emoji": "📛", "exEs": "¿Cuál es tu nombre?", "exDe": "Wie ist dein Name?" },
+
+    { "id": "cafe", "es": "el café", "de": "der Kaffee", "gender": "m", "emoji": "☕", "exEs": "Quiero un café.", "exDe": "Ich möchte einen Kaffee." },
+    { "id": "te", "es": "el té", "de": "der Tee", "gender": "m", "emoji": "🍵", "exEs": "Un té, por favor.", "exDe": "Einen Tee, bitte." },
+    { "id": "agua", "es": "el agua", "de": "das Wasser", "gender": "f", "emoji": "💧", "exEs": "El agua está fría.", "exDe": "Das Wasser ist kalt." },
+    { "id": "leche", "es": "la leche", "de": "die Milch", "gender": "f", "emoji": "🥛", "exEs": "Un café con leche.", "exDe": "Ein Kaffee mit Milch." },
+    { "id": "azucar", "es": "el azúcar", "de": "der Zucker", "gender": "m", "emoji": "🍬", "exEs": "Sin azúcar, por favor.", "exDe": "Ohne Zucker, bitte." },
+    { "id": "quiero", "es": "quiero", "de": "ich möchte", "gender": null, "emoji": "👉", "exEs": "Quiero agua.", "exDe": "Ich möchte Wasser." },
+    { "id": "con", "es": "con", "de": "mit", "gender": null, "emoji": "➕", "exEs": "Un té con leche.", "exDe": "Ein Tee mit Milch." },
+    { "id": "sin", "es": "sin", "de": "ohne", "gender": null, "emoji": "➖", "exEs": "Un café sin azúcar.", "exDe": "Ein Kaffee ohne Zucker." },
+
+    { "id": "pan", "es": "el pan", "de": "das Brot", "gender": "m", "emoji": "🍞", "exEs": "El pan está caliente.", "exDe": "Das Brot ist warm." },
+    { "id": "cruasan", "es": "el cruasán", "de": "das Croissant", "gender": "m", "emoji": "🥐", "exEs": "Quiero un cruasán.", "exDe": "Ich möchte ein Croissant." },
+    { "id": "pastel", "es": "el pastel", "de": "der Kuchen", "gender": "m", "emoji": "🍰", "exEs": "El pastel es muy rico.", "exDe": "Der Kuchen ist sehr lecker." },
+    { "id": "sandwich", "es": "el sándwich", "de": "das Sandwich", "gender": "m", "emoji": "🥪", "exEs": "Un sándwich, por favor.", "exDe": "Ein Sandwich, bitte." },
+    { "id": "galleta", "es": "la galleta", "de": "der Keks", "gender": "f", "emoji": "🍪", "exEs": "Una galleta, por favor.", "exDe": "Einen Keks, bitte." },
+    { "id": "frio", "es": "frío", "de": "kalt", "gender": null, "emoji": "🧊", "exEs": "Un té frío.", "exDe": "Ein kalter Tee." },
+    { "id": "caliente", "es": "caliente", "de": "heiß", "gender": null, "emoji": "🔥", "exEs": "El café está caliente.", "exDe": "Der Kaffee ist heiß." },
+
+    { "id": "cuenta", "es": "la cuenta", "de": "die Rechnung", "gender": "f", "emoji": "🧾", "exEs": "La cuenta, por favor.", "exDe": "Die Rechnung, bitte." },
+    { "id": "mesa", "es": "la mesa", "de": "der Tisch", "gender": "f", "emoji": "🪑", "exEs": "Una mesa para dos.", "exDe": "Ein Tisch für zwei." },
+    { "id": "cuantocuesta", "es": "¿cuánto cuesta?", "de": "was kostet?", "gender": null, "emoji": "💶", "exEs": "¿Cuánto cuesta el café?", "exDe": "Was kostet der Kaffee?" },
+    { "id": "camarero", "es": "el camarero", "de": "der Kellner", "gender": "m", "emoji": "🤵", "exEs": "El camarero es simpático.", "exDe": "Der Kellner ist nett." }
+  ],
+  "units": [
+    {
+      "id": "u1",
+      "title": "Begrüßen & Vorstellen",
+      "subtitle": "Hallo sagen, nach dem Befinden fragen, sich vorstellen",
+      "emoji": "👋",
+      "lessons": [
+        {
+          "id": "u1l1",
+          "title": "Hallo & Tschüss",
+          "exercises": [
+            { "type": "card", "vocab": "hola" },
+            { "type": "pick", "target": "buenosdias", "options": ["buenasnoches", "hola", "gracias"] },
+            { "type": "pick", "target": "gracias", "options": ["porfavor", "si", "no"] },
+            { "type": "card", "vocab": "buenasnoches" },
+            { "type": "match", "vocab": ["hola", "adios", "gracias", "si", "no"] },
+            { "type": "gap", "es": "Muchas ___.", "de": "Vielen Dank.", "answer": "gracias", "options": ["hola", "no", "sí"], "vocab": ["gracias"] },
+            { "type": "build", "es": "Buenos días, señor.", "de": "Guten Morgen, mein Herr.", "extra": ["noches", "gracias"], "vocab": ["buenosdias"] },
+            { "type": "dictation", "es": "Buenas noches, mamá.", "de": "Gute Nacht, Mama.", "extra": ["días", "hola"], "vocab": ["buenasnoches"] },
+            { "type": "speak", "es": "Hola, buenos días.", "de": "Hallo, guten Morgen.", "vocab": ["hola", "buenosdias"] },
+            { "type": "dictation", "es": "Adiós, hasta mañana.", "de": "Tschüss, bis morgen.", "extra": ["gracias", "no"], "vocab": ["adios"] },
+            { "type": "build", "es": "No, gracias.", "de": "Nein, danke.", "extra": ["sí", "hola"], "vocab": ["no", "gracias"] },
+            { "type": "say", "es": "Muchas gracias.", "de": "Vielen Dank.", "vocab": ["gracias"] }
+          ]
+        },
+        {
+          "id": "u1l2",
+          "title": "Wie geht's?",
+          "exercises": [
+            { "type": "card", "vocab": "quetal" },
+            { "type": "pick", "target": "bien", "options": ["mal", "hola", "gracias"] },
+            { "type": "card", "vocab": "muchogusto" },
+            { "type": "pick", "target": "hastaluego", "options": ["bien", "mal", "quetal"] },
+            { "type": "gap", "es": "Hola, ¿qué ___?", "de": "Hallo, wie geht's?", "answer": "tal", "options": ["bien", "mal", "sí"], "vocab": ["quetal"] },
+            { "type": "match", "vocab": ["quetal", "bien", "mal", "muchogusto", "hastaluego"] },
+            { "type": "build", "es": "Hola, ¿qué tal?", "de": "Hallo, wie geht's?", "extra": ["bien", "adiós"], "vocab": ["hola", "quetal"] },
+            { "type": "dictation", "es": "Hoy estoy mal.", "de": "Heute geht es mir schlecht.", "extra": ["bien", "gusto"], "vocab": ["mal"] },
+            { "type": "speak", "es": "Estoy bien, gracias.", "de": "Mir geht es gut, danke.", "vocab": ["bien", "gracias"] },
+            { "type": "build", "es": "Hasta luego, amigo.", "de": "Bis später, mein Freund.", "extra": ["mal", "sí"], "vocab": ["hastaluego"] },
+            { "type": "say", "es": "Estoy bien.", "de": "Mir geht es gut.", "vocab": ["bien"] },
+            { "type": "say", "es": "Mucho gusto.", "de": "Freut mich.", "vocab": ["muchogusto"] }
+          ]
+        },
+        {
+          "id": "u1l3",
+          "title": "Ich heiße …",
+          "exercises": [
+            { "type": "card", "vocab": "mellamo" },
+            { "type": "pick", "target": "alemania", "options": ["espana", "amigo", "nombre"] },
+            { "type": "pick", "target": "amiga", "options": ["amigo", "espana", "nombre"] },
+            { "type": "card", "vocab": "dedonde" },
+            { "type": "gap", "es": "Me ___ Laura.", "de": "Ich heiße Laura.", "answer": "llamo", "options": ["soy", "bien", "tal"], "vocab": ["mellamo"] },
+            { "type": "match", "vocab": ["mellamo", "soy", "alemania", "espana", "nombre"] },
+            { "type": "build", "es": "Soy de Alemania.", "de": "Ich komme aus Deutschland.", "extra": ["España", "llamo"], "vocab": ["soy", "alemania"] },
+            { "type": "dictation", "es": "Es mi amigo.", "de": "Er ist mein Freund.", "extra": ["amiga", "nombre"], "vocab": ["amigo"] },
+            { "type": "speak", "es": "Me llamo Laura.", "de": "Ich heiße Laura.", "vocab": ["mellamo"] },
+            { "type": "say", "es": "Soy de Berlín.", "de": "Ich bin aus Berlin.", "vocab": ["soy"] },
+            { "type": "build", "es": "¿De dónde eres?", "de": "Woher kommst du?", "extra": ["soy", "qué"], "vocab": ["dedonde"] },
+            { "type": "dictation", "es": "Madrid está en España.", "de": "Madrid liegt in Spanien.", "extra": ["Alemania", "soy"], "vocab": ["espana"] },
+            { "type": "gap", "es": "Es mi ___ Sofía.", "de": "Das ist meine Freundin Sofía.", "answer": "amiga", "options": ["amigo", "nombre"], "vocab": ["amiga"] },
+            { "type": "say", "es": "Me llamo Laura.", "de": "Ich heiße Laura.", "vocab": ["mellamo"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": "Im Café bestellen",
+      "subtitle": "Getränke, etwas zu essen und die Rechnung",
+      "emoji": "☕",
+      "lessons": [
+        {
+          "id": "u2l1",
+          "title": "Getränke",
+          "exercises": [
+            { "type": "card", "vocab": "cafe" },
+            { "type": "pick", "target": "te", "options": ["cafe", "agua", "leche"] },
+            { "type": "pick", "target": "agua", "options": ["leche", "te", "azucar"] },
+            { "type": "card", "vocab": "leche" },
+            { "type": "match", "vocab": ["cafe", "te", "agua", "leche", "azucar"] },
+            { "type": "gap", "es": "Un café ___ leche.", "de": "Ein Kaffee mit Milch.", "answer": "con", "options": ["sin", "por"], "vocab": ["con", "leche"] },
+            { "type": "build", "es": "Quiero un café, por favor.", "de": "Ich möchte einen Kaffee, bitte.", "extra": ["té", "una"], "vocab": ["quiero", "cafe", "porfavor"] },
+            { "type": "dictation", "es": "Un té con leche.", "de": "Ein Tee mit Milch.", "extra": ["sin", "agua"], "vocab": ["con", "te", "leche"] },
+            { "type": "speak", "es": "Un té, por favor.", "de": "Einen Tee, bitte.", "vocab": ["te", "porfavor"] },
+            { "type": "say", "es": "Un café con leche.", "de": "Ein Kaffee mit Milch.", "vocab": ["cafe", "con", "leche"] },
+            { "type": "gap", "es": "___ azúcar, por favor.", "de": "Ohne Zucker, bitte.", "answer": "Sin", "options": ["Con", "Quiero"], "vocab": ["sin", "azucar"] },
+            { "type": "dictation", "es": "Quiero un café.", "de": "Ich möchte einen Kaffee.", "extra": ["té", "leche"], "vocab": ["quiero", "cafe"] },
+            { "type": "say", "es": "Quiero agua.", "de": "Ich möchte Wasser.", "vocab": ["quiero", "agua"] },
+            { "type": "say", "es": "Un café sin azúcar.", "de": "Ein Kaffee ohne Zucker.", "vocab": ["sin", "cafe", "azucar"] }
+          ]
+        },
+        {
+          "id": "u2l2",
+          "title": "Etwas essen",
+          "exercises": [
+            { "type": "card", "vocab": "pan" },
+            { "type": "pick", "target": "cruasan", "options": ["pan", "pastel", "galleta"] },
+            { "type": "pick", "target": "galleta", "options": ["sandwich", "pastel", "cruasan"] },
+            { "type": "card", "vocab": "caliente" },
+            { "type": "match", "vocab": ["pan", "cruasan", "pastel", "sandwich", "galleta"] },
+            { "type": "gap", "es": "El café está ___.", "de": "Der Kaffee ist heiß.", "answer": "caliente", "options": ["frío", "bien"], "vocab": ["caliente"] },
+            { "type": "build", "es": "Quiero un cruasán.", "de": "Ich möchte ein Croissant.", "extra": ["una", "pan"], "vocab": ["quiero", "cruasan"] },
+            { "type": "dictation", "es": "El pan está caliente.", "de": "Das Brot ist warm.", "extra": ["frío", "pastel"], "vocab": ["pan", "caliente"] },
+            { "type": "speak", "es": "El pastel es muy rico.", "de": "Der Kuchen ist sehr lecker.", "vocab": ["pastel"] },
+            { "type": "say", "es": "Un sándwich, por favor.", "de": "Ein Sandwich, bitte.", "vocab": ["sandwich", "porfavor"] },
+            { "type": "pick", "target": "frio", "options": ["caliente", "agua", "pan"] },
+            { "type": "dictation", "es": "Un té frío.", "de": "Ein kalter Tee.", "extra": ["caliente", "pan"], "vocab": ["frio", "te"] },
+            { "type": "build", "es": "Una galleta, por favor.", "de": "Einen Keks, bitte.", "extra": ["un", "pastel"], "vocab": ["galleta", "porfavor"] },
+            { "type": "say", "es": "Quiero un cruasán.", "de": "Ich möchte ein Croissant.", "vocab": ["quiero", "cruasan"] }
+          ]
+        },
+        {
+          "id": "u2l3",
+          "title": "Die Rechnung, bitte",
+          "exercises": [
+            { "type": "card", "vocab": "cuenta" },
+            { "type": "pick", "target": "mesa", "options": ["cuenta", "camarero", "cafe"] },
+            { "type": "card", "vocab": "cuantocuesta" },
+            { "type": "match", "vocab": ["cuenta", "mesa", "cuantocuesta", "camarero", "porfavor"] },
+            { "type": "gap", "es": "Una ___ para dos.", "de": "Ein Tisch für zwei.", "answer": "mesa", "options": ["cuenta", "leche"], "vocab": ["mesa"] },
+            { "type": "build", "es": "¿Cuánto cuesta el café?", "de": "Was kostet der Kaffee?", "extra": ["la", "té"], "vocab": ["cuantocuesta", "cafe"] },
+            { "type": "speak", "es": "La cuenta, por favor.", "de": "Die Rechnung, bitte.", "vocab": ["cuenta", "porfavor"] },
+            { "type": "pick", "target": "camarero", "options": ["mesa", "cuenta", "amigo"] },
+            { "type": "dictation", "es": "El camarero es simpático.", "de": "Der Kellner ist nett.", "extra": ["mesa", "cuenta"], "vocab": ["camarero"] },
+            { "type": "build", "es": "Una mesa para dos, por favor.", "de": "Ein Tisch für zwei, bitte.", "extra": ["tres", "cuenta"], "vocab": ["mesa", "porfavor"] },
+            { "type": "say", "es": "Una mesa para dos.", "de": "Ein Tisch für zwei.", "vocab": ["mesa"] },
+            { "type": "say", "es": "¿Cuánto cuesta el pastel?", "de": "Was kostet der Kuchen?", "vocab": ["cuantocuesta", "pastel"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

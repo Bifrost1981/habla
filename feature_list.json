@@ -1,0 +1,918 @@
+{
+  "schema_version": 1,
+  "project": "habla",
+  "description": "Arbeitspakete für Habla 1.0. passes=true nur über scripts/project_gate.py finish mit aktuellem Nachweis und allen Freigaben. Optional je Paket: scope.include = eigener Prüfbereich (sonst ganzes Projekt).",
+  "concept_doc": "https://claude.ai/artifact/YJEgHth1HAgw76NDEn5RWu",
+  "verification_scope": {
+    "include": [
+      "src/*",
+      "scripts/*",
+      "public/*",
+      "tests/*",
+      ".github/*",
+      "index.html",
+      "package.json",
+      "package-lock.json",
+      "tsconfig.json",
+      "vite.config.ts",
+      "feature_list.json",
+      "init.sh",
+      "CLAUDE.md"
+    ],
+    "exclude": [
+      ".git/*",
+      "node_modules/*",
+      "dist/*",
+      "dist-single/*",
+      "dist-artifact/*",
+      "evidence/*",
+      "*__pycache__*",
+      "*.pyc",
+      "*.tmp"
+    ]
+  },
+  "environment_probes": [
+    {
+      "cmd": "node --version",
+      "bind": "major",
+      "why": "Build und Tests laufen mit Node; Hauptversion kann Verhalten ändern"
+    },
+    {
+      "cmd": "python3 --version",
+      "bind": "none",
+      "why": "betrifft nur das Prüfskript; wird protokolliert, bindet aber nicht"
+    }
+  ],
+  "smoke_tests": [
+    "logic",
+    "typecheck"
+  ],
+  "tests": {
+    "logic": {
+      "cmd": "npm test",
+      "description": "Lernlogik und Kursdaten (scripts/test-logic.ts)"
+    },
+    "typecheck": {
+      "cmd": "npx tsc --noEmit",
+      "description": "TypeScript-Typprüfung"
+    },
+    "build": {
+      "cmd": "npm run build",
+      "description": "Produktions-Build der PWA"
+    },
+    "gate-selftest": {
+      "cmd": "python3 -m unittest discover -s tests/gate",
+      "description": "Positive und negative Fälle der Prüflogik"
+    },
+    "e2e": {
+      "cmd": "npm run e2e",
+      "description": "Browser-Durchlauf mit Playwright: Onboarding, Lektionen, erzeugte Lektion, Dunkelmodus, 360 px, Einstellungen, Aufnahmen (tests/e2e)",
+      "timeout": 900
+    },
+    "srs-reference": {
+      "cmd": "npm run test:srs",
+      "timeout": 120,
+      "description": "FSRS: App-Planung = Referenzwerte von ts-fsrs; Gedächtnismodell = py-fsrs; Gegenprobe der Vergleichslogik"
+    },
+    "exercise-mix": {
+      "cmd": "npm run test:mix",
+      "timeout": 120,
+      "description": "Jede Lektion und die tägliche Wiederholung: mindestens 50 % Abruf oder Sprechen (Satz bauen, Hör-Diktat, Nachsprechen, Übersetzen-Sprechen); Diktat mit Kacheln lösbar; Gegenprobe mit dem Aufbau aus 0.3"
+    },
+    "feedback-rules": {
+      "cmd": "npm run test:feedback",
+      "timeout": 120,
+      "description": "Fehlerdiagnose: Testfälle je Fehlertyp (Wortstellung, Geschlecht, Artikel, ser/estar, fehlendes Wort, Wort zu viel, Bedeutung) mit Markierung und Regeltext; Gegenfälle ohne Hinweis; typische Fehler in jedem Satz des Kurses; jeder Hinweis genau ein Satz"
+    },
+    "frequency": {
+      "cmd": "node --experimental-strip-types --no-warnings scripts/test-frequency.ts",
+      "timeout": 120,
+      "description": "Häufigkeitsliste FrequencyWords (CC BY-SA 4.0): Quelle, Lizenz und SHA-256 dokumentiert, nicht in der App; je Einheit Lektion „Kleine Wörter“ mit 6 Wörtern unter den 500 häufigsten, ohne weitere unbekannte Wörter; Abdeckung Top 100 ≥ 78 %, Top 300 ≥ 50 %; seltene Themenwörter ≤ 15 %; je Einheit 2–4 Kann-Beschreibungen (GER A1) mit Gegenproben"
+    },
+    "delivery": {
+      "cmd": "npx playwright test -c tests/delivery/playwright.config.ts",
+      "timeout": 600,
+      "description": "Auslieferung: Build unter /habla/ mit Service Worker; keine fehlgeschlagenen und keine fremden Anfragen, Schriften aus der App; offline nach dem ersten Besuch; gehörte Aufnahme offline, Range-Anfrage 206 aus dem Speicher; alle Aufnahmen offline speichern; Datenschutz-Hinweis"
+    },
+    "links": {
+      "cmd": "node --experimental-strip-types --no-warnings scripts/test-links.ts",
+      "timeout": 120,
+      "description": "Wortbezug und Ablenker (F4–F6): Ablenker in Ersatzübungen und Wiederholung nur aus bis zur Einheit geübten Wörtern (viele Zufallsfolgen); jede Satzübung mit Wortbezug aus der eigenen oder früheren Einheiten; jede Vokabel geübt; Gegenproben"
+    },
+    "roleplay": {
+      "cmd": "node --experimental-strip-types --no-warnings scripts/test-roleplay.ts",
+      "timeout": 120,
+      "description": "Rollenspiele: je Einheit eins; Lauras Antworten nur aus bekannten Wörtern; Glossar der Gegenseite; jede erlaubte Antwort besteht (auch klein, ohne Akzente), Antworten anderer Züge, der Satz der Gegenseite und sí/no bestehen nicht; Inhaltswörter müssen erkannt werden; Auswahl ohne Mikrofon mit genau einer passenden Antwort; Freischaltung; Speicherstand"
+    },
+    "content-coverage": {
+      "cmd": "npm run test:stories",
+      "timeout": 120,
+      "description": "Hörgeschichten: je Einheit eine; 95–98 % der laufenden Wörter bis zu dieser Einheit bekannt (Namen zählen als bekannt); Glossar erklärt genau die unbekannten Wörter; je drei Fragen mit drei Antworten; Gegenproben (Stand der Vor-Einheit, zu viele/keine neuen Wörter, Akzente, Namen); Freischaltung nach allen Lektionen"
+    },
+    "audio-manifest": {
+      "cmd": "npm run test:audio",
+      "timeout": 300,
+      "description": "Vorlese-Orte unverändert; spokenTexts() deckt alles ab, was die Generatoren vorlesen lassen; audio/es-ES hat für jeden Text eine Aufnahme"
+    },
+    "assessment": {
+      "cmd": "npm run test:assessment",
+      "timeout": 120,
+      "description": "Vor- und Nachtest je Einheit (12 Aufgaben: Hören, Abruf, Sprechen), Bewertung mit bekannten Antworten, Veränderung je Fertigkeit, Angebot je Einheit, Speichern und Reparatur des Speicherstands"
+    },
+    "e2e-mutation": {
+      "cmd": "python3 -B scripts/e2e_mutation_check.py",
+      "description": "Kontrolllauf grün, 5 eingebaute Fehler müssen den Browser-Test rot machen",
+      "timeout": 1800
+    }
+  },
+  "packages": [
+    {
+      "id": "WP-00",
+      "title": "Bestandsaufnahme, Konzept und Prüfinfrastruktur",
+      "description": "Habla 0.3 sichten, Weiterentwicklungskonzept erstellen, Featureliste, Fortschrittsprotokoll, init.sh, Start- und Abschlussprüfung mit Nachweisen einrichten und die Prüflogik testen.",
+      "priority": "P0",
+      "depends_on": [],
+      "scope": {
+        "include": [
+          "scripts/project_gate.py",
+          "tests/gate/*",
+          "init.sh",
+          "CLAUDE.md",
+          ".github/*"
+        ]
+      },
+      "scope_note": "Paketbereich = Prüfinfrastruktur. Lern-App-Tests (logic, typecheck) laufen bei jeder Startprüfung; build und e2e gehören zu den Paketen, die die App ändern.",
+      "verification_steps": [
+        "./init.sh ausführen",
+        "python3 scripts/project_gate.py start",
+        "python3 scripts/project_gate.py finish --package WP-00",
+        "Konzeptdokument lesen"
+      ],
+      "acceptance_criteria": [
+        "feature_list.json enthält alle Pakete mit Pflichtfeldern und passes=false",
+        "project-progress.md enthält Konzeptentscheidungen, Stand, Risiken, Blocker und Übergabe",
+        "Startprüfung bricht bei Schemafehler, fehlender Übergabe, veraltetem Nachweis und fehlschlagendem Smoke-Test mit Fehlercode ab",
+        "Abschlussprüfung bindet Nachweise an Inhaltshashes und Umgebung, nicht nur an Zeitstempel",
+        "Selbsttest der Prüflogik deckt gültiges Paket, fehlende Übergabe, fehlschlagenden Test und veralteten Nachweis ab",
+        "Konzept vom Projektverantwortlichen fachlich freigegeben"
+      ],
+      "required_tests": [
+        "gate-selftest"
+      ],
+      "approvals_required": [
+        "owner"
+      ],
+      "passes": true,
+      "evidence": [
+        "evidence/WP-00.json#66dc132afaee"
+      ],
+      "was_accepted": true
+    },
+    {
+      "id": "WP-01",
+      "title": "Dauerhafter Speicherort und Wiederaufnahme",
+      "description": "Projekt an einem dauerhaften Ort ablegen (Ordner auf dem Mac und/oder privates Git-Repository) und Wiederaufnahme in einer neuen Sitzung nachweisen.",
+      "priority": "P0",
+      "depends_on": [
+        "WP-00"
+      ],
+      "verification_steps": [
+        "Neue Sitzung öffnen und nur mit der Wiederaufnahmeanweisung den Stand laden",
+        "python3 scripts/project_gate.py start in der neuen Sitzung"
+      ],
+      "acceptance_criteria": [
+        "Speicherort vom Projektverantwortlichen gewählt und freigegeben",
+        "Wiederaufnahme in einer neuen Sitzung erfolgreich, Startprüfung grün",
+        "Keine Geheimnisse (z. B. .env) im Speicherort der Versionsverwaltung"
+      ],
+      "required_tests": [
+        "logic",
+        "typecheck",
+        "gate-selftest"
+      ],
+      "approvals_required": [
+        "owner"
+      ],
+      "passes": true,
+      "evidence": [
+        "evidence/WP-01.json#e737b4b53aff"
+      ],
+      "was_accepted": true,
+      "scope": {
+        "include": [
+          ".gitignore",
+          ".env.example",
+          "init.sh",
+          "CLAUDE.md"
+        ]
+      }
+    },
+    {
+      "id": "WP-02",
+      "title": "Browser-Ende-zu-Ende-Test im Projekt",
+      "description": "Playwright-Test ins Repository holen: Onboarding, zwei Lektionen, eine erzeugte Lektion, Einstellungen, Hell/Dunkel, Breite 360 px, Abspielen vorab vertonter Aufnahmen.",
+      "priority": "P0",
+      "depends_on": [
+        "WP-00"
+      ],
+      "verification_steps": [
+        "npm run e2e",
+        "python3 -B scripts/e2e_mutation_check.py (Kontrolle grün, jede Mutation muss den Test rot machen)"
+      ],
+      "acceptance_criteria": [
+        "Alle 6 Übungstypen werden im Browser durchlaufen",
+        "Kein Konsolenfehler, kein horizontales Scrollen bei 360 px",
+        "Ein absichtlich eingebauter Fehler lässt den Test fehlschlagen"
+      ],
+      "required_tests": [
+        "e2e",
+        "e2e-mutation",
+        "logic",
+        "typecheck"
+      ],
+      "approvals_required": [],
+      "passes": true,
+      "evidence": [
+        "evidence/WP-02.json#2e9fac0b8569"
+      ],
+      "was_accepted": true
+    },
+    {
+      "id": "WP-15",
+      "title": "Folgeprüfung und Rückschrittschutz",
+      "description": "Befund G1/G3 der Fehlersuche 2026-11-14: Jede App-Änderung macht abgenommene Pakete ohne eigenen Bereich veraltet, und eine fehlgeschlagene Neuprüfung setzte das Paket still auf offen (Startprüfung danach grün). Abhilfe: start meldet Rückschritte abgenommener Pakete als Defekt und nennt veraltete Pakete mit dem Befehl zur Neuprüfung; CLAUDE.md schreibt die Folgeprüfung am Sitzungsende vor.",
+      "priority": "P0",
+      "depends_on": [
+        "WP-00"
+      ],
+      "scope": {
+        "include": [
+          "scripts/project_gate.py",
+          "tests/gate/*",
+          "CLAUDE.md"
+        ]
+      },
+      "verification_steps": [
+        "python3 -m unittest discover -s tests/gate -v (inklusive der Fälle zu Folgeprüfung und Rückschritt)",
+        "Am echten Projekt: start nennt veraltete Pakete unter „Neu prüfen“; nach finish dieser Pakete ist start grün"
+      ],
+      "acceptance_criteria": [
+        "Ein abgenommenes Paket, dessen erneuter finish-Lauf scheitert (Test rot oder Freigabe fehlt), lässt start mit „Rückschritt“ fehlschlagen",
+        "start nennt für jedes veraltete oder zurückgefallene Paket den finish-Befehl",
+        "Nach erfolgreicher Neuprüfung ist start wieder grün",
+        "Ein noch nie abgenommenes offenes Paket bleibt kein Defekt",
+        "CLAUDE.md schreibt die Folgeprüfung am Sitzungsende vor und verbietet das Zurücksetzen von passes von Hand"
+      ],
+      "required_tests": [
+        "gate-selftest"
+      ],
+      "approvals_required": [
+        "owner"
+      ],
+      "passes": true,
+      "evidence": [
+        "evidence/WP-15.json#049a2d8c05d1"
+      ],
+      "was_accepted": true
+    },
+    {
+      "id": "WP-16",
+      "title": "Toleranter Sprechabgleich auf Wortebene",
+      "description": "Befund S1 der Fehlersuche 2026-11-14: Wörter wurden nur exakt verglichen, daher scheiterte jede kleine Abweichung (‚ola‘ für ‚Hola.‘ → 0 %); betroffen 46 von 62 Sprechübungen (≤ 4 Wörter). Abhilfe: Lautschlüssel für gleich klingende Schreibweisen und anteilige Anrechnung ähnlicher Wörter; Schwelle bleibt 80 %.",
+      "priority": "P1",
+      "depends_on": [
+        "WP-02"
+      ],
+      "scope": {
+        "include": [
+          "src/lib/text.ts",
+          "scripts/test-logic.ts"
+        ]
+      },
+      "verification_steps": [
+        "npm test (Fälle zum Sprechabgleich inklusive Gegenfälle)",
+        "npx tsc --noEmit",
+        "npm run e2e (keine Regression in der App)"
+      ],
+      "acceptance_criteria": [
+        "Gleich klingende Schreibweisen (stummes h, b/v, ll/y, c/z/s, qu/k, g/j) zählen voll: ‚ola‘ besteht ‚Hola.‘",
+        "Ein Wort mit einer kleinen Abweichung zählt anteilig und besteht in kurzen Sätzen (‚gracia‘ → ‚Gracias.‘, ‚buenas dias‘ → ‚Buenos días.‘), bleibt aber als nicht klar markiert",
+        "Falsche, fehlende oder vertauschte kurze Wörter scheitern weiterhin (‚me llamo eva‘, ‚buenas noches‘, ‚buenos‘, ‚la casa‘ für ‚El café.‘)",
+        "Alle bisherigen Tests der Lernlogik bleiben unverändert grün"
+      ],
+      "required_tests": [
+        "logic",
+        "typecheck",
+        "e2e"
+      ],
+      "approvals_required": [],
+      "passes": true,
+      "evidence": [
+        "evidence/WP-16.json#ab7fcecfed13"
+      ],
+      "was_accepted": true
+    },
+    {
+      "id": "WP-17",
+      "title": "Robustheit: Speicherstand, Audio-Rückfall, Zeitgeber, Tasten bei Dialog",
+      "description": "Befunde B1–B4 der Fehlersuche 2026-11-14: beschädigter Speicherstand → leere Seite; fehlende Aufnahme → Gerätestimme doppelt; schnelles Weiter → alte Lösung über der neuen Übung; Enter/Pfeiltasten wirken hinter dem Dialog „Lektion beenden?“.",
+      "priority": "P1",
+      "depends_on": [
+        "WP-02"
+      ],
+      "scope": {
+        "include": [
+          "src/lib/storage.ts",
+          "src/lib/speech.ts",
+          "src/lib/dom.ts",
+          "src/screens/LessonScreen.tsx",
+          "src/exercises/Card.tsx",
+          "src/exercises/Speak.tsx",
+          "scripts/test-logic.ts",
+          "tests/e2e/habla.spec.ts"
+        ]
+      },
+      "verification_steps": [
+        "npm test (sanitizeProgress mit kaputten und gültigen Ständen)",
+        "npm run e2e (Szenarien B1–B4; jedes war vor der Korrektur rot)",
+        "npx tsc --noEmit"
+      ],
+      "acceptance_criteria": [
+        "Ein beschädigter Speicherstand führt nicht mehr zu einer leeren Seite; gültige Teile bleiben erhalten, kaputte fallen auf den Standard",
+        "Fehlt eine Aufnahmedatei, springt die Gerätestimme genau einmal ein",
+        "Nach „Weiter“ wird die Lösung der vorigen Übung nicht mehr vorgelesen",
+        "Solange „Lektion beenden?“ offen ist, lösen Enter, Pfeil- und Leertaste nichts in der Übung dahinter aus",
+        "Jedes der vier Browser-Szenarien schlägt auf dem Stand vor der Korrektur fehl"
+      ],
+      "required_tests": [
+        "logic",
+        "typecheck",
+        "e2e"
+      ],
+      "approvals_required": [],
+      "passes": true,
+      "evidence": [
+        "evidence/WP-17.json#cea56c1f7a2b"
+      ],
+      "was_accepted": true
+    },
+    {
+      "id": "WP-13",
+      "title": "Geschützte Integration (Branch-Schutz und Pflicht-CI)",
+      "description": "Repository mit Pflicht-Statusprüfung: Merge auf main nur, wenn project_gate start und alle Tests grün sind. Erlaubte und gesperrte Fälle mit Test-Pull-Requests prüfen.",
+      "priority": "P1",
+      "depends_on": [
+        "WP-01",
+        "WP-02"
+      ],
+      "verification_steps": [
+        "Pull Request mit grünem Lauf lässt sich mergen",
+        "Pull Request mit absichtlich rotem Test wird blockiert",
+        "Prüfen, wer die Regel umgehen kann (Admins, Force-Push)"
+      ],
+      "acceptance_criteria": [
+        "Ausdrückliche Zustimmung zur Einrichtung liegt vor",
+        "Gesperrter Fall nachweislich blockiert, erlaubter Fall nachweislich möglich",
+        "Geltungsbereich und verbleibende Umgehungen dokumentiert"
+      ],
+      "required_tests": [
+        "gate-selftest",
+        "logic",
+        "typecheck",
+        "build"
+      ],
+      "approvals_required": [
+        "owner"
+      ],
+      "passes": false,
+      "evidence": []
+    },
+    {
+      "id": "WP-03",
+      "title": "Natürliche Stimme vertonen",
+      "description": "Alle vorgelesenen Texte mit einer natürlichen Stimme vertonen und ausliefern; Gerätestimme nur als Rückfall. Entscheidung 2026-11-19 nach Hörprobe: Pocket TTS (Kyutai, offen, lokal), Stimme Lola, Einstellung „sanft“ – statt Azure (kein Konto, keine Kosten). Aufnahmen in audio/ (außerhalb von Git und Prüfbereich), von Vite unter /audio/ ausgeliefert.",
+      "priority": "P1",
+      "depends_on": [
+        "WP-01",
+        "WP-02"
+      ],
+      "verification_steps": [
+        "npm run audio -- --provider pocket --export; bash scripts/vertonen.sh (Mac); npm run audio -- --provider pocket",
+        "npm run test:audio (Vorlese-Orte, Vollständigkeit der Textliste, jede Aufnahme vorhanden)",
+        "npm run e2e (unabhängig von vorhandenen Aufnahmen: HABLA_AUDIO=off)",
+        "Projektverantwortlicher hört die Stimme in der App (mehrere Lektionen und Wiederholung)"
+      ],
+      "acceptance_criteria": [
+        "100 % der vorlesbaren Texte haben eine Aufnahme (npm run test:audio); die Textliste umfasst Lektionen, Wiederholung, Ersatzübungen ohne Mikrofon, Tests und feste Sätze (Befund A1 behoben)",
+        "Projektverantwortlicher bewertet die Stimme in der App als natürlich und angenehm",
+        "Kein Schlüssel im App-Code oder Repository; Lizenz und Namensnennung (CC-BY-4.0) mitgeliefert",
+        "Der Build liefert die Aufnahmen mit Range-Anfragen aus (Safari); der Browser-Test hängt nicht davon ab, ob Aufnahmen vorhanden sind"
+      ],
+      "required_tests": [
+        "audio-manifest",
+        "logic",
+        "typecheck",
+        "e2e"
+      ],
+      "approvals_required": [
+        "owner"
+      ],
+      "passes": true,
+      "evidence": [
+        "evidence/WP-03.json#27fc3c3f82a9"
+      ],
+      "scope": {
+        "include": [
+          "scripts/make-audio.ts",
+          "scripts/audio-signal.ts",
+          "scripts/pocket_render.py",
+          "scripts/vertonen.sh",
+          "scripts/test-audio.ts",
+          "src/lib/spokenTexts.ts",
+          "src/lib/audioKey.ts",
+          "vite.config.ts",
+          "public/THIRD-PARTY-LICENSES.txt"
+        ]
+      },
+      "was_accepted": true
+    },
+    {
+      "id": "WP-04",
+      "title": "FSRS statt Leitner",
+      "description": "Wiederholung je Wort mit FSRS planen (Bewertung aus Übungsergebnis), bestehenden Leitner-Fortschritt übernehmen, Wiederholungsprotokoll lokal speichern.",
+      "priority": "P1",
+      "depends_on": [
+        "WP-02"
+      ],
+      "verification_steps": [
+        "npm run test:srs",
+        "npm test (Übernahme alter Leitner-Stände, Verhalten bei richtig/falsch)",
+        "npm run e2e (Szenario: Fortschritt aus Version 0.3 laden, wiederholen, FSRS gespeichert)"
+      ],
+      "acceptance_criteria": [
+        "Intervalle stimmen mit Referenzwerten der FSRS-Bibliothek überein",
+        "Fortschritt aus Version 0.3 geht nicht verloren",
+        "Lizenz der verwendeten FSRS-Bibliothek geprüft und dokumentiert"
+      ],
+      "required_tests": [
+        "srs-reference",
+        "logic",
+        "typecheck",
+        "e2e"
+      ],
+      "approvals_required": [],
+      "passes": true,
+      "evidence": [
+        "evidence/WP-04.json#1464f355b3a1"
+      ],
+      "scope": {
+        "include": [
+          "src/lib/srs.ts",
+          "src/lib/storage.ts",
+          "src/types.ts",
+          "src/App.tsx",
+          "scripts/test-srs.ts",
+          "scripts/make-srs-reference.ts",
+          "scripts/srs_reference_py.py",
+          "scripts/test-logic.ts",
+          "tests/srs/*",
+          "tests/e2e/habla.spec.ts",
+          "public/THIRD-PARTY-LICENSES.txt",
+          "package.json",
+          "package-lock.json"
+        ]
+      },
+      "was_accepted": true
+    },
+    {
+      "id": "WP-05",
+      "title": "Mehr Abruf: Diktat und Deutsch-Spanisch-Sprechen",
+      "description": "Neue Übungen Hör-Diktat (Kacheln) und Übersetzen-Sprechen; Lektionsgenerator so umstellen, dass Abruf und Sprechen überwiegen.",
+      "priority": "P1",
+      "depends_on": [
+        "WP-02"
+      ],
+      "verification_steps": [
+        "Mix-Prüfung über alle Lektionen",
+        "e2e mit neuen Übungstypen"
+      ],
+      "acceptance_criteria": [
+        "In jeder Lektion sind mindestens 50 % der Übungen Abruf oder Sprechen",
+        "Bedienung ohne Tastatur bleibt vollständig möglich"
+      ],
+      "required_tests": [
+        "exercise-mix",
+        "logic",
+        "e2e"
+      ],
+      "approvals_required": [],
+      "passes": true,
+      "evidence": [
+        "evidence/WP-05.json#9d69bddc79d7"
+      ],
+      "was_accepted": true
+    },
+    {
+      "id": "WP-06",
+      "title": "Explizites Feedback mit Regelhinweis",
+      "description": "Fehler erkennen (Genus, Artikel, Wortstellung, fehlendes Wort, ser/estar) und mit Markierung plus Ein-Satz-Regel zurückmelden.",
+      "priority": "P1",
+      "depends_on": [
+        "WP-02"
+      ],
+      "verification_steps": [
+        "Testfälle typischer Fehler",
+        "Sichtprüfung der Hinweise"
+      ],
+      "acceptance_criteria": [
+        "Mindestens 5 Fehlertypen mit eigenem Hinweis",
+        "Hinweise fachlich korrekt (Freigabe)"
+      ],
+      "required_tests": [
+        "feedback-rules",
+        "logic",
+        "e2e"
+      ],
+      "approvals_required": [
+        "owner"
+      ],
+      "passes": true,
+      "evidence": [
+        "evidence/WP-06.json#ff2e9241a901"
+      ],
+      "was_accepted": true,
+      "scope": {
+        "include": [
+          "src/lib/diagnose.ts",
+          "scripts/test-feedback.ts",
+          "docs/wp06-regelhinweise.md",
+          "src/content/*",
+          "src/lib/text.ts",
+          "src/lib/generate.ts"
+        ]
+      }
+    },
+    {
+      "id": "WP-08",
+      "title": "Hörgeschichten und Dialoge pro Einheit",
+      "description": "Je Einheit eine Geschichte oder ein Dialog mit 95–98 % bekannten Wörtern, vertont, mit Verständnisfragen per Antippen.",
+      "priority": "P1",
+      "depends_on": [
+        "WP-03",
+        "WP-05"
+      ],
+      "scope": {
+        "include": [
+          "src/content/stories.ts",
+          "src/lib/stories.ts",
+          "src/screens/StoryScreen.tsx",
+          "scripts/test-stories.ts",
+          "src/screens/PathScreen.tsx",
+          "src/lib/storage.ts",
+          "src/App.tsx"
+        ]
+      },
+      "verification_steps": [
+        "Abdeckungsprüfung",
+        "Hörprobe"
+      ],
+      "acceptance_criteria": [
+        "8 Geschichten, je 95–98 % bekannte Wörter laut Skript",
+        "Inhalt sprachlich korrekt (Freigabe)"
+      ],
+      "required_tests": [
+        "content-coverage",
+        "audio-manifest",
+        "e2e"
+      ],
+      "approvals_required": [
+        "owner"
+      ],
+      "passes": true,
+      "evidence": [
+        "evidence/WP-08.json#56b02c18653d"
+      ],
+      "was_accepted": true
+    },
+    {
+      "id": "WP-10",
+      "title": "Lernerfolg messen",
+      "description": "Kurzer Test vor und nach jeder Einheit (Hören, Abruf, Sprechen), lokale Auswertung und Verlauf.",
+      "priority": "P1",
+      "depends_on": [
+        "WP-05"
+      ],
+      "verification_steps": [
+        "Testlauf mit bekannten Antworten",
+        "Auswertung prüfen"
+      ],
+      "acceptance_criteria": [
+        "Für jede Einheit ein Vor- und Nachtest",
+        "Auswertung zeigt Veränderung je Fertigkeit"
+      ],
+      "required_tests": [
+        "assessment",
+        "e2e"
+      ],
+      "approvals_required": [],
+      "passes": true,
+      "evidence": [
+        "evidence/WP-10.json#7f208f32067e"
+      ],
+      "was_accepted": true
+    },
+    {
+      "id": "WP-18",
+      "title": "Vortest im Onboarding (überspringbar)",
+      "description": "Entscheidung des Projektverantwortlichen vom 2026-11-17 zum Risiko aus WP-10: Das Onboarding startete sofort die erste Lektion, danach gab es für Einheit 1 keinen Vortest mehr. Jetzt bietet ein letzter Onboarding-Schritt den Vortest von Einheit 1 an; danach startet die erste Lektion. Überspringen führt direkt zur Lektion.",
+      "priority": "P1",
+      "depends_on": [
+        "WP-10"
+      ],
+      "scope": {
+        "include": [
+          "src/screens/Onboarding.tsx",
+          "src/App.tsx",
+          "src/styles.css",
+          "tests/e2e/habla.spec.ts"
+        ]
+      },
+      "verification_steps": [
+        "npm run e2e (Szenarien: Onboarding mit Vortest, Vortest übersprungen; bestehender Onboarding-Test mit dem neuen Schritt)",
+        "npx tsc --noEmit"
+      ],
+      "acceptance_criteria": [
+        "Der letzte Onboarding-Schritt bietet den Vortest von Einheit 1 an und lässt sich überspringen",
+        "Nach dem Vortest startet direkt die erste Lektion; der Vortest ist gespeichert und wird nicht erneut angeboten",
+        "Übersprungen: Der Lernpfad bietet den Vortest weiter an, bis Einheit 1 begonnen ist",
+        "Beide neuen Browser-Szenarien schlagen auf dem Stand vor der Änderung fehl"
+      ],
+      "required_tests": [
+        "logic",
+        "typecheck",
+        "e2e"
+      ],
+      "approvals_required": [],
+      "passes": true,
+      "evidence": [
+        "evidence/WP-18.json#bc89915c3618"
+      ],
+      "was_accepted": true
+    },
+    {
+      "id": "WP-19",
+      "title": "Auslieferung: offline, Unterpfad, eigene Schriften, Datenschutz-Hinweis",
+      "description": "Entscheidung des Projektverantwortlichen vom 2026-11-24 (Defekte B5, B6, B7, P1 aus der Fehlersuche vom 2026-11-14): Service Worker speichert alle App-Dateien vorab (offline nach dem ersten Besuch), Aufnahmen vollständig statt als Teilantwort (offline abspielbar, Range aus dem Speicher), Knopf „Aufnahmen offline speichern“; relative Pfade (läuft unter einem Unterpfad wie GitHub Pages …/habla/); Schriften in der App statt Google Fonts; Hinweis in Einführung und Einstellungen, dass Chrome/Edge das Mikrofon-Audio an Google/Microsoft schicken; README berichtigt (D1).",
+      "priority": "P2",
+      "depends_on": [
+        "WP-17"
+      ],
+      "scope": {
+        "include": [
+          "index.html",
+          "vite.config.ts",
+          "public/sw.js",
+          "public/manifest.webmanifest",
+          "public/THIRD-PARTY-LICENSES.txt",
+          "src/main.tsx",
+          "src/lib/offline.ts",
+          "src/screens/SettingsScreen.tsx",
+          "src/screens/Onboarding.tsx",
+          "tests/delivery/*",
+          "README.md"
+        ]
+      },
+      "verification_steps": [
+        "npx playwright test -c tests/delivery/playwright.config.ts (4 Szenarien unter /habla/)",
+        "Gegenprobe: dieselben Tests auf dem Stand vor der Änderung schlagen fehl",
+        "npm run e2e",
+        "npm run build",
+        "npx tsc --noEmit"
+      ],
+      "acceptance_criteria": [
+        "Unter einem Unterpfad lädt die App ohne fehlgeschlagene Anfragen und ohne Anfragen an fremde Server; die Schriften kommen aus der App",
+        "Nach dem ersten Besuch startet die App offline, der Lernpfad ist bedienbar",
+        "Eine einmal gehörte Aufnahme spielt offline; Teilanfragen (Range) werden aus dem Speicher mit 206 beantwortet",
+        "„Aufnahmen offline speichern“ macht alle Aufnahmen offline verfügbar",
+        "Einführung und Einstellungen nennen, wohin die Spracherkennung das Mikrofon-Audio schickt",
+        "Die neuen Tests schlagen auf dem Stand vor der Änderung fehl"
+      ],
+      "required_tests": [
+        "delivery",
+        "e2e",
+        "build",
+        "typecheck",
+        "logic"
+      ],
+      "approvals_required": [],
+      "passes": true,
+      "evidence": [
+        "evidence/WP-19.json#a6205460f734"
+      ],
+      "was_accepted": true
+    },
+    {
+      "id": "WP-20",
+      "title": "Wortbezug und Ablenker: nur Gelerntes, jede Übung zählt (F4–F6)",
+      "description": "Defekte F4–F6 aus der Fehlersuche vom 2026-11-14, nach WP-19 als nächstes Paket angekündigt: Ablenker-Kacheln in Ersatzübungen (Sprechen ohne Mikrofon) und in der Wiederholung nur aus Wörtern, die bis zur Einheit der Übung geübt wurden; Satzübungen ohne Lektionswort bekommen die bis dahin geübten Wörter im Satz als Bezug (notfalls das Wort, dessen Beispielsatz sie sind), damit sie auf die Wiederholungsplanung wirken; jede Vokabel ist Ziel einer Übung.",
+      "priority": "P2",
+      "depends_on": [
+        "WP-05"
+      ],
+      "scope": {
+        "include": [
+          "src/lib/course.ts",
+          "src/lib/generate.ts",
+          "scripts/test-links.ts"
+        ]
+      },
+      "verification_steps": [
+        "node --experimental-strip-types --no-warnings scripts/test-links.ts",
+        "Verfälschungen: Ablenker ohne Einschränkung, kein Nachtrag des Wortbezugs, ohne Beispielsatz-Rückfall",
+        "npm test, npm run test:mix, npm run test:audio -- --texts-only",
+        "npm run e2e"
+      ],
+      "acceptance_criteria": [
+        "Keine Ersatz- oder Wiederholungsübung zeigt Ablenker aus späteren Einheiten",
+        "Jede Satzübung hat einen Wortbezug aus der eigenen oder einer früheren Einheit",
+        "Jede Vokabel ist Ziel mindestens einer Übung",
+        "Übungsmix, Vertonung und alle bisherigen Tests unverändert grün"
+      ],
+      "required_tests": [
+        "links",
+        "logic",
+        "exercise-mix",
+        "e2e"
+      ],
+      "approvals_required": [],
+      "passes": true,
+      "evidence": [
+        "evidence/WP-20.json#1ef08634a2a9"
+      ],
+      "was_accepted": true
+    },
+    {
+      "id": "WP-07",
+      "title": "Aussprache-Feedback auf Lautebene",
+      "description": "Machbarkeit klären (Cloud-Aussprachebewertung für es-ES/es-MX oder lokales Modell), Datenschutz, Kosten; danach Umsetzung mit Einwilligung.",
+      "priority": "P2",
+      "depends_on": [
+        "WP-02"
+      ],
+      "verification_steps": [
+        "Machbarkeitsbericht",
+        "Test mit Aufnahmen bekannter Fehler (r/rr, Vokale)"
+      ],
+      "acceptance_criteria": [
+        "Entscheidung zu Anbieter, Kosten und Datenschutz freigegeben",
+        "Erkennt mindestens r/rr und Vokalfehler in Testaufnahmen"
+      ],
+      "required_tests": [
+        "e2e"
+      ],
+      "approvals_required": [
+        "owner"
+      ],
+      "passes": false,
+      "evidence": [
+        "evidence/WP-07.json#041e0c0289dd"
+      ]
+    },
+    {
+      "id": "WP-09",
+      "title": "Geführte Rollenspiele",
+      "description": "Pro Einheit ein Rollenspiel mit Ziel; zuerst regelbasiert, optional mit KI über einen Proxy ohne Schlüssel in der App.",
+      "priority": "P2",
+      "depends_on": [
+        "WP-06",
+        "WP-08"
+      ],
+      "scope": {
+        "include": [
+          "src/content/roleplays.ts",
+          "src/lib/roleplays.ts",
+          "src/screens/RoleplayScreen.tsx",
+          "scripts/test-roleplay.ts",
+          "src/screens/PathScreen.tsx",
+          "src/lib/storage.ts",
+          "src/App.tsx"
+        ]
+      },
+      "verification_steps": [
+        "Durchlauf jedes Rollenspiels",
+        "Kosten- und Datenschutzprüfung bei KI-Variante"
+      ],
+      "acceptance_criteria": [
+        "8 Rollenspiele lauffähig ohne KI",
+        "KI-Variante nur nach Freigabe von Kosten und Datenschutz"
+      ],
+      "required_tests": [
+        "e2e",
+        "logic",
+        "roleplay"
+      ],
+      "approvals_required": [
+        "owner"
+      ],
+      "passes": true,
+      "evidence": [
+        "evidence/WP-09.json#b9e45f004ec6"
+      ],
+      "was_accepted": true
+    },
+    {
+      "id": "WP-11",
+      "title": "Wortschatz nach Häufigkeit und GER-Kann-Beschreibungen",
+      "description": "Vokabeln gegen eine Häufigkeitsliste prüfen, Lücken füllen, jeder Einheit Kann-Beschreibungen zuordnen.",
+      "priority": "P2",
+      "depends_on": [
+        "WP-08"
+      ],
+      "scope": {
+        "include": [
+          "src/content/more.json",
+          "src/content/cando.ts",
+          "src/lib/cando.ts",
+          "scripts/test-frequency.ts",
+          "data/frequency/*",
+          "src/screens/PathScreen.tsx"
+        ]
+      },
+      "verification_steps": [
+        "Abgleich mit Häufigkeitsliste (Lizenz prüfen)"
+      ],
+      "acceptance_criteria": [
+        "Lizenz der Häufigkeitsliste geklärt",
+        "Jede Einheit hat Kann-Beschreibungen"
+      ],
+      "required_tests": [
+        "content-coverage",
+        "logic",
+        "frequency"
+      ],
+      "approvals_required": [
+        "owner"
+      ],
+      "passes": true,
+      "evidence": [
+        "evidence/WP-11.json#7054fe105771"
+      ],
+      "was_accepted": true
+    },
+    {
+      "id": "WP-14",
+      "title": "Nutzertest mit 5 Lernenden",
+      "description": "Fünf deutschsprachige Anfänger nutzen Habla zwei Wochen; Vor-/Nachtest und Interviews.",
+      "priority": "P2",
+      "depends_on": [
+        "WP-10",
+        "WP-03"
+      ],
+      "verification_steps": [
+        "Einwilligungen",
+        "Auswertung"
+      ],
+      "acceptance_criteria": [
+        "Einwilligungen liegen vor",
+        "Bericht mit Ergebnissen und Konsequenzen freigegeben"
+      ],
+      "required_tests": [
+        "assessment"
+      ],
+      "approvals_required": [
+        "owner"
+      ],
+      "passes": false,
+      "evidence": []
+    },
+    {
+      "id": "WP-12",
+      "title": "A2-Inhalte",
+      "description": "Vier weitere Einheiten auf A2 (Vergangenheit, Pläne, Gesundheit, Reisen).",
+      "priority": "P3",
+      "depends_on": [
+        "WP-11",
+        "WP-14"
+      ],
+      "verification_steps": [
+        "Inhaltsprüfung",
+        "Abdeckung",
+        "e2e"
+      ],
+      "acceptance_criteria": [
+        "4 Einheiten mit je 4 Lektionen",
+        "Sprachlich korrekt (Freigabe)"
+      ],
+      "required_tests": [
+        "logic",
+        "content-coverage",
+        "e2e"
+      ],
+      "approvals_required": [
+        "owner"
+      ],
+      "passes": false,
+      "evidence": []
+    }
+  ]
+}

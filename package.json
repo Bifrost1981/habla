@@ -1,0 +1,41 @@
+{
+  "name": "habla",
+  "private": true,
+  "version": "0.3.0",
+  "type": "module",
+  "description": "Habla – Spanisch lernen ohne Tastatur: Tippen, Ziehen, Hören, Sprechen.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "build:single": "tsc --noEmit && vite build --mode single",
+    "preview": "vite preview",
+    "test": "node --experimental-strip-types --no-warnings scripts/test-logic.ts",
+    "audio": "node --experimental-strip-types --no-warnings scripts/make-audio.ts",
+    "e2e": "playwright test -c tests/e2e/playwright.config.ts",
+    "test:srs": "node --experimental-strip-types --no-warnings scripts/test-srs.ts",
+    "test:mix": "node --experimental-strip-types --no-warnings scripts/test-mix.ts",
+    "test:feedback": "node --experimental-strip-types --no-warnings scripts/test-feedback.ts",
+    "test:assessment": "node --experimental-strip-types --no-warnings scripts/test-assessment.ts",
+    "test:audio": "node --experimental-strip-types --no-warnings scripts/test-audio.ts",
+    "test:stories": "node --experimental-strip-types --no-warnings scripts/test-stories.ts"
+  },
+  "dependencies": {
+    "@fontsource/bricolage-grotesque": "^5.3.0",
+    "@fontsource/figtree": "^5.3.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "ts-fsrs": "5.4.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "4.3.3",
+    "typescript": "5.6.3",
+    "vite": "5.4.10",
+    "vite-plugin-singlefile": "2.0.3"
+  },
+  "engines": {
+    "node": ">=22.6"
+  }
+}

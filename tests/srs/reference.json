@@ -1,0 +1,561 @@
+{
+  "note": "Referenzwerte für npm run test:srs. ts: direkt aus ts-fsrs; python: Gegenrechnung des Gedächtnismodells mit py-fsrs bei gleichen Zeitpunkten.",
+  "ts_fsrs": {
+    "version": "5.4.2",
+    "w": [
+      0.212,
+      1.2931,
+      2.3065,
+      8.2956,
+      6.4133,
+      0.8334,
+      3.0194,
+      0.001,
+      1.8722,
+      0.1666,
+      0.796,
+      1.4835,
+      0.0614,
+      0.2629,
+      1.6483,
+      0.6014,
+      1.8729,
+      0.5425,
+      0.0912,
+      0.0658,
+      0.1542
+    ],
+    "request_retention": 0.9,
+    "maximum_interval": 36500,
+    "enable_fuzz": false,
+    "enable_short_term": true,
+    "learning_steps": [],
+    "relearning_steps": []
+  },
+  "sequences": {
+    "immer_richtig": [
+      {
+        "day": "2026-11-02",
+        "rating": 3,
+        "days": 2,
+        "due": "2026-11-04",
+        "stability": 2.3065,
+        "difficulty": 2.11810397,
+        "state": 2,
+        "lapses": 0
+      },
+      {
+        "day": "2026-11-04",
+        "rating": 3,
+        "days": 11,
+        "due": "2026-11-15",
+        "stability": 10.96433194,
+        "difficulty": 2.11121424,
+        "state": 2,
+        "lapses": 0
+      },
+      {
+        "day": "2026-11-15",
+        "rating": 3,
+        "days": 46,
+        "due": "2026-12-31",
+        "stability": 46.28021494,
+        "difficulty": 2.1043314,
+        "state": 2,
+        "lapses": 0
+      },
+      {
+        "day": "2026-12-31",
+        "rating": 3,
+        "days": 163,
+        "due": "2027-06-12",
+        "stability": 162.86219887,
+        "difficulty": 2.09745544,
+        "state": 2,
+        "lapses": 0
+      },
+      {
+        "day": "2027-06-12",
+        "rating": 3,
+        "days": 497,
+        "due": "2028-10-21",
+        "stability": 497.44720499,
+        "difficulty": 2.09058635,
+        "state": 2,
+        "lapses": 0
+      },
+      {
+        "day": "2028-10-21",
+        "rating": 3,
+        "days": 1346,
+        "due": "2032-06-28",
+        "stability": 1345.52877622,
+        "difficulty": 2.08372413,
+        "state": 2,
+        "lapses": 0
+      }
+    ],
+    "wechselnd": [
+      {
+        "day": "2026-11-02",
+        "rating": 3,
+        "days": 2,
+        "due": "2026-11-04",
+        "stability": 2.3065,
+        "difficulty": 2.11810397,
+        "state": 2,
+        "lapses": 0
+      },
+      {
+        "day": "2026-11-04",
+        "rating": 1,
+        "days": 1,
+        "due": "2026-11-05",
+        "stability": 0.6075801,
+        "difficulty": 7.39450274,
+        "state": 2,
+        "lapses": 1
+      },
+      {
+        "day": "2026-11-05",
+        "rating": 3,
+        "days": 3,
+        "due": "2026-11-08",
+        "stability": 2.40040407,
+        "difficulty": 7.38233661,
+        "state": 2,
+        "lapses": 1
+      },
+      {
+        "day": "2026-11-08",
+        "rating": 1,
+        "days": 1,
+        "due": "2026-11-09",
+        "stability": 0.60300388,
+        "difficulty": 9.12482021,
+        "state": 2,
+        "lapses": 2
+      },
+      {
+        "day": "2026-11-09",
+        "rating": 3,
+        "days": 2,
+        "due": "2026-11-11",
+        "stability": 1.53399093,
+        "difficulty": 9.11092376,
+        "state": 2,
+        "lapses": 2
+      },
+      {
+        "day": "2026-11-11",
+        "rating": 3,
+        "days": 4,
+        "due": "2026-11-15",
+        "stability": 3.28096824,
+        "difficulty": 9.09704121,
+        "state": 2,
+        "lapses": 2
+      }
+    ],
+    "fehlstart": [
+      {
+        "day": "2026-11-02",
+        "rating": 1,
+        "days": 1,
+        "due": "2026-11-03",
+        "stability": 0.212,
+        "difficulty": 6.4133,
+        "state": 2,
+        "lapses": 0
+      },
+      {
+        "day": "2026-11-03",
+        "rating": 1,
+        "days": 1,
+        "due": "2026-11-04",
+        "stability": 0.10088579,
+        "difficulty": 8.80630447,
+        "state": 2,
+        "lapses": 1
+      },
+      {
+        "day": "2026-11-04",
+        "rating": 3,
+        "days": 2,
+        "due": "2026-11-06",
+        "stability": 0.68320684,
+        "difficulty": 8.79272653,
+        "state": 2,
+        "lapses": 1
+      },
+      {
+        "day": "2026-11-06",
+        "rating": 3,
+        "days": 3,
+        "due": "2026-11-09",
+        "stability": 2.37309488,
+        "difficulty": 8.77916217,
+        "state": 2,
+        "lapses": 1
+      },
+      {
+        "day": "2026-11-09",
+        "rating": 3,
+        "days": 5,
+        "due": "2026-11-14",
+        "stability": 5.2668717,
+        "difficulty": 8.76561138,
+        "state": 2,
+        "lapses": 1
+      }
+    ],
+    "verspaetet": [
+      {
+        "day": "2026-11-02",
+        "rating": 3,
+        "days": 2,
+        "due": "2026-11-04",
+        "stability": 2.3065,
+        "difficulty": 2.11810397,
+        "state": 2,
+        "lapses": 0
+      },
+      {
+        "day": "2026-11-09",
+        "rating": 3,
+        "days": 21,
+        "due": "2026-11-30",
+        "stability": 21.41139201,
+        "difficulty": 2.11121424,
+        "state": 2,
+        "lapses": 0
+      },
+      {
+        "day": "2026-12-20",
+        "rating": 3,
+        "days": 116,
+        "due": "2027-04-15",
+        "stability": 115.86875243,
+        "difficulty": 2.1043314,
+        "state": 2,
+        "lapses": 0
+      },
+      {
+        "day": "2027-04-17",
+        "rating": 1,
+        "days": 4,
+        "due": "2027-04-21",
+        "stability": 4.18036933,
+        "difficulty": 7.38997579,
+        "state": 2,
+        "lapses": 1
+      },
+      {
+        "day": "2027-05-01",
+        "rating": 3,
+        "days": 18,
+        "due": "2027-05-19",
+        "stability": 17.59197094,
+        "difficulty": 7.37781418,
+        "state": 2,
+        "lapses": 1
+      }
+    ],
+    "gleicher_tag": [
+      {
+        "day": "2026-11-02",
+        "rating": 1,
+        "days": 1,
+        "due": "2026-11-03",
+        "stability": 0.212,
+        "difficulty": 6.4133,
+        "state": 2,
+        "lapses": 0
+      },
+      {
+        "day": "2026-11-02",
+        "rating": 3,
+        "days": 2,
+        "due": "2026-11-04",
+        "stability": 0.24668919,
+        "difficulty": 6.40211507,
+        "state": 2,
+        "lapses": 0
+      },
+      {
+        "day": "2026-11-04",
+        "rating": 3,
+        "days": 3,
+        "due": "2026-11-07",
+        "stability": 2.63439245,
+        "difficulty": 6.39094132,
+        "state": 2,
+        "lapses": 0
+      },
+      {
+        "day": "2026-11-04",
+        "rating": 3,
+        "days": 4,
+        "due": "2026-11-08",
+        "stability": 2.63439245,
+        "difficulty": 6.37977875,
+        "state": 2,
+        "lapses": 0
+      },
+      {
+        "day": "2026-11-08",
+        "rating": 3,
+        "days": 10,
+        "due": "2026-11-18",
+        "stability": 10.04556861,
+        "difficulty": 6.36862734,
+        "state": 2,
+        "lapses": 0
+      }
+    ],
+    "viele_fehler": [
+      {
+        "day": "2026-11-02",
+        "rating": 1,
+        "days": 1,
+        "due": "2026-11-03",
+        "stability": 0.212,
+        "difficulty": 6.4133,
+        "state": 2,
+        "lapses": 0
+      },
+      {
+        "day": "2026-11-03",
+        "rating": 1,
+        "days": 1,
+        "due": "2026-11-04",
+        "stability": 0.10088579,
+        "difficulty": 8.80630447,
+        "state": 2,
+        "lapses": 1
+      },
+      {
+        "day": "2026-11-04",
+        "rating": 1,
+        "days": 1,
+        "due": "2026-11-05",
+        "stability": 0.05503453,
+        "difficulty": 9.59286876,
+        "state": 2,
+        "lapses": 2
+      },
+      {
+        "day": "2026-11-05",
+        "rating": 1,
+        "days": 1,
+        "due": "2026-11-06",
+        "stability": 0.03336919,
+        "difficulty": 9.85140709,
+        "state": 2,
+        "lapses": 3
+      },
+      {
+        "day": "2026-11-06",
+        "rating": 3,
+        "days": 2,
+        "due": "2026-11-08",
+        "stability": 0.20248908,
+        "difficulty": 9.83678405,
+        "state": 2,
+        "lapses": 3
+      },
+      {
+        "day": "2026-11-08",
+        "rating": 3,
+        "days": 2,
+        "due": "2026-11-10",
+        "stability": 0.75362577,
+        "difficulty": 9.82217564,
+        "state": 2,
+        "lapses": 3
+      }
+    ]
+  },
+  "python": {
+    "fsrs_version": "6.3.3",
+    "sequences": {
+      "immer_richtig": [
+        {
+          "stability": 2.3065,
+          "difficulty": 2.118103970459016,
+          "days": 2
+        },
+        {
+          "stability": 10.964332335820698,
+          "difficulty": 2.111214235785395,
+          "days": 11
+        },
+        {
+          "stability": 46.28021728755693,
+          "difficulty": 2.1043313908464483,
+          "days": 46
+        },
+        {
+          "stability": 162.86220163874916,
+          "difficulty": 2.0974554287524403,
+          "days": 163
+        },
+        {
+          "stability": 497.4471936002745,
+          "difficulty": 2.0905863426205262,
+          "days": 497
+        },
+        {
+          "stability": 1345.52877754259,
+          "difficulty": 2.083724125574744,
+          "days": 1346
+        }
+      ],
+      "wechselnd": [
+        {
+          "stability": 2.3065,
+          "difficulty": 2.118103970459016,
+          "days": 2
+        },
+        {
+          "stability": 0.6075801062519337,
+          "difficulty": 7.394502741279718,
+          "days": 1
+        },
+        {
+          "stability": 2.4004040500172708,
+          "difficulty": 7.382336607835277,
+          "days": 2
+        },
+        {
+          "stability": 0.6030038750082264,
+          "difficulty": 9.12482021240336,
+          "days": 1
+        },
+        {
+          "stability": 1.533990941375913,
+          "difficulty": 9.110923761487795,
+          "days": 2
+        },
+        {
+          "stability": 3.2809683330250135,
+          "difficulty": 9.097041207023144,
+          "days": 3
+        }
+      ],
+      "fehlstart": [
+        {
+          "stability": 0.212,
+          "difficulty": 6.4133,
+          "days": 1
+        },
+        {
+          "stability": 0.10088578982099844,
+          "difficulty": 8.806304468856837,
+          "days": 1
+        },
+        {
+          "stability": 0.6832068408085884,
+          "difficulty": 8.792726533684817,
+          "days": 1
+        },
+        {
+          "stability": 2.37309487216051,
+          "difficulty": 8.77916217644797,
+          "days": 2
+        },
+        {
+          "stability": 5.266871610747958,
+          "difficulty": 8.76561138356836,
+          "days": 5
+        }
+      ],
+      "verspaetet": [
+        {
+          "stability": 2.3065,
+          "difficulty": 2.118103970459016,
+          "days": 2
+        },
+        {
+          "stability": 21.41139197998198,
+          "difficulty": 2.111214235785395,
+          "days": 21
+        },
+        {
+          "stability": 115.8687495637691,
+          "difficulty": 2.1043313908464483,
+          "days": 116
+        },
+        {
+          "stability": 4.180369307588479,
+          "difficulty": 7.389975788014609,
+          "days": 4
+        },
+        {
+          "stability": 17.59197116867817,
+          "difficulty": 7.377814181523433,
+          "days": 18
+        }
+      ],
+      "gleicher_tag": [
+        {
+          "stability": 0.212,
+          "difficulty": 6.4133,
+          "days": 1
+        },
+        {
+          "stability": 0.24668918777567272,
+          "difficulty": 6.402115069296838,
+          "days": 1
+        },
+        {
+          "stability": 2.634392411534852,
+          "difficulty": 6.3909413235243795,
+          "days": 3
+        },
+        {
+          "stability": 2.634392411534852,
+          "difficulty": 6.379778751497693,
+          "days": 3
+        },
+        {
+          "stability": 10.045568338899448,
+          "difficulty": 6.368627342043034,
+          "days": 10
+        }
+      ],
+      "viele_fehler": [
+        {
+          "stability": 0.212,
+          "difficulty": 6.4133,
+          "days": 1
+        },
+        {
+          "stability": 0.10088578982099844,
+          "difficulty": 8.806304468856837,
+          "days": 1
+        },
+        {
+          "stability": 0.05503453011833104,
+          "difficulty": 9.592868765339693,
+          "days": 1
+        },
+        {
+          "stability": 0.033369187408475304,
+          "difficulty": 9.85140710095639,
+          "days": 1
+        },
+        {
+          "stability": 0.20248907297694096,
+          "difficulty": 9.83678406315227,
+          "days": 1
+        },
+        {
+          "stability": 0.7536257525194402,
+          "difficulty": 9.822175648385956,
+          "days": 1
+        }
+      ]
+    }
+  }
+}

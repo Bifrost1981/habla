@@ -1,0 +1,228 @@
+{
+  "approvals": [
+    {
+      "package": "WP-00",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Freigabe im Chat am 2026-11-14 erteilt, von Claude eingetragen",
+      "date": "2026-11-14T11:13:21+00:00",
+      "state_hash": "44cc5e9a5be087740827bfea966f09417b118e8f6e78688d8e1c52e9f870cba7"
+    },
+    {
+      "package": "WP-00",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Erneute Freigabe im Chat nach Reparatur der Umgebungsbindung, von Claude eingetragen",
+      "date": "2026-11-14T18:48:19+00:00",
+      "state_hash": "da87fa4a0cbcea9a9d17ee169ecb7c49fd3e791bcedf6e186313724a08a6f8f9"
+    },
+    {
+      "package": "WP-00",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Freigabe im Chat nach Reparatur Prüfbereich je Paket, von Claude eingetragen",
+      "date": "2026-11-14T18:56:49+00:00",
+      "package_hash": "d6e815386f64d5921784b0bd0bc4aa3b922532332e2f8df89d4cdc53ffc96658"
+    },
+    {
+      "package": "WP-00",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Im Chat am 2026-11-15 erteilt, von Claude eingetragen",
+      "date": "2026-11-15T10:55:29+00:00",
+      "package_hash": "a62573946152938c14f58a82a61456693160ad2815b4cec10d27622c800b4f05"
+    },
+    {
+      "package": "WP-15",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Im Chat am 2026-11-15 erteilt, von Claude eingetragen",
+      "date": "2026-11-15T10:55:35+00:00",
+      "package_hash": "049a2d8c05d18d8d00a5047d7d119f40fa2977851e52c3822549f52660c66625"
+    },
+    {
+      "package": "WP-01",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "",
+      "date": "2026-11-15T15:35:06+00:00",
+      "package_hash": "92248f0ecbfff513662a6173be9f42f542ef424b0afb2a97b14ff468f97b7f4b"
+    },
+    {
+      "package": "WP-01",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "",
+      "date": "2026-11-15T17:10:33+00:00",
+      "package_hash": "7015f6b03626342aeebacb0ebf5bdfdac23d2b9f2edab3233886cacfcaca79e5"
+    },
+    {
+      "package": "WP-06",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "",
+      "date": "2026-11-15T17:45:26+00:00",
+      "package_hash": "e587a758d08b21d6be94856fea92f9c356e0133d6b8772b0384604edbc860ee5"
+    },
+    {
+      "package": "WP-01",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "",
+      "date": "2026-11-15T17:47:20+00:00",
+      "package_hash": "f0b48dae147ad0105b0f2c84a2a2ff2d36980ad1ec53480c4da39ff6d6c6e410"
+    },
+    {
+      "package": "WP-06",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "",
+      "date": "2026-11-15T20:14:39+00:00",
+      "package_hash": "fbe364a7b504d088d0c2dbce6f40fff55a5f5f3b04add3f73613a4d4abda1647"
+    },
+    {
+      "package": "WP-01",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "",
+      "date": "2026-11-15T20:16:48+00:00",
+      "package_hash": "415660f112b9754ddda64f27b89d8d3e65e21ddfef973ba418394848ec40ffca"
+    },
+    {
+      "package": "WP-01",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Im Chat am 2026-11-17 erteilt („Ja, beide freigeben“), von Claude eingetragen",
+      "date": "2026-11-17T10:09:46+00:00",
+      "package_hash": "e737b4b53affe8064ecdf4a0fbcb8ef9acb089c8b5f25dffbb8b63b54c183df6"
+    },
+    {
+      "package": "WP-06",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Im Chat am 2026-11-17 erteilt („Ja, beide freigeben“), von Claude eingetragen",
+      "date": "2026-11-17T10:09:56+00:00",
+      "package_hash": "b1ffe887870657278b756c2d8fbc54e898c1e7c555954973e9e96317e9b75f83"
+    },
+    {
+      "package": "WP-03",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Lola sanft, ohne Atmen, 8 % langsamer: in der Hörprobe angehört (‚passt‘), Eintrag auf ausdrücklichen Wunsch durch Claude, 2026-11-19",
+      "date": "2026-11-19T11:19:46+00:00",
+      "package_hash": "fa5029309da82efe9363dba666f28252b98dbafe563a4c27483bf5cd84dda070"
+    },
+    {
+      "package": "WP-03",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Erneute Freigabe nach WP-08 (Liste der vorzulesenden Texte um die Geschichtensätze erweitert); auf ausdrücklichen Wunsch durch Claude eingetragen, 2026-11-23",
+      "date": "2026-11-23T08:12:58+00:00",
+      "package_hash": "0cf083ec4c5646568a1caed4461373dc9c6a12f6a153b4502379dd74a8afd83f"
+    },
+    {
+      "package": "WP-06",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Erneute Freigabe nach WP-08 (neue Datei src/content/stories.ts im Paketbereich); auf ausdrücklichen Wunsch durch Claude eingetragen, 2026-11-23",
+      "date": "2026-11-23T08:19:48+00:00",
+      "package_hash": "88f804ac7bec25300305fad8f4006f3b5bd9a6e108eff18bbbc3a738a4e2c835"
+    },
+    {
+      "package": "WP-08",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Hörgeschichten gelesen und angehört (Seite ‚Habla Hörgeschichten‘), Inhalt sprachlich korrekt; auf ausdrücklichen Wunsch durch Claude eingetragen, 2026-11-23",
+      "date": "2026-11-23T08:26:36+00:00",
+      "package_hash": "514cc92e72829bca4d6b1ce1e00fc768ed3a4d1884e7c14a0a5454a1d354d5f3"
+    },
+    {
+      "package": "WP-03",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Erneute Freigabe nach WP-09 (Liste der vorzulesenden Texte um die Rollenspielsätze erweitert); auf ausdrücklichen Wunsch durch Claude eingetragen, 2026-11-23",
+      "date": "2026-11-23T12:51:03+00:00",
+      "package_hash": "637064605eb46cd3e32953df14a8bc809e8a7c3f94e00a2a5e6617dfeb5c23a9"
+    },
+    {
+      "package": "WP-06",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Erneute Freigabe nach WP-09 (neue Datei src/content/roleplays.ts im Paketbereich); auf ausdrücklichen Wunsch durch Claude eingetragen, 2026-11-23",
+      "date": "2026-11-23T12:58:12+00:00",
+      "package_hash": "01ddd6e6d318fbbcc4ae31004966c3485fd852b06fa91682f8ca4ff397d2b0ef"
+    },
+    {
+      "package": "WP-08",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Erneute Freigabe nach WP-09 (Paketbereich jetzt eng, auf Wunsch); auf ausdrücklichen Wunsch durch Claude eingetragen, 2026-11-23",
+      "date": "2026-11-23T13:05:24+00:00",
+      "package_hash": "aa6965b650012725064ddd55b592d69251a83ccb4f51730be70635e7e868e0a2"
+    },
+    {
+      "package": "WP-09",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Rollenspiele ohne KI: technisch bestanden, Freigabe auf ausdrücklichen Wunsch (‚Jetzt freigeben‘) durch Claude eingetragen, 2026-11-24",
+      "date": "2026-11-24T06:37:39+00:00",
+      "package_hash": "5586b76283405791bc4f7e2606c8cd5ab8f5b1471ec60d3cd84960e0c6070699"
+    },
+    {
+      "package": "WP-06",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Erneute Freigabe nach WP-11 (neue Lektionen in src/content/more.json, neue Datei src/content/cando.ts); auf ausdrücklichen Wunsch durch Claude eingetragen, 2026-11-24",
+      "date": "2026-11-24T12:34:39+00:00",
+      "package_hash": "79206695b0150d16810051ccbba84110488d30c6b0cae51c1216cbff0468d9d0"
+    },
+    {
+      "package": "WP-08",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Erneute Freigabe nach WP-11 (Kann-Beschreibungen im Lernpfad, PathScreen.tsx); auf ausdrücklichen Wunsch durch Claude eingetragen, 2026-11-24",
+      "date": "2026-11-24T12:42:03+00:00",
+      "package_hash": "56b02c18653d6f53c809e56c0c37463a862278eca43bbe18472b52ca5ac0bca1"
+    },
+    {
+      "package": "WP-09",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Erneute Freigabe nach WP-11 (Paketbereich jetzt eng, auf Wunsch); auf ausdrücklichen Wunsch durch Claude eingetragen, 2026-11-24",
+      "date": "2026-11-24T12:49:23+00:00",
+      "package_hash": "b9e45f004ec6652837a40662fd96b09ce26d3e83124760d52ac1007ff17f502a"
+    },
+    {
+      "package": "WP-11",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Kleine häufige Wörter und Kann-Beschreibungen gegengelesen und angehört (Seite ‚Habla Kleine Wörter‘); auf ausdrücklichen Wunsch durch Claude eingetragen, 2026-11-24",
+      "date": "2026-11-24T12:52:25+00:00",
+      "package_hash": "7054fe10577162aca7a9e9eefb813332fd7c10fbbc632e7176cf020c2b95b525"
+    },
+    {
+      "package": "WP-03",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Erneute Freigabe nach WP-19 (vite.config.ts: relative Pfade und Offline-Liste; Schriftlizenzen in THIRD-PARTY-LICENSES.txt); auf ausdrücklichen Wunsch durch Claude eingetragen, 2026-11-24",
+      "date": "2026-11-24T16:18:44+00:00",
+      "package_hash": "27fc3c3f82a90597535bf05eef2a78473cac26e22b670ba9adaa2739e2cb7bb0"
+    },
+    {
+      "package": "WP-06",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Erneute Freigabe nach WP-20 (generate.ts: Wortbezug für Satzübungen ohne Lektionswort; Regelhinweise unverändert); auf ausdrücklichen Wunsch durch Claude eingetragen, 2026-11-24",
+      "date": "2026-11-24T18:44:46+00:00",
+      "package_hash": "ff2e9241a90164a365b55939b88e6664b4a2213a934db6d40cedf4dbf5806b41"
+    },
+    {
+      "package": "WP-00",
+      "role": "owner",
+      "by": "Projektverantwortlicher",
+      "note": "Erneute Freigabe nach WP-13-Vorbereitung (.github/workflows/pruefung.yml neu; Prüfskript unverändert); auf ausdrücklichen Wunsch durch Claude eingetragen, 2026-11-25",
+      "date": "2026-11-25T20:12:39+00:00",
+      "package_hash": "66dc132afaee627948a33bf93e2268fde95ecac99e642823f660c2b00d23f8f2"
+    }
+  ]
+}

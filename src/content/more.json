@@ -1,0 +1,751 @@
+{
+  "units": [
+    {
+      "id": "u1",
+      "lessons": [
+        {
+          "id": "u1l4",
+          "title": "Kleine Gespräche",
+          "words": [
+            ["comoestas", "¿cómo estás?", "wie geht es dir?", "💬", "¿Cómo estás, Marta?", "Wie geht es dir, Marta?"],
+            ["muy", "muy", "sehr", "💯", "Muy bien, gracias.", "Sehr gut, danke."],
+            ["ytu", "¿y tú?", "und du?", "👉", "Bien, ¿y tú?", "Gut, und dir?"],
+            ["tambien", "también", "auch", "🙌", "Yo también.", "Ich auch."],
+            ["denada", "de nada", "gern geschehen", "🌸", "De nada, amigo.", "Gern geschehen, mein Freund."],
+            ["perdon", "perdón", "Entschuldigung", "😅", "Perdón, ¿qué?", "Entschuldigung, wie bitte?"],
+            ["noentiendo", "no entiendo", "ich verstehe nicht", "🤷", "Perdón, no entiendo.", "Entschuldigung, ich verstehe nicht."],
+            ["claro", "claro", "klar", "👌", "¡Claro que sí!", "Aber klar!"]
+          ],
+          "sentences": [
+            ["Muy bien, ¿y tú?", "Sehr gut, und dir?", "Muy", ["Claro", "Perdón"]],
+            ["Perdón, no entiendo.", "Entschuldigung, ich verstehe nicht."],
+            ["¿Cómo estás?", "Wie geht es dir?"],
+            ["De nada, amigo.", "Gern geschehen, mein Freund.", "nada", ["también", "claro"]],
+            ["Yo también.", "Ich auch."]
+          ]
+        },
+        {
+          "id": "u1l5",
+          "title": "Kleine Wörter: Sie, gut, jetzt",
+          "words": [
+            ["usted", "usted", "Sie (höflich)", "🎩", "¿Y usted?", "Und Sie?"],
+            ["bueno", "bueno", "gut / na gut", "👍", "Bueno, adiós.", "Na gut, tschüss."],
+            ["ahora", "ahora", "jetzt", "⏱️", "Ahora estoy bien.", "Jetzt geht es mir gut."],
+            ["o", "o", "oder", "🔀", "¿Sí o no?", "Ja oder nein?"],
+            ["senora", "señora", "Frau (Anrede)", "👩", "Buenos días, señora.", "Guten Tag, meine Dame."],
+            ["verdad", "¿verdad?", "oder? / nicht wahr?", "🤔", "Eres de Madrid, ¿verdad?", "Du kommst aus Madrid, oder?"]
+          ],
+          "sentences": [
+            ["¿Y usted, señora?", "Und Sie, meine Dame?", "usted", ["ahora", "bueno"]],
+            ["Bueno, hasta luego.", "Na gut, bis später."],
+            ["Ahora estoy muy bien.", "Jetzt geht es mir sehr gut.", "Ahora", ["Bueno", "Usted"]],
+            ["Eres de Berlín, ¿verdad?", "Du kommst aus Berlin, oder?"],
+            ["¿Sí o no?", "Ja oder nein?", "o", ["y", "de"]]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "lessons": [
+        {
+          "id": "u2l4",
+          "title": "Im Restaurant",
+          "words": [
+            ["menu", "el menú", "die Speisekarte", "📜", "El menú, por favor.", "Die Speisekarte, bitte."],
+            ["ensalada", "la ensalada", "der Salat", "🥗", "Una ensalada verde.", "Ein grüner Salat."],
+            ["sopa", "la sopa", "die Suppe", "🍲", "La sopa está caliente.", "Die Suppe ist heiß."],
+            ["pescado", "el pescado", "der Fisch", "🐟", "El pescado es fresco.", "Der Fisch ist frisch."],
+            ["carne", "la carne", "das Fleisch", "🥩", "No como carne.", "Ich esse kein Fleisch."],
+            ["vino", "el vino", "der Wein", "🍷", "Un vino tinto, por favor.", "Einen Rotwein, bitte."],
+            ["cerveza", "la cerveza", "das Bier", "🍺", "Una cerveza fría.", "Ein kaltes Bier."],
+            ["rico", "rico", "lecker", "😋", "¡Qué rico!", "Wie lecker!"]
+          ],
+          "sentences": [
+            ["Una cerveza, por favor.", "Ein Bier, bitte.", "cerveza", ["sopa", "carne"]],
+            ["Para mí, la ensalada.", "Für mich den Salat."],
+            ["El pescado está muy rico.", "Der Fisch ist sehr lecker."],
+            ["La sopa está muy rica.", "Die Suppe ist sehr lecker.", "sopa", ["cerveza", "ensalada"]],
+            ["No como carne.", "Ich esse kein Fleisch."]
+          ]
+        },
+        {
+          "id": "u2l5",
+          "title": "Kleine Wörter: noch einer, lieber, immer",
+          "words": [
+            ["otro", "otro", "noch ein / ein anderer", "➕", "Otro café, por favor.", "Noch einen Kaffee, bitte."],
+            ["mejor", "mejor", "besser / lieber", "⭐", "Mejor un té.", "Lieber einen Tee."],
+            ["vale", "vale", "okay", "🆗", "Vale, gracias.", "Okay, danke."],
+            ["solo", "solo", "pur / nur", "☕", "Un café solo, por favor.", "Einen Espresso, bitte."],
+            ["siempre", "siempre", "immer", "🔁", "Siempre quiero café.", "Ich möchte immer Kaffee."],
+            ["nunca", "nunca", "nie", "🚫", "Nunca como carne.", "Ich esse nie Fleisch."]
+          ],
+          "sentences": [
+            ["Otro café con leche, por favor.", "Noch einen Milchkaffee, bitte.", "Otro", ["Mejor", "Siempre"]],
+            ["Mejor un té sin azúcar.", "Lieber einen Tee ohne Zucker."],
+            ["Vale, la cuenta, por favor.", "Okay, die Rechnung, bitte.", "Vale", ["Nunca", "Otro"]],
+            ["Siempre quiero un café solo.", "Ich möchte immer einen Espresso."],
+            ["Nunca como pescado.", "Ich esse nie Fisch.", "Nunca", ["Siempre", "Mejor"]]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": "Zahlen, Zeit & Tage",
+      "subtitle": "Zählen, die Uhrzeit sagen und Wochentage",
+      "emoji": "🕒",
+      "lessons": [
+        {
+          "id": "u3l1",
+          "title": "Zahlen 1–5",
+          "words": [
+            ["uno", "uno", "eins", "1️⃣", "Solo uno, gracias.", "Nur eins, danke."],
+            ["dos", "dos", "zwei", "2️⃣", "Dos cafés, por favor.", "Zwei Kaffee, bitte."],
+            ["tres", "tres", "drei", "3️⃣", "Tengo tres hermanos.", "Ich habe drei Geschwister."],
+            ["cuatro", "cuatro", "vier", "4️⃣", "Somos cuatro.", "Wir sind zu viert."],
+            ["cinco", "cinco", "fünf", "5️⃣", "Son las cinco.", "Es ist fünf Uhr."],
+            ["tengo", "tengo", "ich habe", "✋", "Tengo un perro.", "Ich habe einen Hund."],
+            ["cuantos", "¿cuántos?", "wie viele?", "❓", "¿Cuántos años tienes?", "Wie alt bist du?"]
+          ],
+          "sentences": [
+            ["Tengo dos hermanos.", "Ich habe zwei Geschwister.", "dos", ["tres", "cinco"]],
+            ["Uno, dos, tres.", "Eins, zwei, drei."],
+            ["Somos cuatro.", "Wir sind zu viert."],
+            ["Tengo cinco euros.", "Ich habe fünf Euro.", "cinco", ["cuatro", "uno"]],
+            ["¿Cuántos años tienes?", "Wie alt bist du?"]
+          ]
+        },
+        {
+          "id": "u3l2",
+          "title": "Zahlen 6–10",
+          "words": [
+            ["seis", "seis", "sechs", "6️⃣", "Mi hijo tiene seis años.", "Mein Sohn ist sechs Jahre alt."],
+            ["siete", "siete", "sieben", "7️⃣", "La semana tiene siete días.", "Die Woche hat sieben Tage."],
+            ["ocho", "ocho", "acht", "8️⃣", "Trabajo ocho horas.", "Ich arbeite acht Stunden."],
+            ["nueve", "nueve", "neun", "9️⃣", "Son las nueve.", "Es ist neun Uhr."],
+            ["diez", "diez", "zehn", "🔟", "Cuesta diez euros.", "Es kostet zehn Euro."],
+            ["euro", "el euro", "der Euro", "💶", "Son tres euros.", "Das macht drei Euro."],
+            ["ano", "el año", "das Jahr", "🎂", "Tengo treinta años.", "Ich bin dreißig Jahre alt."]
+          ],
+          "sentences": [
+            ["Cuesta diez euros.", "Es kostet zehn Euro.", "diez", ["seis", "ocho"]],
+            ["Tengo siete años.", "Ich bin sieben Jahre alt."],
+            ["Son ocho euros.", "Das macht acht Euro."],
+            ["Son las nueve.", "Es ist neun Uhr.", "nueve", ["siete", "seis"]],
+            ["Mi hijo tiene seis años.", "Mein Sohn ist sechs Jahre alt."]
+          ]
+        },
+        {
+          "id": "u3l3",
+          "title": "Wie spät ist es?",
+          "words": [
+            ["hora", "la hora", "die Uhrzeit", "🕐", "¿Tienes hora?", "Hast du die Uhrzeit?"],
+            ["quehora", "¿qué hora es?", "wie spät ist es?", "⌚", "Perdón, ¿qué hora es?", "Entschuldigung, wie spät ist es?"],
+            ["ymedia", "y media", "halb (… Uhr dreißig)", "🕧", "Son las dos y media.", "Es ist halb drei."],
+            ["ycuarto", "y cuarto", "Viertel nach", "🕒", "Son las tres y cuarto.", "Es ist Viertel nach drei."],
+            ["manana", "la mañana", "der Morgen, Vormittag", "🌄", "Trabajo por la mañana.", "Ich arbeite vormittags."],
+            ["tarde", "la tarde", "der Nachmittag", "🌇", "Buenas tardes.", "Guten Tag! (nachmittags)"],
+            ["noche", "la noche", "die Nacht, der Abend", "🌃", "Llego por la noche.", "Ich komme abends an."]
+          ],
+          "sentences": [
+            ["Son las tres y media.", "Es ist halb vier.", "media", ["cuarto", "hora"]],
+            ["¿Qué hora es?", "Wie spät ist es?"],
+            ["Es la una y cuarto.", "Es ist Viertel nach eins."],
+            ["Trabajo por la mañana.", "Ich arbeite vormittags.", "mañana", ["noche", "tarde"]],
+            ["Buenas tardes.", "Guten Tag."]
+          ]
+        },
+        {
+          "id": "u3l4",
+          "title": "Wochentage",
+          "words": [
+            ["lunes", "el lunes", "der Montag", "😴", "El lunes trabajo.", "Am Montag arbeite ich."],
+            ["martes", "el martes", "der Dienstag", "💼", "El martes tengo clase.", "Am Dienstag habe ich Unterricht."],
+            ["miercoles", "el miércoles", "der Mittwoch", "🐪", "El miércoles voy al gimnasio.", "Am Mittwoch gehe ich ins Fitnessstudio."],
+            ["jueves", "el jueves", "der Donnerstag", "🎾", "El jueves juego al tenis.", "Am Donnerstag spiele ich Tennis."],
+            ["viernes", "el viernes", "der Freitag", "🎉", "¡Por fin es viernes!", "Endlich ist Freitag!"],
+            ["sabado", "el sábado", "der Samstag", "🛍️", "El sábado voy de compras.", "Am Samstag gehe ich einkaufen."],
+            ["domingo", "el domingo", "der Sonntag", "☀️", "El domingo descanso.", "Am Sonntag ruhe ich mich aus."],
+            ["hoy", "hoy", "heute", "📅", "Hoy es lunes.", "Heute ist Montag."]
+          ],
+          "sentences": [
+            ["Hoy es viernes.", "Heute ist Freitag.", "viernes", ["lunes", "domingo"]],
+            ["El sábado no trabajo.", "Am Samstag arbeite ich nicht."],
+            ["¿Qué día es hoy?", "Welcher Tag ist heute?"],
+            ["El domingo descanso.", "Am Sonntag ruhe ich mich aus.", "domingo", ["martes", "jueves"]],
+            ["Hasta el lunes.", "Bis Montag."]
+          ]
+        },
+        {
+          "id": "u3l5",
+          "title": "Kleine Wörter: Zeit, Mal, wenn",
+          "words": [
+            ["tiempo", "el tiempo", "die Zeit", "⏳", "Hoy no tengo tiempo.", "Heute habe ich keine Zeit."],
+            ["vez", "la vez", "das Mal", "1️⃣", "Una vez por semana.", "Einmal pro Woche."],
+            ["veces", "las veces", "die Male", "🔂", "Dos veces por semana.", "Zweimal pro Woche."],
+            ["antes", "antes", "vorher / vor", "⏮️", "Antes de clase voy al gimnasio.", "Vor dem Unterricht gehe ich ins Fitnessstudio."],
+            ["cuando", "cuando", "wenn / als", "🕰️", "Cuando tengo tiempo, juego al tenis.", "Wenn ich Zeit habe, spiele ich Tennis."],
+            ["porque", "porque", "weil", "💡", "Hoy descanso porque estoy mal.", "Heute ruhe ich mich aus, weil es mir schlecht geht."]
+          ],
+          "sentences": [
+            ["Hoy no tengo tiempo.", "Heute habe ich keine Zeit.", "tiempo", ["vez", "semana"]],
+            ["Juego al tenis dos veces por semana.", "Ich spiele zweimal pro Woche Tennis."],
+            ["Cuando tengo tiempo, voy al gimnasio.", "Wenn ich Zeit habe, gehe ich ins Fitnessstudio.", "Cuando", ["Porque", "Antes"]],
+            ["Descanso porque estoy mal.", "Ich ruhe mich aus, weil es mir schlecht geht."],
+            ["Antes de clase trabajo.", "Vor dem Unterricht arbeite ich.", "Antes", ["Cuando", "Porque"]]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": "Familie & Menschen",
+      "subtitle": "Familie, Aussehen, Charakter und Berufe",
+      "emoji": "👨‍👩‍👧",
+      "lessons": [
+        {
+          "id": "u4l1",
+          "title": "Meine Familie",
+          "words": [
+            ["familia", "la familia", "die Familie", "👨‍👩‍👧", "Mi familia es grande.", "Meine Familie ist groß."],
+            ["madre", "la madre", "die Mutter", "👩", "Mi madre se llama Carmen.", "Meine Mutter heißt Carmen."],
+            ["padre", "el padre", "der Vater", "👨", "Mi padre es de Sevilla.", "Mein Vater ist aus Sevilla."],
+            ["hermano", "el hermano", "der Bruder", "👦", "Mi hermano es alto.", "Mein Bruder ist groß."],
+            ["hermana", "la hermana", "die Schwester", "👧", "Tengo una hermana.", "Ich habe eine Schwester."],
+            ["hijo", "el hijo", "der Sohn", "🧒", "Es mi hijo Pablo.", "Das ist mein Sohn Pablo."],
+            ["hija", "la hija", "die Tochter", "👶", "Mi hija tiene dos años.", "Meine Tochter ist zwei Jahre alt."],
+            ["mi", "mi", "mein / meine", "👆", "Es mi casa.", "Das ist mein Haus."]
+          ],
+          "sentences": [
+            ["Mi madre se llama Carmen.", "Meine Mutter heißt Carmen.", "madre", ["padre", "hija"]],
+            ["Tengo una hermana.", "Ich habe eine Schwester."],
+            ["Mi familia es grande.", "Meine Familie ist groß."],
+            ["Mi padre es de Sevilla.", "Mein Vater ist aus Sevilla.", "padre", ["hermano", "hijo"]],
+            ["Es mi hijo Pablo.", "Das ist mein Sohn Pablo."]
+          ]
+        },
+        {
+          "id": "u4l2",
+          "title": "Großeltern, Onkel & Co.",
+          "words": [
+            ["abuelo", "el abuelo", "der Großvater", "👴", "Mi abuelo tiene ochenta años.", "Mein Großvater ist achtzig Jahre alt."],
+            ["abuela", "la abuela", "die Großmutter", "👵", "Mi abuela vive en Madrid.", "Meine Großmutter wohnt in Madrid."],
+            ["esposo", "el esposo", "der Ehemann", "🤵", "Mi esposo es alemán.", "Mein Mann ist Deutscher."],
+            ["esposa", "la esposa", "die Ehefrau", "👰", "Su esposa es muy simpática.", "Seine Frau ist sehr nett."],
+            ["tio", "el tío", "der Onkel", "🧔", "Mi tío vive en México.", "Mein Onkel wohnt in Mexiko."],
+            ["tia", "la tía", "die Tante", "👩‍🦰", "Mi tía es profesora.", "Meine Tante ist Lehrerin."],
+            ["primo", "el primo", "der Cousin", "🧑‍🦱", "Tengo dos primos.", "Ich habe zwei Cousins."],
+            ["vive", "vive", "er/sie wohnt", "🏡", "Mi hermana vive en Berlín.", "Meine Schwester wohnt in Berlin."]
+          ],
+          "sentences": [
+            ["Mi abuela vive en Madrid.", "Meine Großmutter wohnt in Madrid.", "abuela", ["tía", "esposa"]],
+            ["Mi esposo es alemán.", "Mein Mann ist Deutscher."],
+            ["Tengo dos primos.", "Ich habe zwei Cousins."],
+            ["Mi tío vive en México.", "Mein Onkel wohnt in Mexiko.", "tío", ["abuelo", "primo"]],
+            ["Mi tía es muy simpática.", "Meine Tante ist sehr nett."]
+          ]
+        },
+        {
+          "id": "u4l3",
+          "title": "Wie ist er? Wie ist sie?",
+          "words": [
+            ["alto", "alto", "groß (Person)", "🦒", "Mi hermano es alto.", "Mein Bruder ist groß."],
+            ["bajo", "bajo", "klein (Person)", "🐭", "Él es bajo.", "Er ist klein."],
+            ["joven", "joven", "jung", "🧑", "Mi profesora es joven.", "Meine Lehrerin ist jung."],
+            ["mayor", "mayor", "älter, alt", "🧓", "Mi abuelo ya es mayor.", "Mein Großvater ist schon älter."],
+            ["simpatico", "simpático", "nett", "😊", "Pedro es muy simpático.", "Pedro ist sehr nett."],
+            ["guapo", "guapo", "hübsch, gutaussehend", "😍", "¡Qué guapo!", "Wie hübsch!"],
+            ["pelo", "el pelo", "die Haare", "💇", "Tiene el pelo largo.", "Sie hat lange Haare."],
+            ["es", "es", "er/sie ist", "👤", "Ella es muy alta.", "Sie ist sehr groß."]
+          ],
+          "sentences": [
+            ["Mi hermano es alto.", "Mein Bruder ist groß.", "alto", ["bajo", "joven"]],
+            ["Ella es joven y guapa.", "Sie ist jung und hübsch."],
+            ["Pedro es muy simpático.", "Pedro ist sehr nett."],
+            ["Mi abuelo es mayor.", "Mein Großvater ist alt.", "mayor", ["joven", "alto"]],
+            ["Tiene el pelo largo.", "Sie hat lange Haare."]
+          ]
+        },
+        {
+          "id": "u4l4",
+          "title": "Berufe",
+          "words": [
+            ["trabajo", "trabajo", "ich arbeite", "💼", "Trabajo en Berlín.", "Ich arbeite in Berlin."],
+            ["oficina", "la oficina", "das Büro", "🏢", "Trabajo en una oficina.", "Ich arbeite in einem Büro."],
+            ["medico", "el médico", "der Arzt", "🩺", "Mi hermano es médico.", "Mein Bruder ist Arzt."],
+            ["profesora", "la profesora", "die Lehrerin", "👩‍🏫", "Soy profesora.", "Ich bin Lehrerin."],
+            ["estudiante", "el estudiante", "der Student", "🎓", "Soy estudiante.", "Ich bin Student."],
+            ["cocinero", "el cocinero", "der Koch", "👨‍🍳", "Mi padre es cocinero.", "Mein Vater ist Koch."],
+            ["dedicas", "¿a qué te dedicas?", "was machst du beruflich?", "🤔", "Y tú, ¿a qué te dedicas?", "Und du, was machst du beruflich?"]
+          ],
+          "sentences": [
+            ["Soy profesora.", "Ich bin Lehrerin.", "profesora", ["médico", "cocinero"]],
+            ["Trabajo en una oficina.", "Ich arbeite in einem Büro."],
+            ["¿A qué te dedicas?", "Was machst du beruflich?"],
+            ["Mi hermano es médico.", "Mein Bruder ist Arzt.", "médico", ["estudiante", "cocinero"]],
+            ["Soy estudiante.", "Ich bin Student."]
+          ]
+        },
+        {
+          "id": "u4l5",
+          "title": "Kleine Wörter: wir, sie, unser",
+          "words": [
+            ["nosotros", "nosotros", "wir", "🧑‍🤝‍🧑", "Nosotros también.", "Wir auch."],
+            ["ellos", "ellos", "sie (Plural)", "👥", "Ellos son mis hermanos.", "Das sind meine Geschwister."],
+            ["mis", "mis", "meine (Plural)", "🫶", "Son mis primos.", "Das sind meine Cousins."],
+            ["sus", "sus", "seine / ihre (Plural)", "👨‍👧‍👦", "Pedro y sus hermanos.", "Pedro und seine Geschwister."],
+            ["nuestra", "nuestra", "unsere", "🏡", "Es nuestra casa.", "Das ist unser Haus."],
+            ["gente", "la gente", "die Leute", "👪", "La gente es muy simpática.", "Die Leute sind sehr nett."]
+          ],
+          "sentences": [
+            ["Ellos son mis hermanos.", "Das sind meine Geschwister.", "mis", ["sus", "nuestra"]],
+            ["Nosotros también somos de Madrid.", "Wir kommen auch aus Madrid."],
+            ["Es nuestra casa.", "Das ist unser Haus.", "nuestra", ["mis", "sus"]],
+            ["Pedro vive con sus hermanos.", "Pedro wohnt bei seinen Geschwistern."],
+            ["La gente es muy simpática.", "Die Leute sind sehr nett.", "gente", ["casa", "familia"]]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "title": "Unterwegs",
+      "subtitle": "Nach dem Weg fragen, Richtungen und Verkehrsmittel",
+      "emoji": "🧭",
+      "lessons": [
+        {
+          "id": "u5l1",
+          "title": "Wo ist …?",
+          "words": [
+            ["dondeesta", "¿dónde está?", "wo ist?", "📍", "¿Dónde está el hotel?", "Wo ist das Hotel?"],
+            ["calle", "la calle", "die Straße", "🛣️", "Vivo en esta calle.", "Ich wohne in dieser Straße."],
+            ["estacion", "la estación", "der Bahnhof", "🚉", "La estación está cerca.", "Der Bahnhof ist in der Nähe."],
+            ["museo", "el museo", "das Museum", "🏛️", "El museo abre a las diez.", "Das Museum öffnet um zehn."],
+            ["bano", "el baño", "die Toilette", "🚻", "¿Dónde está el baño?", "Wo ist die Toilette?"],
+            ["hotel", "el hotel", "das Hotel", "🏨", "El hotel es muy bonito.", "Das Hotel ist sehr schön."],
+            ["cerca", "cerca", "in der Nähe", "📌", "Está muy cerca.", "Es ist ganz nah."],
+            ["lejos", "lejos", "weit weg", "🔭", "¿Está lejos?", "Ist es weit?"]
+          ],
+          "sentences": [
+            ["¿Dónde está la estación?", "Wo ist der Bahnhof?", "estación", ["calle", "museo"]],
+            ["El museo está cerca.", "Das Museum ist in der Nähe."],
+            ["¿Dónde está el baño?", "Wo ist die Toilette?"],
+            ["El hotel está lejos.", "Das Hotel ist weit weg.", "lejos", ["cerca", "calle"]],
+            ["Busco la calle Mayor.", "Ich suche die Calle Mayor."]
+          ]
+        },
+        {
+          "id": "u5l2",
+          "title": "Rechts, links, geradeaus",
+          "words": [
+            ["derecha", "a la derecha", "rechts", "➡️", "Gire a la derecha.", "Biegen Sie rechts ab."],
+            ["izquierda", "a la izquierda", "links", "⬅️", "Está a la izquierda.", "Es ist links."],
+            ["recto", "todo recto", "geradeaus", "⬆️", "Siga todo recto.", "Gehen Sie geradeaus."],
+            ["esquina", "la esquina", "die Ecke", "📐", "Está en la esquina.", "Es ist an der Ecke."],
+            ["aqui", "aquí", "hier", "👇", "Estoy aquí.", "Ich bin hier."],
+            ["alli", "allí", "dort", "👉", "El banco está allí.", "Die Bank ist dort."],
+            ["disculpe", "disculpe", "Entschuldigung (Sie)", "🙇", "Disculpe, ¿dónde está el metro?", "Entschuldigung, wo ist die U-Bahn?"]
+          ],
+          "sentences": [
+            ["Gire a la derecha.", "Biegen Sie rechts ab.", "derecha", ["izquierda", "esquina"]],
+            ["Siga todo recto.", "Gehen Sie geradeaus."],
+            ["Disculpe, ¿dónde está el metro?", "Entschuldigung, wo ist die U-Bahn?"],
+            ["Está a la izquierda.", "Es ist links.", "izquierda", ["derecha", "esquina"]],
+            ["Está en la esquina.", "Es ist an der Ecke."]
+          ]
+        },
+        {
+          "id": "u5l3",
+          "title": "Bus, Bahn & Co.",
+          "words": [
+            ["autobus", "el autobús", "der Bus", "🚌", "Voy en autobús.", "Ich fahre mit dem Bus."],
+            ["metro", "el metro", "die U-Bahn", "🚇", "El metro es rápido.", "Die U-Bahn ist schnell."],
+            ["tren", "el tren", "der Zug", "🚆", "El tren sale a las ocho.", "Der Zug fährt um acht ab."],
+            ["taxi", "el taxi", "das Taxi", "🚕", "Tomo un taxi.", "Ich nehme ein Taxi."],
+            ["avion", "el avión", "das Flugzeug", "✈️", "El avión llega tarde.", "Das Flugzeug kommt spät an."],
+            ["bicicleta", "la bicicleta", "das Fahrrad", "🚲", "Voy en bicicleta.", "Ich fahre mit dem Fahrrad."],
+            ["apie", "a pie", "zu Fuß", "🚶", "Vamos a pie.", "Wir gehen zu Fuß."],
+            ["aeropuerto", "el aeropuerto", "der Flughafen", "🛫", "¿Dónde está el aeropuerto?", "Wo ist der Flughafen?"]
+          ],
+          "sentences": [
+            ["Voy en autobús.", "Ich fahre mit dem Bus.", "autobús", ["tren", "taxi"]],
+            ["Un taxi al aeropuerto, por favor.", "Ein Taxi zum Flughafen, bitte."],
+            ["Vamos a pie.", "Wir gehen zu Fuß."],
+            ["El tren sale a las ocho.", "Der Zug fährt um acht ab.", "tren", ["metro", "avión"]],
+            ["Voy en bicicleta.", "Ich fahre mit dem Fahrrad."]
+          ]
+        },
+        {
+          "id": "u5l4",
+          "title": "In der Stadt",
+          "words": [
+            ["plaza", "la plaza", "der Platz", "⛲", "La plaza es muy bonita.", "Der Platz ist sehr schön."],
+            ["banco", "el banco", "die Bank", "🏦", "El banco está cerrado.", "Die Bank ist geschlossen."],
+            ["farmacia", "la farmacia", "die Apotheke", "💊", "¿Hay una farmacia cerca?", "Gibt es eine Apotheke in der Nähe?"],
+            ["supermercado", "el supermercado", "der Supermarkt", "🛒", "Voy al supermercado.", "Ich gehe in den Supermarkt."],
+            ["restaurante", "el restaurante", "das Restaurant", "🍽️", "Busco un restaurante.", "Ich suche ein Restaurant."],
+            ["parque", "el parque", "der Park", "🌳", "Vamos al parque.", "Wir gehen in den Park."],
+            ["hay", "hay", "es gibt", "✨", "Aquí hay un parque.", "Hier gibt es einen Park."]
+          ],
+          "sentences": [
+            ["¿Hay una farmacia cerca?", "Gibt es eine Apotheke in der Nähe?", "farmacia", ["plaza", "banco"]],
+            ["El banco está en la plaza.", "Die Bank ist am Platz."],
+            ["Busco un restaurante.", "Ich suche ein Restaurant."],
+            ["Vamos al parque.", "Wir gehen in den Park.", "parque", ["banco", "restaurante"]],
+            ["El supermercado está abierto.", "Der Supermarkt ist geöffnet."]
+          ]
+        },
+        {
+          "id": "u5l5",
+          "title": "Kleine Wörter: gehen, dort, Ort",
+          "words": [
+            ["ir", "ir", "gehen / fahren", "🚶", "Quiero ir a la plaza.", "Ich möchte zum Platz gehen."],
+            ["ahi", "ahí", "da / dort", "📍", "El banco está ahí.", "Die Bank ist dort."],
+            ["lugar", "el lugar", "der Ort", "🗺️", "Es un lugar muy bonito.", "Das ist ein sehr schöner Ort."],
+            ["otra", "otra", "eine andere / noch eine", "🔄", "Es otra calle.", "Das ist eine andere Straße."],
+            ["nuevo", "nuevo", "neu", "✨", "El hotel es nuevo.", "Das Hotel ist neu."],
+            ["donde", "donde", "wo (im Satz)", "🎯", "La plaza donde está el museo.", "Der Platz, wo das Museum ist."]
+          ],
+          "sentences": [
+            ["Quiero ir a la estación.", "Ich möchte zum Bahnhof.", "ir", ["ahí", "lugar"]],
+            ["El museo está ahí, a la derecha.", "Das Museum ist dort, rechts."],
+            ["Es un lugar muy bonito.", "Das ist ein sehr schöner Ort.", "lugar", ["hotel", "museo"]],
+            ["El hotel donde vivo es nuevo.", "Das Hotel, in dem ich wohne, ist neu."],
+            ["Es otra calle.", "Das ist eine andere Straße.", "otra", ["nuevo", "ahí"]]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "title": "Einkaufen",
+      "subtitle": "Markt, Preise, Kleidung und Farben",
+      "emoji": "🛍️",
+      "lessons": [
+        {
+          "id": "u6l1",
+          "title": "Auf dem Markt",
+          "words": [
+            ["fruta", "la fruta", "das Obst", "🧺", "La fruta es muy fresca.", "Das Obst ist sehr frisch."],
+            ["manzana", "la manzana", "der Apfel", "🍎", "Quiero dos manzanas.", "Ich möchte zwei Äpfel."],
+            ["platano", "el plátano", "die Banane", "🍌", "¿Tiene plátanos?", "Haben Sie Bananen?"],
+            ["tomate", "el tomate", "die Tomate", "🍅", "Un kilo de tomates.", "Ein Kilo Tomaten."],
+            ["naranja", "la naranja", "die Orange", "🍊", "Las naranjas son de Valencia.", "Die Orangen sind aus Valencia."],
+            ["kilo", "el kilo", "das Kilo", "⚖️", "Un kilo, por favor.", "Ein Kilo, bitte."],
+            ["medio", "medio", "halb", "🌓", "Medio kilo de naranjas.", "Ein halbes Kilo Orangen."],
+            ["tiene", "¿tiene…?", "haben Sie …?", "🙋‍♂️", "¿Tiene fresas?", "Haben Sie Erdbeeren?"]
+          ],
+          "sentences": [
+            ["Un kilo de tomates, por favor.", "Ein Kilo Tomaten, bitte.", "kilo", ["medio", "tomate"]],
+            ["Quiero dos manzanas.", "Ich möchte zwei Äpfel."],
+            ["¿Tiene plátanos?", "Haben Sie Bananen?"],
+            ["Medio kilo de naranjas.", "Ein halbes Kilo Orangen.", "Medio", ["Un", "Dos"]],
+            ["La fruta es muy fresca.", "Das Obst ist sehr frisch."]
+          ]
+        },
+        {
+          "id": "u6l2",
+          "title": "Was kostet das?",
+          "words": [
+            ["caro", "caro", "teuer", "💸", "Es muy caro.", "Das ist sehr teuer."],
+            ["barato", "barato", "billig", "🏷️", "Este es más barato.", "Dieser ist billiger."],
+            ["precio", "el precio", "der Preis", "💲", "¿Cuál es el precio?", "Was ist der Preis?"],
+            ["pagar", "pagar", "bezahlen", "💰", "Quiero pagar, por favor.", "Ich möchte bitte bezahlen."],
+            ["tarjeta", "la tarjeta", "die Karte", "💳", "¿Puedo pagar con tarjeta?", "Kann ich mit Karte bezahlen?"],
+            ["efectivo", "en efectivo", "bar", "💵", "Pago en efectivo.", "Ich zahle bar."],
+            ["puedo", "¿puedo…?", "kann ich …?", "🤞", "¿Puedo ver?", "Darf ich mal sehen?"],
+            ["cuesta", "cuesta", "es kostet", "🪙", "Cuesta cinco euros.", "Es kostet fünf Euro."]
+          ],
+          "sentences": [
+            ["Es muy caro.", "Das ist sehr teuer.", "caro", ["barato", "precio"]],
+            ["¿Puedo pagar con tarjeta?", "Kann ich mit Karte bezahlen?"],
+            ["Pago en efectivo.", "Ich zahle bar."],
+            ["Este es más barato.", "Dieser ist billiger.", "barato", ["caro", "precio"]],
+            ["¿Cuál es el precio?", "Was ist der Preis?"]
+          ]
+        },
+        {
+          "id": "u6l3",
+          "title": "Kleidung",
+          "words": [
+            ["camiseta", "la camiseta", "das T-Shirt", "👕", "Una camiseta blanca.", "Ein weißes T-Shirt."],
+            ["pantalones", "los pantalones", "die Hose", "👖", "Los pantalones son largos.", "Die Hose ist lang."],
+            ["vestido", "el vestido", "das Kleid", "👗", "Me gusta el vestido.", "Mir gefällt das Kleid."],
+            ["zapatos", "los zapatos", "die Schuhe", "👟", "Los zapatos son bonitos.", "Die Schuhe sind schön."],
+            ["chaqueta", "la chaqueta", "die Jacke", "🧥", "Busco una chaqueta.", "Ich suche eine Jacke."],
+            ["talla", "la talla", "die Größe (Kleidung)", "📏", "¿Qué talla tiene?", "Welche Größe haben Sie?"],
+            ["probador", "el probador", "die Umkleidekabine", "🪞", "¿Dónde está el probador?", "Wo ist die Umkleidekabine?"],
+            ["bonito", "bonito", "schön", "🌺", "¡Qué bonito!", "Wie schön!"]
+          ],
+          "sentences": [
+            ["Busco una chaqueta.", "Ich suche eine Jacke.", "chaqueta", ["talla", "camiseta"]],
+            ["¿Qué talla tiene?", "Welche Größe haben Sie?"],
+            ["Los zapatos son bonitos.", "Die Schuhe sind schön."],
+            ["Me gusta el vestido.", "Mir gefällt das Kleid.", "vestido", ["probador", "precio"]],
+            ["¿Dónde está el probador?", "Wo ist die Umkleidekabine?"]
+          ]
+        },
+        {
+          "id": "u6l4",
+          "title": "Farben",
+          "words": [
+            ["rojo", "rojo", "rot", "🔴", "Un vestido rojo.", "Ein rotes Kleid."],
+            ["azul", "azul", "blau", "🔵", "El mar es azul.", "Das Meer ist blau."],
+            ["verde", "verde", "grün", "🟢", "Una ensalada verde.", "Ein grüner Salat."],
+            ["amarillo", "amarillo", "gelb", "🟡", "El plátano es amarillo.", "Die Banane ist gelb."],
+            ["negro", "negro", "schwarz", "⚫", "Un café negro.", "Ein schwarzer Kaffee."],
+            ["blanco", "blanco", "weiß", "⚪", "El vino blanco.", "Der Weißwein."],
+            ["color", "el color", "die Farbe", "🎨", "¿De qué color es?", "Welche Farbe hat es?"],
+            ["megusta", "me gusta", "mir gefällt", "❤️", "Me gusta mucho.", "Das gefällt mir sehr."]
+          ],
+          "sentences": [
+            ["Me gusta el color azul.", "Mir gefällt die Farbe Blau.", "azul", ["rojo", "verde"]],
+            ["La camiseta es blanca.", "Das T-Shirt ist weiß."],
+            ["¿De qué color es?", "Welche Farbe hat es?"],
+            ["¿Tiene esto en rojo?", "Haben Sie das in Rot?", "rojo", ["negro", "amarillo"]],
+            ["Mi color favorito es el verde.", "Meine Lieblingsfarbe ist Grün."]
+          ]
+        },
+        {
+          "id": "u6l5",
+          "title": "Kleine Wörter: Geld, Sachen, zu viel",
+          "words": [
+            ["puede", "puede", "Sie können / er kann", "🙋", "Usted puede pagar con tarjeta.", "Sie können mit Karte bezahlen."],
+            ["dinero", "el dinero", "das Geld", "💶", "No tengo dinero.", "Ich habe kein Geld."],
+            ["cosas", "las cosas", "die Sachen", "🛍️", "Quiero muchas cosas.", "Ich möchte viele Sachen."],
+            ["menos", "menos", "weniger", "➖", "Quiero menos azúcar.", "Ich möchte weniger Zucker."],
+            ["demasiado", "demasiado", "zu (sehr)", "😬", "Es demasiado caro.", "Das ist zu teuer."],
+            ["tanto", "tanto", "so viel", "🤲", "No quiero tanto.", "Ich möchte nicht so viel."]
+          ],
+          "sentences": [
+            ["No tengo mucho dinero.", "Ich habe nicht viel Geld.", "dinero", ["cosas", "precio"]],
+            ["El vestido es demasiado caro.", "Das Kleid ist zu teuer."],
+            ["¿Puede pagar con tarjeta?", "Kann er mit Karte bezahlen?", "Puede", ["Puedo", "Tanto"]],
+            ["No quiero tanto, gracias.", "Ich möchte nicht so viel, danke."],
+            ["Quiero menos tomates.", "Ich möchte weniger Tomaten.", "menos", ["tanto", "demasiado"]]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u7",
+      "title": "Mein Tag",
+      "subtitle": "Tagesablauf, Essen, Abend und Freizeit",
+      "emoji": "☀️",
+      "lessons": [
+        {
+          "id": "u7l1",
+          "title": "Am Morgen",
+          "words": [
+            ["melevanto", "me levanto", "ich stehe auf", "⏰", "Me levanto a las siete.", "Ich stehe um sieben Uhr auf."],
+            ["meducho", "me ducho", "ich dusche", "🚿", "Me ducho por la mañana.", "Ich dusche morgens."],
+            ["desayuno", "desayuno", "ich frühstücke", "🥣", "Desayuno pan con tomate.", "Ich frühstücke Brot mit Tomate."],
+            ["salgo", "salgo de casa", "ich gehe aus dem Haus", "🚪", "Salgo de casa a las ocho.", "Ich gehe um acht aus dem Haus."],
+            ["temprano", "temprano", "früh", "🐓", "Me levanto temprano.", "Ich stehe früh auf."],
+            ["tomo", "tomo", "ich trinke / nehme", "🫖", "Tomo un café con leche.", "Ich trinke einen Milchkaffee."],
+            ["todoslosdias", "todos los días", "jeden Tag", "🔁", "Corro todos los días.", "Ich laufe jeden Tag."]
+          ],
+          "sentences": [
+            ["Me levanto a las siete.", "Ich stehe um sieben Uhr auf.", "levanto", ["ducho", "tomo"]],
+            ["Desayuno pan con tomate.", "Ich frühstücke Brot mit Tomate."],
+            ["Me ducho por la mañana.", "Ich dusche morgens."],
+            ["Salgo de casa temprano.", "Ich gehe früh aus dem Haus.", "temprano", ["tarde", "hoy"]],
+            ["Tomo un café todos los días.", "Ich trinke jeden Tag einen Kaffee."]
+          ]
+        },
+        {
+          "id": "u7l2",
+          "title": "Tagsüber",
+          "words": [
+            ["como", "como", "ich esse", "🍴", "Como a las dos.", "Ich esse um zwei."],
+            ["estudio", "estudio", "ich lerne", "📚", "Estudio español.", "Ich lerne Spanisch."],
+            ["leo", "leo", "ich lese", "📖", "Leo un libro.", "Ich lese ein Buch."],
+            ["escribo", "escribo", "ich schreibe", "✍️", "Escribo un correo.", "Ich schreibe eine E-Mail."],
+            ["hablo", "hablo", "ich spreche", "🗣️", "Hablo un poco de español.", "Ich spreche ein bisschen Spanisch."],
+            ["comida", "la comida", "das Essen", "🥘", "La comida está lista.", "Das Essen ist fertig."],
+            ["despues", "después", "danach", "⏭️", "Después leo un rato.", "Danach lese ich ein bisschen."]
+          ],
+          "sentences": [
+            ["Como a las dos.", "Ich esse um zwei.", "Como", ["Leo", "Hablo"]],
+            ["Estudio español.", "Ich lerne Spanisch."],
+            ["Hablo un poco de español.", "Ich spreche ein bisschen Spanisch."],
+            ["Después leo un libro.", "Danach lese ich ein Buch.", "leo", ["como", "escribo"]],
+            ["La comida está lista.", "Das Essen ist fertig."]
+          ]
+        },
+        {
+          "id": "u7l3",
+          "title": "Am Abend",
+          "words": [
+            ["cena", "la cena", "das Abendessen", "🍝", "La cena es a las nueve.", "Das Abendessen ist um neun."],
+            ["cocino", "cocino", "ich koche", "🍳", "Cocino para mi familia.", "Ich koche für meine Familie."],
+            ["veotele", "veo la tele", "ich sehe fern", "📺", "Veo la tele con mi hijo.", "Ich sehe mit meinem Sohn fern."],
+            ["meacuesto", "me acuesto", "ich gehe ins Bett", "🛏️", "Me acuesto a las once.", "Ich gehe um elf ins Bett."],
+            ["descanso", "descanso", "ich ruhe mich aus", "🛋️", "El domingo descanso.", "Am Sonntag ruhe ich mich aus."],
+            ["cansado", "cansado", "müde", "🥱", "Estoy muy cansado.", "Ich bin sehr müde."],
+            ["estoy", "estoy", "ich bin (Zustand, Ort)", "😌", "Estoy en casa.", "Ich bin zu Hause."]
+          ],
+          "sentences": [
+            ["Estoy muy cansado.", "Ich bin sehr müde.", "cansado", ["cena", "tarde"]],
+            ["Cocino para mi familia.", "Ich koche für meine Familie."],
+            ["Me acuesto a las once.", "Ich gehe um elf ins Bett."],
+            ["La cena es a las nueve.", "Das Abendessen ist um neun.", "cena", ["casa", "tele"]],
+            ["Veo la tele con mi hijo.", "Ich sehe mit meinem Sohn fern."]
+          ]
+        },
+        {
+          "id": "u7l4",
+          "title": "Freizeit",
+          "words": [
+            ["finde", "el fin de semana", "das Wochenende", "🗓️", "El fin de semana voy al cine.", "Am Wochenende gehe ich ins Kino."],
+            ["deporte", "el deporte", "der Sport", "⚽", "Hago deporte.", "Ich treibe Sport."],
+            ["musica", "la música", "die Musik", "🎵", "Escucho música.", "Ich höre Musik."],
+            ["bailar", "bailar", "tanzen", "💃", "Me gusta bailar.", "Ich tanze gern."],
+            ["nadar", "nadar", "schwimmen", "🏊", "¿Te gusta nadar?", "Schwimmst du gern?"],
+            ["viajar", "viajar", "reisen", "🧳", "Me encanta viajar.", "Ich liebe es zu reisen."],
+            ["cine", "el cine", "das Kino", "🎬", "Vamos al cine.", "Wir gehen ins Kino."],
+            ["tegusta", "¿te gusta…?", "magst du …?", "🤗", "¿Te gusta el fútbol?", "Magst du Fußball?"]
+          ],
+          "sentences": [
+            ["Me gusta bailar.", "Ich tanze gern.", "bailar", ["nadar", "viajar"]],
+            ["El fin de semana voy al cine.", "Am Wochenende gehe ich ins Kino."],
+            ["¿Te gusta nadar?", "Schwimmst du gern?"],
+            ["Escucho música.", "Ich höre Musik.", "música", ["deporte", "cine"]],
+            ["Me encanta viajar.", "Ich liebe es zu reisen."]
+          ]
+        },
+        {
+          "id": "u7l5",
+          "title": "Kleine Wörter: machen, ausgehen, noch",
+          "words": [
+            ["hacer", "hacer", "machen", "🛠️", "Me gusta hacer deporte.", "Ich mache gern Sport."],
+            ["salir", "salir", "ausgehen", "🎉", "Hoy quiero salir.", "Heute möchte ich ausgehen."],
+            ["amigos", "los amigos", "die Freunde", "🫂", "Salgo con mis amigos.", "Ich gehe mit meinen Freunden aus."],
+            ["todavia", "todavía", "noch", "⏸️", "Todavía estoy cansado.", "Ich bin noch müde."],
+            ["hablar", "hablar", "sprechen", "🗣️", "Me gusta hablar español.", "Ich spreche gern Spanisch."],
+            ["nadie", "nadie", "niemand", "🙅", "No hay nadie en casa.", "Niemand ist zu Hause."]
+          ],
+          "sentences": [
+            ["Me gusta hacer deporte por la tarde.", "Ich mache gern am Nachmittag Sport.", "hacer", ["salir", "hablar"]],
+            ["Hoy quiero salir con mis amigos.", "Heute möchte ich mit meinen Freunden ausgehen."],
+            ["Todavía estoy cansado.", "Ich bin noch müde.", "Todavía", ["Nadie", "Siempre"]],
+            ["Me gusta hablar español.", "Ich spreche gern Spanisch."],
+            ["Hoy no hay nadie en casa.", "Heute ist niemand zu Hause.", "nadie", ["todavía", "siempre"]]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u8",
+      "title": "Zuhause",
+      "subtitle": "Wohnung, Möbel, wo etwas liegt und Besuch",
+      "emoji": "🏠",
+      "lessons": [
+        {
+          "id": "u8l1",
+          "title": "Meine Wohnung",
+          "words": [
+            ["casa", "la casa", "das Haus", "🏠", "Mi casa es tu casa.", "Mein Haus ist dein Haus."],
+            ["apartamento", "el apartamento", "die Wohnung", "🏘️", "Vivo en un apartamento.", "Ich wohne in einer Wohnung."],
+            ["cocina", "la cocina", "die Küche", "🫕", "La cocina es pequeña.", "Die Küche ist klein."],
+            ["dormitorio", "el dormitorio", "das Schlafzimmer", "🛌", "El dormitorio es tranquilo.", "Das Schlafzimmer ist ruhig."],
+            ["jardin", "el jardín", "der Garten", "🌷", "Mi casa tiene un jardín.", "Mein Haus hat einen Garten."],
+            ["habitacion", "la habitación", "das Zimmer", "🔑", "Una habitación doble.", "Ein Doppelzimmer."],
+            ["grande", "grande", "groß", "🐘", "El parque es grande.", "Der Park ist groß."],
+            ["pequeno", "pequeño", "klein", "🐜", "Mi apartamento es pequeño.", "Meine Wohnung ist klein."]
+          ],
+          "sentences": [
+            ["Vivo en un apartamento.", "Ich wohne in einer Wohnung.", "apartamento", ["jardín", "dormitorio"]],
+            ["La cocina es pequeña.", "Die Küche ist klein."],
+            ["Mi casa tiene un jardín.", "Mein Haus hat einen Garten."],
+            ["El dormitorio es grande.", "Das Schlafzimmer ist groß.", "grande", ["pequeño", "cocina"]],
+            ["Tengo tres habitaciones.", "Ich habe drei Zimmer."]
+          ]
+        },
+        {
+          "id": "u8l2",
+          "title": "Möbel",
+          "words": [
+            ["silla", "la silla", "der Stuhl", "💺", "Una silla cómoda.", "Ein bequemer Stuhl."],
+            ["cama", "la cama", "das Bett", "🛏️", "La cama es grande.", "Das Bett ist groß."],
+            ["sofa", "el sofá", "das Sofa", "🛋️", "El sofá es muy cómodo.", "Das Sofa ist sehr bequem."],
+            ["lampara", "la lámpara", "die Lampe", "💡", "La lámpara es nueva.", "Die Lampe ist neu."],
+            ["ventana", "la ventana", "das Fenster", "🪟", "Abre la ventana, por favor.", "Mach bitte das Fenster auf."],
+            ["puerta", "la puerta", "die Tür", "🚪", "Cierra la puerta.", "Mach die Tür zu."],
+            ["armario", "el armario", "der Schrank", "🗄️", "La ropa está en el armario.", "Die Kleidung ist im Schrank."],
+            ["comodo", "cómodo", "bequem", "☁️", "Es muy cómodo.", "Es ist sehr bequem."]
+          ],
+          "sentences": [
+            ["La lámpara está en la mesa.", "Die Lampe steht auf dem Tisch.", "lámpara", ["ventana", "silla"]],
+            ["Abre la ventana, por favor.", "Mach bitte das Fenster auf."],
+            ["El sofá es muy cómodo.", "Das Sofa ist sehr bequem."],
+            ["Cierra la puerta.", "Mach die Tür zu.", "puerta", ["cama", "ventana"]],
+            ["La cama es grande.", "Das Bett ist groß."]
+          ]
+        },
+        {
+          "id": "u8l3",
+          "title": "Wo liegt was?",
+          "words": [
+            ["encima", "encima de", "auf, über", "🔝", "El libro está encima de la mesa.", "Das Buch liegt auf dem Tisch."],
+            ["debajo", "debajo de", "unter", "⬇️", "El gato está debajo de la cama.", "Die Katze ist unter dem Bett."],
+            ["allado", "al lado de", "neben", "↔️", "El banco está al lado del hotel.", "Die Bank ist neben dem Hotel."],
+            ["delante", "delante de", "vor", "▶️", "La parada está delante del museo.", "Die Haltestelle ist vor dem Museum."],
+            ["detras", "detrás de", "hinter", "🔙", "El jardín está detrás de la casa.", "Der Garten ist hinter dem Haus."],
+            ["gato", "el gato", "die Katze", "🐈", "Mi gato se llama Coco.", "Meine Katze heißt Coco."],
+            ["llaves", "las llaves", "die Schlüssel", "🗝️", "¿Dónde están las llaves?", "Wo sind die Schlüssel?"],
+            ["libro", "el libro", "das Buch", "📕", "Leo un libro.", "Ich lese ein Buch."]
+          ],
+          "sentences": [
+            ["El gato está debajo de la cama.", "Die Katze ist unter dem Bett.", "debajo", ["encima", "detrás"]],
+            ["El jardín está detrás de la casa.", "Der Garten ist hinter dem Haus."],
+            ["¿Dónde están las llaves?", "Wo sind die Schlüssel?"],
+            ["El libro está encima de la mesa.", "Das Buch liegt auf dem Tisch.", "encima", ["debajo", "delante"]],
+            ["El gato está al lado del sofá.", "Die Katze ist neben dem Sofa."]
+          ]
+        },
+        {
+          "id": "u8l4",
+          "title": "Besuch zu Hause",
+          "words": [
+            ["bienvenido", "bienvenido", "willkommen", "🤗", "¡Bienvenido a casa!", "Willkommen zu Hause!"],
+            ["pasa", "¡pasa!", "komm rein!", "🏃", "Pasa, pasa.", "Komm rein, komm rein."],
+            ["sientate", "siéntate", "setz dich", "🪑", "Siéntate, por favor.", "Setz dich bitte."],
+            ["vecino", "el vecino", "der Nachbar", "🧑‍🤝‍🧑", "Mi vecino es muy simpático.", "Mein Nachbar ist sehr nett."],
+            ["limpio", "limpio", "sauber", "🧽", "La casa está limpia.", "Das Haus ist sauber."],
+            ["sucio", "sucio", "schmutzig", "🧦", "La cocina está sucia.", "Die Küche ist schmutzig."],
+            ["quieres", "¿quieres…?", "möchtest du …?", "🫶", "¿Quieres un café?", "Möchtest du einen Kaffee?"],
+            ["vivo", "vivo", "ich wohne", "📮", "Vivo en el centro.", "Ich wohne im Zentrum."]
+          ],
+          "sentences": [
+            ["¡Bienvenido a mi casa!", "Willkommen in meinem Haus!", "Bienvenido", ["Quieres", "Vivo"]],
+            ["¿Quieres un café?", "Möchtest du einen Kaffee?"],
+            ["Siéntate, por favor.", "Setz dich bitte."],
+            ["Mi vecino es muy simpático.", "Mein Nachbar ist sehr nett.", "vecino", ["sucio", "limpio"]],
+            ["Vivo en el centro.", "Ich wohne im Zentrum."]
+          ]
+        },
+        {
+          "id": "u8l5",
+          "title": "Kleine Wörter: das, dieser, zwischen",
+          "words": [
+            ["eso", "eso", "das (da)", "👆", "¿Qué es eso?", "Was ist das?"],
+            ["ese", "ese", "dieser / der da", "👉", "Ese sofá es nuevo.", "Das Sofa da ist neu."],
+            ["esa", "esa", "diese / die da", "🫵", "Esa lámpara es bonita.", "Die Lampe da ist schön."],
+            ["entre", "entre", "zwischen", "↔️", "El baño está entre la cocina y el dormitorio.", "Das Bad ist zwischen der Küche und dem Schlafzimmer."],
+            ["nuestro", "nuestro", "unser", "🐈", "Es nuestro gato.", "Das ist unser Kater."],
+            ["losiento", "lo siento", "es tut mir leid", "🙏", "Lo siento, la cocina está sucia.", "Tut mir leid, die Küche ist schmutzig."]
+          ],
+          "sentences": [
+            ["¿Qué es eso?", "Was ist das?", "eso", ["ese", "esa"]],
+            ["Ese sofá es muy cómodo.", "Das Sofa da ist sehr bequem."],
+            ["La mesa está entre la ventana y la puerta.", "Der Tisch steht zwischen dem Fenster und der Tür.", "entre", ["debajo", "encima"]],
+            ["Lo siento, el baño está sucio.", "Tut mir leid, das Bad ist schmutzig."],
+            ["Es nuestro apartamento.", "Das ist unsere Wohnung.", "nuestro", ["nuestra", "ese"]]
+          ]
+        }
+      ]
+    }
+  ]
+}

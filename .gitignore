@@ -1,0 +1,18 @@
+node_modules
+dist
+dist-single
+dist-artifact
+.env
+
+# Prüfnachweise werden versioniert, Testaufnahmen nicht
+public/audio/
+__pycache__/
+*.pyc
+test-results/
+playwright-report/
+docs/*/work/
+docs/*/out/
+
+# Testaufnahmen und Modelldateien (WP-07), bleiben nur auf dem Mac
+testdaten/
+.DS_Store

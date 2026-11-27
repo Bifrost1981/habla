@@ -1,0 +1,148 @@
+{
+  "package_id": "WP-16",
+  "created": "2026-11-15T17:33:03+00:00",
+  "result": "pass",
+  "package_state": {
+    "package_hash": "ab7fcecfed1320319791923db4e828610f7db4f19e07215f8bdfc7daf417250f",
+    "file_count": 2,
+    "scope": [
+      "src/lib/text.ts",
+      "scripts/test-logic.ts"
+    ]
+  },
+  "state": {
+    "state_hash": "3677da4582b2d9198c100958085b91f4ec96ead2b27add44d89110a12e7a8261",
+    "file_count": 63,
+    "environment": {
+      "node --version": "v22.23.4",
+      "python3 --version": "Python 3.13.18"
+    },
+    "environment_bound": {
+      "node --version": "major 22"
+    },
+    "git_head": "3ff745c8fe2edbcbb91b7a5f021f1f31560dfb56",
+    "git_dirty": true
+  },
+  "scope": {
+    "include": [
+      "src/*",
+      "scripts/*",
+      "public/*",
+      "tests/*",
+      ".github/*",
+      "index.html",
+      "package.json",
+      "package-lock.json",
+      "tsconfig.json",
+      "vite.config.ts",
+      "feature_list.json",
+      "init.sh",
+      "CLAUDE.md"
+    ],
+    "exclude": [
+      ".git/*",
+      "node_modules/*",
+      "dist/*",
+      "dist-single/*",
+      "dist-artifact/*",
+      "evidence/*",
+      "*__pycache__*",
+      "*.pyc",
+      "*.tmp"
+    ]
+  },
+  "files": {
+    ".github/workflows/gate.yml": "8f2487e977a43184792b4bafdff70b5a5b556f76081c44cffa9d89f87a900cff",
+    "CLAUDE.md": "fa521596733c671850cc3bc7a389f27986b7770a740b0066d99eae41f7312525",
+    "feature_list.json": "77cc10f041574e5b7bbe92aaa36053fe8b5884e86b9e5197504c71922bfa7ff1",
+    "index.html": "a84c90a2accc83a4d6d9f284c82b6529b0c9e55125728eed36a08c2dba9d9096",
+    "init.sh": "5a6d51f65acd82d7ef2d828ce6508f0ad656fc52d29ff2a157c487c720ea235d",
+    "package-lock.json": "5cc44c8252a9e6f15fa17abad4ad11a22da93751bd0e27c3a8959907aa334203",
+    "package.json": "3153c87c33e2ff37c873233cb2b5bc946b49c181e9e14e17d6d4481e93935a6b",
+    "public/THIRD-PARTY-LICENSES.txt": "8ac7412fa6900007d5fa63aaea6712b97d27146d781b78665505ff95a95145f4",
+    "public/icon.svg": "a14e5fdb3a727db87ac2c15230118ba094cd85071ea161999277c996c44254d7",
+    "public/manifest.webmanifest": "45b6582b23e8a3b62249e93fe1662a5b2c87ff704d7138fdcbd3e5f5d9038378",
+    "public/sw.js": "ca9a95313e78082ce39b3475b9ab069cd45ae336084a73ffec457f23455ed031",
+    "scripts/e2e_mutation_check.py": "6dd2022125e7e5ac1816c9c8ec6603f23a03453a4521667489977759959d1b0d",
+    "scripts/make-artifact.py": "38f9570586dda2b6f9650f997b2e1578485aea093a3d2f27a7fc7bb51b23c244",
+    "scripts/make-audio.ts": "3c19550ef6365e05dd3c2c39f4b9ba591a66fe3d83dc362cc45fc36c42588239",
+    "scripts/make-srs-reference.ts": "04485d695e6ccbd5f9cdc6c3356ff23ac8f2525a42704d4224b12a2c4f4ead31",
+    "scripts/project_gate.py": "95b839c98af41937e907b3bbc8c9fb2e32e0a7f87a3dda16f015449d8bcd0fe1",
+    "scripts/srs_reference_py.py": "7403cdc2ec3c6badebecea6a0fd021c2fb6ad7c095cfa40b10abe4d95ddc63e4",
+    "scripts/test-feedback.ts": "a4f42b9ccf1aeb0e348c04a159e2af2fbb76c0393ff1151949a6386442b9eb0f",
+    "scripts/test-logic.ts": "b97c32dcd7bbbc88e771c99f8c02b934ab68fe8d20ca72c9bc84d10d4db9672a",
+    "scripts/test-mix.ts": "2cb6341592f7213c2db8bce61ac45e98cbe0a02841f5d100fac25c8ec91b1cb8",
+    "scripts/test-srs.ts": "b98740ba0f0b446ff1971d8f8fd754bcb5e66ba3eae53189e88405b4bae6ce56",
+    "src/App.tsx": "ba8dab9ba74b63e5fc45a5071d7224bb562bf1ee6c745d8e84e222fd6bcfccc5",
+    "src/components/GoalRing.tsx": "948e58ee194434d4f7b052dc0107540fe9970d016be3a253a036b438c5e6533e",
+    "src/components/MicButton.tsx": "740cc2724b439edca5435aacfdce565bda67aa91be30cbc0d5d255038257284c",
+    "src/components/Speakable.tsx": "7256807c8afb86ddd0f70a333faebbfa321eea0ff7cdf1e24f7422b18608273c",
+    "src/components/VoicePicker.tsx": "e7c490b82cdd67c79fe93c5c41a980598e6531d1e4409b8aba865e3dabe46146",
+    "src/components/icons.tsx": "da360a44c361a65c33dbd189547924a4eeb7a23978e3d0162454ab425c96db9a",
+    "src/content/course.json": "4c7739448c94abf73cff0738fdd167911f277b2724befcc4b0b218d4b2608db5",
+    "src/content/more.json": "40b2013de374ed9c5d897e83b152551120276b53c2cd10020d93b7b87a47fc34",
+    "src/content/phrases.ts": "2ead2c9c9ace0ae8c7207fa398e504006adbec89d0f43550e90112a89969ee76",
+    "src/context.tsx": "3f4c442c63c3401a513fed8070feb727e2d0a36b97999b2527172b7ef953d1bf",
+    "src/exercises/Build.tsx": "351a6f508ef3c6cb9a711f3699b33329cdd95366ea4ff521543f7fa9cfaa3e3c",
+    "src/exercises/Card.tsx": "fa78a03c37a84e1a6d2c45a35d0fecb92d5fe28cbaf740acfd90440e9a018b39",
+    "src/exercises/Gap.tsx": "3f2d07f1008f4bc6bdbb7bd56a68d0e4e6273753f54c68a37b5f7986b64661e1",
+    "src/exercises/Match.tsx": "01022dd48a90e3be7f310f062bc649f4bd0ad0d411fefb6da9539f8e008593d9",
+    "src/exercises/Pick.tsx": "1a3c7dbcc2b56216e56249e51be1d0a1bac4d4ae71c479709feff4ded8441e6b",
+    "src/exercises/Speak.tsx": "7ec329bcb0771325f924832a3a5e1a70857b9dc4facf3274e5b68b6ebd375a26",
+    "src/exercises/common.tsx": "c1d9227db7c0b9cfa51fdb5f250c43b67e5f676ffd1ba2d7f62713c06c63192b",
+    "src/lib/audioKey.ts": "bbf9433d60bf6ebcb44355dffb9f199aa76f7810f4671a37b5b20cb6b21e76c0",
+    "src/lib/course.ts": "1f6bc3a593ed585429dbe57235d2a987d040ffee8c8e7067dc6a846ea94444aa",
+    "src/lib/diagnose.ts": "fa20df42cf4a22689f9eb9233db15f6b20e911316b9c0fb1a182ae0df4451180",
+    "src/lib/dom.ts": "2b88fde45211dd79caaabd451ef7a1300f37802ddaa2cd0d2a98bb8ccdae6346",
+    "src/lib/feedback.ts": "508255cdbe907cd4dc0de9d14d08d9459cb4d7f4410b46c2746ad0dad802ad5b",
+    "src/lib/generate.ts": "58bab9f5106865f072b3c185c27b2e82c75e93479dc2a6b1bd1b90efe3bf27b9",
+    "src/lib/speech.ts": "2bd96c063c33702763cf54f0c6529b9dfa2db2445ef67315a3caa28580e40868",
+    "src/lib/srs.ts": "bc63fcface0e4e171b3ef142551c17fdd064c535f70fad1f8c60fb05dab0165c",
+    "src/lib/storage.ts": "e97632361b033c6f2f6ef903348ac11e18366478696ce3e5ba05d6b914373f6b",
+    "src/lib/text.ts": "ad6ffe4de11d216edaf249c31d424a61e048709819b050f4f704e81c771c33ee",
+    "src/main.tsx": "64adc2a9cabc84686bcabce05f5e4ae3a53baf5735edc6a65a0084b6c3f2614f",
+    "src/screens/LessonScreen.tsx": "94c8f97dc349c5303c256bd9843cf06f1e75243472de48c9705279c404f1af83",
+    "src/screens/Onboarding.tsx": "ae8e9238cb54001d5c6ea3e71bd82466a77ecf4e37199c32d38cb026a87d6633",
+    "src/screens/PathScreen.tsx": "528dbf55f5f0b60c6da7c312ccafc488d0ffe7d8deba0798ac3ad765dc5a3f9e",
+    "src/screens/ResultScreen.tsx": "1bd72bb3b9809a0bee5307fe6b35df956a68d2cd81ded13e346542065320cce1",
+    "src/screens/SettingsScreen.tsx": "0f04701cc44e6e3390def109c6a9117389ae284b99ee3f4b2fc3ffac37d9e732",
+    "src/styles.css": "f9f75d85b5d85214dea46e2b1fead4f8bd4a3ed022e25aaa1e68dd523fec4f59",
+    "src/types.ts": "4ba57e91c89b0b6a54f4b0438be58061b84510305f70460adef07e605f82f294",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "tests/e2e/habla.spec.ts": "aa0ce614080c2c629dd61d5444ee9b51a79ffcfd4bf705b8c03a5079a2d2b17e",
+    "tests/e2e/playwright.config.ts": "ed8deab0c2ebeb22b2c86acf821509d8ec6fe698eea4504367aa9fd4c895b058",
+    "tests/gate/test_project_gate.py": "746bbece4d3ec93b39a3cd8d6abaee5f065ba98170d852babfc82b43e7a27c86",
+    "tests/srs/reference.json": "cd9fac83806da4a5d809623a55f7305ebbb9fb602f7a2c7399508f82ffa9d072",
+    "tsconfig.json": "86f3cb14826ff520a8088a808922614d05b78031a5124bf1e5f55e9a83d737a5",
+    "vite.config.ts": "46e53e936e3420f0e62afba8cd32edd2f2d9fd974ba260ec234743ac5d0c1fc7"
+  },
+  "commands": [
+    {
+      "name": "logic",
+      "cmd": "npm test",
+      "returncode": 0,
+      "started": "2026-11-15T17:31:11+00:00",
+      "duration_s": 0.3,
+      "output_tail": "\n> habla@0.3.0 test\n> node --experimental-strip-types --no-warnings scripts/test-logic.ts\n\nOK – 239 Vokabeln, 580 Übungen in 32 Lektionen und 8 Einheiten, alle Tests bestanden.\n"
+    },
+    {
+      "name": "typecheck",
+      "cmd": "npx tsc --noEmit",
+      "returncode": 0,
+      "started": "2026-11-15T17:31:11+00:00",
+      "duration_s": 2.68,
+      "output_tail": ""
+    },
+    {
+      "name": "e2e",
+      "cmd": "npm run e2e",
+      "returncode": 0,
+      "started": "2026-11-15T17:31:14+00:00",
+      "duration_s": 109.4,
+      "output_tail": "g 1 worker\n\n  ✓   1 [chromium] › tests/e2e/habla.spec.ts:142:1 › Onboarding und erste Lektion bis zum Ergebnis (24.5s)\n  ✓   2 [chromium] › tests/e2e/habla.spec.ts:169:1 › Erzeugte Lektion (Einheit 3) im Dunkelmodus (36.0s)\n  ✓   3 [chromium] › tests/e2e/habla.spec.ts:185:1 › Einstellungen: Tempo wird gespeichert (1.1s)\n  ✓   4 [chromium] › tests/e2e/habla.spec.ts:198:1 › Schmale Breite 360 px ohne seitliches Scrollen (1.4s)\n  ✓   5 [chromium] › tests/e2e/habla.spec.ts:231:1 › Vorab vertonte Aufnahme wird statt der Gerätestimme abgespielt (1.4s)\n  ✓   6 [chromium] › tests/e2e/habla.spec.ts:306:1 › B1 Beschädigter Speicherstand: App startet trotzdem (954ms)\n  ✓   7 [chromium] › tests/e2e/habla.spec.ts:317:1 › B2 Fehlende Aufnahmedatei: Gerätestimme springt genau einmal ein (2.1s)\n  ✓   8 [chromium] › tests/e2e/habla.spec.ts:331:1 › B3 Schnelles „Weiter“: Lösung der alten Übung wird nicht mehr vorgelesen (3.7s)\n  ✓   9 [chromium] › tests/e2e/habla.spec.ts:348:1 › B4 Dialog „Lektion beenden?“ sperrt Tasten der Übung dahinter (2.8s)\n  ✓  10 [chromium] › tests/e2e/habla.spec.ts:375:1 › Fortschritt aus Version 0.3 (Leitner) wird übernommen und mit FSRS weitergeplant (6.3s)\n  ✓  11 [chromium] › tests/e2e/habla.spec.ts:459:1 › Hör-Diktat und Übersetzen-Sprechen: Abruf ohne Vorlage, nur mit Klicks und Mikrofon (20.3s)\n  ✓  12 [chromium] › tests/e2e/habla.spec.ts:576:1 › Regelhinweis bei falscher Antwort: Wortstellung, ser/estar, fehlendes Wort, Wort zu viel (4.8s)\n\n  12 passed (1.8m)\n"
+    }
+  ],
+  "problems": [],
+  "approvals_required": [],
+  "approvals_valid": []
+}
